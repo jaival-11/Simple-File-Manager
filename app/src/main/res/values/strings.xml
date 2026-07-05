@@ -815,7 +815,7 @@ The image dimensions must be as follows:
 
     <!-- Shared strings -->
     <string name="app_name" translatable="false">Morphe</string>
-    <string name="select_file">Monet Files</string>
+    <string name="select_file">Simple File Manager</string>
     <string name="select_folder">Select folder</string>
     <string name="patches">Patches</string>
     <string name="home">Home</string>

@@ -221,9 +221,10 @@ fun FilePicker(
     onFilePicked: (File) -> Unit,
     allowFolderSelection: Boolean = false
 ) {
+    val context = androidx.compose.ui.platform.LocalContext.current
+
     val prefs: PreferencesManager = koinInject()
     val pm: PM = koinInject()
-    val context = LocalContext.current
     val coroutineScope = rememberCoroutineScope()
     val allowedExtensions = remember(mimeTypes) { resolveAllowedExtensions(mimeTypes) }
     val mppIcon: ImageBitmap? = remember(context) {
@@ -333,6 +334,37 @@ fun FilePicker(
         val atStorageRoot = roots.any { (_, root) -> root == currentDir }
         currentDir = if (atStorageRoot) null else currentDir?.parentFile
     }
+
+    var backPressedOnce by remember { mutableStateOf(false) }
+
+    // This resets the double-tap timer after 2 seconds
+    LaunchedEffect(backPressedOnce) {
+        if (backPressedOnce) {
+            delay(2000)
+            backPressedOnce = false
+        }
+    }
+
+    // Check if we are currently looking at the base storage directory
+    val isAtRoot = currentDir == null || roots.any { (_, root) -> root == currentDir }
+
+    BackHandler {
+        if (showSearch) {
+            showSearch = false
+        } else if (!isAtRoot) {
+            // Not at the root folder, so go up one level safely
+            navigateBack()
+        } else {
+            // We are at the root folder, trigger the double-tap exit logic
+            if (backPressedOnce) {
+                onDismiss() // This triggers finish() in MainActivity to close the app
+            } else {
+                backPressedOnce = true
+                Toast.makeText(context, "Press back again to close the app", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
 
     MorpheDialog(
         onDismissRequest = {
