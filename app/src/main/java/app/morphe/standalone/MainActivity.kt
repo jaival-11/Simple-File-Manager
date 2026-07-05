@@ -1,12 +1,27 @@
 package app.morphe.standalone
 
 import android.app.Application
+import android.content.Context
+import android.content.Intent
+import android.net.Uri
+import android.os.Build
 import android.os.Bundle
+import android.os.Environment
+import android.provider.Settings
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalLifecycleOwner
+import androidx.compose.ui.unit.dp
+import androidx.core.content.ContextCompat
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
 import app.morphe.standalone.data.platform.Filesystem
 import app.morphe.standalone.domain.manager.PreferencesManager
 import app.morphe.standalone.ui.screen.shared.FilePicker
@@ -21,11 +36,18 @@ val appModule = module {
     single { Filesystem(get<android.content.Context>() as Application) }
 }
 
+fun checkStoragePermission(context: Context): Boolean {
+    return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+        Environment.isExternalStorageManager()
+    } else {
+        ContextCompat.checkSelfPermission(context, android.Manifest.permission.READ_EXTERNAL_STORAGE) == android.content.pm.PackageManager.PERMISSION_GRANTED
+    }
+}
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
-        // Initialize Koin dependencies
         if (org.koin.core.context.GlobalContext.getOrNull() == null) {
             startKoin {
                 androidContext(this@MainActivity.applicationContext)
@@ -35,19 +57,58 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             MaterialTheme {
-                Surface {
-                    FilePicker(
-                        mimeTypes = arrayOf("*/*"),
-                        onDismiss = { 
-                            // Close the app when the back/cancel button is hit
-                            finish() 
-                        },
-                        onFilePicked = { file ->
-                            // Show a toast with the selected file name
-                            Toast.makeText(this@MainActivity, "Picked: ${file.name}", Toast.LENGTH_LONG).show()
-                        },
-                        allowFolderSelection = false
-                    )
+                Surface(modifier = Modifier.fillMaxSize()) {
+                    val context = LocalContext.current
+                    val lifecycleOwner = LocalLifecycleOwner.current
+                    var hasPermission by remember { mutableStateOf(checkStoragePermission(context)) }
+
+                    // Automatically refresh permission status when returning from Android Settings
+                    DisposableEffect(lifecycleOwner) {
+                        val observer = LifecycleEventObserver { _, event ->
+                            if (event == Lifecycle.Event.ON_RESUME) {
+                                hasPermission = checkStoragePermission(context)
+                            }
+                        }
+                        lifecycleOwner.lifecycle.addObserver(observer)
+                        onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
+                    }
+
+                    if (hasPermission) {
+                        FilePicker(
+                            mimeTypes = arrayOf("*/*"),
+                            onDismiss = { finish() },
+                            onFilePicked = { file ->
+                                Toast.makeText(context, "Picked: ${file.name}", Toast.LENGTH_LONG).show()
+                            },
+                            allowFolderSelection = false
+                        )
+                    } else {
+                        Column(
+                            modifier = Modifier.fillMaxSize(),
+                            verticalArrangement = Arrangement.Center,
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ) {
+                            Text("Storage permission is required to browse files.")
+                            Spacer(modifier = Modifier.height(16.dp))
+                            Button(onClick = {
+                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                                    try {
+                                        val intent = Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION)
+                                        intent.addCategory(Intent.CATEGORY_DEFAULT)
+                                        intent.data = Uri.parse("package:${context.packageName}")
+                                        startActivity(intent)
+                                    } catch (e: Exception) {
+                                        val intent = Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION)
+                                        startActivity(intent)
+                                    }
+                                } else {
+                                    requestPermissions(arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE), 100)
+                                }
+                            }) {
+                                Text("Grant Permission")
+                            }
+                        }
+                    }
                 }
             }
         }

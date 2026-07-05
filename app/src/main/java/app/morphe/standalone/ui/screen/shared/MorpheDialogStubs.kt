@@ -1,10 +1,10 @@
 package app.morphe.standalone.ui.screen.shared
 
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.window.Dialog
 
 val LocalDialogTextColor = compositionLocalOf { Color.Black }
 val LocalDialogSecondaryTextColor = compositionLocalOf { Color.Gray }
@@ -18,14 +18,13 @@ fun MorpheDialog(
     footer: (@Composable () -> Unit)? = null,
     content: @Composable () -> Unit
 ) {
-    Dialog(onDismissRequest = onDismissRequest) {
-        Surface(shape = MaterialTheme.shapes.large, color = MaterialTheme.colorScheme.surface) {
-            CompositionLocalProvider(
-                LocalDialogTextColor provides MaterialTheme.colorScheme.onSurface,
-                LocalDialogSecondaryTextColor provides MaterialTheme.colorScheme.onSurfaceVariant
-            ) {
-                content()
-            }
+    // Removed the Dialog wrapper and added Modifier.fillMaxSize()
+    Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+        CompositionLocalProvider(
+            LocalDialogTextColor provides MaterialTheme.colorScheme.onBackground,
+            LocalDialogSecondaryTextColor provides MaterialTheme.colorScheme.onSurfaceVariant
+        ) {
+            content()
         }
     }
 }
