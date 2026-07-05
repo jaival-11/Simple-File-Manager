@@ -1,0 +1,219 @@
+package app.morphe.standalone.ui.screen.shared
+
+import android.content.pm.PackageInfo
+import android.graphics.drawable.Drawable
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Android
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.graphics.vector.rememberVectorPainter
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
+import app.morphe.standalone.util.AppDataResolver
+import app.morphe.standalone.util.AppDataSource
+import coil.compose.AsyncImage
+import coil.compose.SubcomposeAsyncImage
+import org.koin.compose.koinInject
+
+/**
+ * Universal app icon component.
+ *
+ * Automatically resolves icon from available sources:
+ * installed app → original APK → patched APK → constants → fallback
+ *
+ * @param placeholderInnerPadding Inner padding applied only to [GlassPlaceholderIcon] so it
+ *   optically aligns with adaptive icons (which have ~10% inset). Real icons are not affected.
+ *   Use 6.dp for large cards (60dp), 0.dp (default) for smaller contexts like list rows.
+ */
+@Composable
+fun AppIcon(
+    modifier: Modifier = Modifier,
+    packageInfo: PackageInfo? = null,
+    packageName: String? = null,
+    contentDescription: String?,
+    preferredSource: AppDataSource = AppDataSource.INSTALLED,
+    placeholderGradientColors: List<Color>? = null,
+    placeholderInnerPadding: Dp = 0.dp
+) {
+    // If PackageInfo is provided, use the simple implementation
+    if (packageInfo != null) {
+        SimpleAppIcon(
+            packageInfo = packageInfo,
+            contentDescription = contentDescription,
+            modifier = modifier
+        )
+        return
+    }
+
+    // If only package name is provided, resolve from multiple sources
+    if (packageName != null) {
+        ResolvedAppIcon(
+            packageName = packageName,
+            contentDescription = contentDescription,
+            modifier = modifier,
+            preferredSource = preferredSource,
+            placeholderGradientColors = placeholderGradientColors,
+            placeholderInnerPadding = placeholderInnerPadding
+        )
+        return
+    }
+
+    // Fallback: show glass placeholder if colors supplied, otherwise Android icon
+    if (placeholderGradientColors != null) {
+        GlassPlaceholderIcon(
+            gradientColors = placeholderGradientColors,
+            modifier = modifier,
+            innerPadding = placeholderInnerPadding
+        )
+    } else {
+        FallbackIcon(
+            contentDescription = contentDescription,
+            modifier = modifier
+        )
+    }
+}
+
+/**
+ * Simple icon display when PackageInfo is already available.
+ */
+@Composable
+private fun SimpleAppIcon(
+    packageInfo: PackageInfo,
+    contentDescription: String?,
+    modifier: Modifier = Modifier
+) {
+    val context = LocalContext.current
+    val cacheKey = "${packageInfo.packageName}:${packageInfo.versionName}"
+    val request = remember(cacheKey) {
+        coil.request.ImageRequest.Builder(context)
+            .data(packageInfo)
+            .memoryCacheKey(cacheKey)
+            .build()
+    }
+
+    SubcomposeAsyncImage(
+        model = request,
+        contentDescription = contentDescription,
+        modifier = modifier,
+        loading = { ShimmerBox(modifier = Modifier.fillMaxSize()) }
+    )
+}
+
+/**
+ * Resolved icon from any available source when only package name is known.
+ */
+@Composable
+private fun ResolvedAppIcon(
+    packageName: String,
+    contentDescription: String?,
+    modifier: Modifier = Modifier,
+    preferredSource: AppDataSource = AppDataSource.INSTALLED,
+    placeholderGradientColors: List<Color>? = null,
+    placeholderInnerPadding: Dp = 0.dp
+) {
+    val appDataResolver: AppDataResolver = koinInject()
+
+    var resolvedPackageInfo by remember(packageName) { mutableStateOf<PackageInfo?>(null) }
+    var resolvedDrawable by remember(packageName) { mutableStateOf<Drawable?>(null) }
+    var isLoading by remember(packageName) { mutableStateOf(true) }
+
+    LaunchedEffect(packageName, preferredSource) {
+        // Use resolveAppData to get complete data in one call
+        val resolvedData = appDataResolver.resolveAppData(packageName, preferredSource)
+        resolvedPackageInfo = resolvedData.packageInfo
+        // Fall back to raw Drawable when packageInfo is unavailable
+        resolvedDrawable = resolvedData.icon.takeIf { resolvedData.packageInfo == null }
+        isLoading = false
+    }
+
+    when {
+        isLoading -> {
+            // Show the same placeholder as the resolved state so size stays consistent
+            if (placeholderGradientColors != null) {
+                GlassPlaceholderIcon(
+                    gradientColors = placeholderGradientColors,
+                    modifier = modifier,
+                    innerPadding = placeholderInnerPadding
+                )
+            } else {
+                ShimmerBox(
+                    modifier = modifier,
+                    shape = RoundedCornerShape(15.dp)
+                )
+            }
+        }
+        resolvedPackageInfo != null -> {
+            SimpleAppIcon(
+                packageInfo = resolvedPackageInfo!!,
+                contentDescription = contentDescription,
+                modifier = modifier
+            )
+        }
+        resolvedDrawable != null -> {
+            // packageInfo unavailable but raw Drawable was resolved (rare path)
+            DrawableAppIcon(
+                drawable = resolvedDrawable!!,
+                contentDescription = contentDescription,
+                modifier = modifier
+            )
+        }
+        placeholderGradientColors != null -> {
+            // No icon found - show glass placeholder tinted to card colors
+            GlassPlaceholderIcon(
+                gradientColors = placeholderGradientColors,
+                modifier = modifier,
+                innerPadding = placeholderInnerPadding
+            )
+        }
+        else -> {
+            FallbackIcon(
+                contentDescription = contentDescription,
+                modifier = modifier
+            )
+        }
+    }
+}
+
+/**
+ * Icon display from a raw [Drawable] - used when packageInfo is unavailable but
+ * the resolver produced a Drawable directly.
+ */
+@Composable
+private fun DrawableAppIcon(
+    drawable: Drawable,
+    contentDescription: String?,
+    modifier: Modifier = Modifier
+) {
+    // Coil can load Drawable directly without needing PackageInfo
+    AsyncImage(
+        model = drawable,
+        contentDescription = contentDescription,
+        modifier = modifier
+    )
+}
+
+/**
+ * Fallback Android icon when no package info is available and no gradient colors are given.
+ */
+@Composable
+private fun FallbackIcon(
+    contentDescription: String?,
+    modifier: Modifier = Modifier
+) {
+    val image = rememberVectorPainter(Icons.Default.Android)
+    val colorFilter = ColorFilter.tint(MaterialTheme.colorScheme.onSurface)
+
+    Image(
+        image,
+        contentDescription,
+        modifier,
+        colorFilter = colorFilter
+    )
+}

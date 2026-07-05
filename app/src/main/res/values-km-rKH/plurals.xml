@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="patch_count">
+        <item quantity="other">បំណះ %s</item>
+    </plurals>
+    <plurals name="sources_management_subtitle">
+        <item quantity="other">%s ប្រភពដែលបានដំឡើង</item>
+    </plurals>
+</resources>

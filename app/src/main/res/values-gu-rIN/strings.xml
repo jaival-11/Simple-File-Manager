@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Home Screen -->
+    <string name="home_other_apps">અન્ય એપ્લિકેશનો</string>
+    <string name="home_not_patched_yet">હજુ પેચ કરેલ નથી </string>
+    <string name="home_no_patches_available">કોઈ પેચો ઉપલબ્ધ નથી</string>
+    <string name="home_app_hide_title">આ એપ્લિકેશનને છુપાવા માગો છો?</string>
+    <string name="home_app_will_be_hidden">આ એપ છુપાવવામાં આવશે</string>
+    <string name="home_app_no_hidden">કોઈ છુપાવેલી એપ્લિકેશનો નથી</string>
+    <string name="home_app_hidden_apps_title">છુપાવેલ એપ્લિકેશનો</string>
+    <string name="android_11_bug_dialog_title">એન્ડ્રોઇડ 11 બગ</string>
+    <string name="android_11_bug_dialog_description">એપ ઇન્સ્ટોલેશનની પરવાનગી પહેલેથી જ આપવી જરૂરી છે, કારણ કે Android 11 સિસ્ટમમાં એક બગ છે જે યુઝર અનુભવને નકારાત્મક રીતે અસર કરી શકે છે</string>
+    <string name="deep_link_add_source_title">સ્ત્રોત ઉમેરો</string>
+    <string name="deep_link_add_source_message">શું તમે આ પેચ સ્ત્રોતને મોર્ફેમાં ઉમેરવા માંગો છો?</string>
+    <!-- Home Screen - Update Notifications -->
+    <string name="home_update_available">મોર્ફે અદ્યતન ઉપલબ્ધ છે</string>
+    <string name="home_update_available_subtitle">નવું સંસ્કરણ ઇન્સ્ટોલ કરવા માટે તૈયાર છે</string>
+    <string name="home_update_error">અપડેટ નિષ્ફળ થયું</string>
+    <string name="home_update_error_subtitle">તમારું ઇન્ટરનેટ કનેક્શન તપાસો અને ફરી પ્રયાસ કરો</string>
+    <string name="home_update_skipped_metered">અદ્યતન છોડ્યાં</string>
+    <string name="home_update_skipped_metered_subtitle">મોબાઇલ ડેટા સક્રિય છે</string>
+    <string name="home_updating_sources">સ્ત્રોતો અધ્યતન કરી રહ્યાં છીએ...</string>
+    <string name="home_update_progress_format">%s પર પ્રક્રિયા થઈ</string>
+    <string name="home_update_success">સ્ત્રોતો અધ્યતન કરવાનું પૂર્ણ થયું</string>
+    <string name="home_update_success_subtitle">તમારા સ્ત્રોતો અધ્યતન જ છે</string>
+    <!-- Home Screen - Home Greetings -->
+    <string name="home_greeting_1">તમે કઈ એપ્લિકેશનને પેચ કરવા માંગો છો?</string>
+    <!-- Humorous hype message with light nostalgia -->
+    <!-- "Buckle up" referring to fastening your vehicle seat belt. A light-hearted joke to build excitement -->
+    <string name="home_greeting_3">બકલ અપ, પેચિંગનો સમય છે</string>
+    <!-- Sarcastic joke about blocking ads, intentionally over-the-top -->
+    <string name="home_greeting_4">બીજા દિવસે, બીજી જાહેરાત-અવરોધિત માસ્ટરપીસ</string>
+    <!-- "Watch ads" refers to watching video ads in unpatched apps -->
+    <string name="home_greeting_5">જાહેરાતો જોવા માંગો છો? હું પણ નહિ</string>
+    <!-- Friendly, slightly mischievous joke about controlling app behavior -->
+    <string name="home_greeting_6">ચાલો તમારી એપને જીવંત બનાવીએ</string>
+    <!-- Whimsical forecast-style joke, not meant literally -->
+    <string name="home_greeting_7" formatted="false">આજની આગાહી: પેચિંગની 100% તક</string>
+    <!-- From mediocrity to amazing -->
+    <string name="home_greeting_8">શું તમે અશાંતતાને અદ્ભુતતામાં બદલવા માટે તૈયાર છો?</string>
+    <!-- Playful exaggeration, making patching feel heroic -->
+    <string name="home_greeting_9">આજથી એપ્સને પોતાની પાસેથી સેવ કરી રહ્યા છીએ</string>
+    <!-- Light sarcasm, casual and tech-savvy humor -->
+    <string name="home_greeting_10">કેફીન અને સારા પેચો દ્વારા સંચાલિત</string>
+    <!-- Morning greetings (5:00–11:59) -->
+    <!-- Afternoon greetings (12:00–16:59) -->
+    <!-- Evening greetings (17:00–21:59) -->
+    <!-- Late night greetings (22:00–23:59) -->
+    <!-- Super late night greetings (0:00–4:59) -->
+    <!-- Home Screen - Sources Management -->
+    <string name="sources_management_title">પેચ સ્ત્રોતો</string>
+    <string name="sources_management_open_in_browser">બ્રાઉઝરમાં ખોલો</string>
+    <string name="sources_management_failed_to_open_url">URL ખોલવામાં નિષ્ફળ</string>
+    <!-- Home Screen - Sources Dialogs -->
+    <string name="sources_dialog_display_name">પ્રદર્શિત નામ</string>
+    <string name="sources_dialog_rename">પેચ સ્રોતનું નામ બદલો</string>
+    <string name="sources_dialog_view_any_version">કોઈપણ સંસ્કરણ</string>
+    <string name="sources_dialog_view_any_package">કોઈપણ પેકેજ</string>
+    <string name="sources_dialog_add_source">પેચ સ્રોત ઉમેરો</string>
+    <string name="sources_dialog_remote">દૂરસ્થ</string>
+    <string name="sources_dialog_remote_url">સ્રોત URL</string>
+    <string name="sources_dialog_remote_url_formats_title">ઉદાહરણો:</string>
+    <string name="sources_dialog_local">સ્થાનિક</string>
+    <!-- Home Screen - Dialog 1: APK Availability -->
+    <!-- Home Screen - Dialog 2: Download Instructions -->
+    <string name="home_download_instructions_title">મૂળ APK ડાઉનલોડ કરો</string>
+    <string name="home_download_instructions_steps_title">સૂચનાઓ:</string>
+    <string name="home_download_instructions_step1">નીચેનું \'%s\' બટન દબાવો</string>
+    <string name="home_download_instructions_step2_part1">વેબપેજ નીચે સ્ક્રોલ કરો અને દબાવો</string>
+    <string name="home_download_instructions_download_button_toast">વેબસાઇટ પર ડાઉનલોડ દબાવો, અને અહીં નહીં 😊</string>
+    <string name="home_download_instructions_step3">ડાઉનલોડ પૂર્ણ થાય ત્યાં સુધી રાહ જુઓ, અને APK &lt;b&gt;ઇન્સ્ટોલ કરશો નહીં&lt;b&gt;</string>
+    <string name="home_download_instructions_step3_mount">ડાઉનલોડની રાહ જુઓ ડાઉનલોડ પૂર્ણ થાય ત્યાં સુધી રાહ જુઓ, પછી &lt;b&gt;APK ઇન્સ્ટોલ કરો&lt;b&gt;</string>
+    <string name="home_download_instructions_continue">APKMirror.com પર ચાલુ રાખો</string>
+    <!-- Home Screen - Dialog 3: File Picker Prompt -->
+    <string name="home_recommended_version">ભલામણ કરેલ સંસ્કરણ</string>
+    <string name="home_selected_version">પસંદ કરેલ સંસ્કરણ</string>
+    <!-- Home Screen - Dialog 4: Expert Mode Dialog -->
+    <!-- Home Screen - Home Sub-Dialogs -->
+    <string name="home_dialog_unsupported_version_dialog_title">અસમર્થિત સંસ્કરણ</string>
+    <string name="home_dialog_unsupported_version_dialog_proceed">ઘરની ધોરાજી ચલાવો</string>
+    <!-- "Build" here refers to a specific compiled version of the app (versionCode) -->
+    <string name="home_dialog_wrong_package_title">ખોટું પેકેજ પસંદ કર્યું</string>
+    <string name="home_dialog_expected_package">અપેક્ષિત પેકેજ:</string>
+    <string name="home_dialog_selected_package">પસંદ કરેલ પેકેજ:</string>
+    <!-- Patch Options -->
+    <string name="custom_color">કસ્ટમ રંગ</string>
+    <string name="hex_color">હેક્સ રંગ</string>
+    <string name="patch_option_instructions">સૂચનાઓ</string>
+    <!-- Adaptive Icon Creator -->
+    <!-- Header Creator -->
+    <!-- Home Screen - App Info Screen -->
+    <string name="home_app_info_patches_name_default">પેચો</string>
+    <!-- Home Screen - Root Mode -->
+    <string name="root_gmscore_excluded">GmsCore સપોર્ટ પેચ રૂટ મોડમાં બાકાત છે</string>
+    <!-- Patcher Screen -->
+    <string name="patcher_error_copied">ભૂલ ક્લિપબોર્ડ પર કૉપિ કરવામાં આવેલ છે</string>
+    <string name="patcher_long_step_warning">આ પગલામાં થોડો સમય લાગી શકે છે. કૃપા કરીને રાહ જુઓ...</string>
+    <string name="patcher_installing_subtitle">લગભગ નાચવા માટે તૈયાર! 🎸</string>
+    <string name="patcher_success_title">બધું થઈ ગયું! 🎉</string>
+    <string name="patcher_success_subtitle">તમારી એપ્લિકેશન પેચ અને ઇન્સ્ટોલ કરેલી છે!</string>
+    <string name="patcher_complete_title">પૅચિંગ પૂર્ણ! ✨</string>
+    <string name="patcher_failed_title">અરે! કંઈક ખોટું થયું</string>
+    <string name="patcher_failed_subtitle">ભૂલની વિગતો નીચે તપાસો</string>
+    <string name="patcher_failed_dialog_title">પૅચિંગ નિષ્ફળ થયું</string>
+    <string name="patcher_unknown_error">અજાણી ભૂલ આવી</string>
+    <string name="patcher_conflict_title">પેકેજ સંઘર્ષ</string>
+    <string name="patcher_conflict_subtitle">તમારે વર્તમાન સંસ્કરણને અનઇન્સ્ટોલ કરવાની જરૂર છે</string>
+    <string name="patcher_install_error_title">ઇન્સ્ટોલેશન ભૂલ</string>
+    <string name="patcher_install_error_subtitle">અનઇન્સ્ટોલ કરી અને ફરીથી ઇન્સ્ટોલ કરવાનો પ્રયાસ કરો</string>
+    <string name="patcher_ready_to_install_subtitle">ઇન્સ્ટોલ કરવા માટે નીચેનું બટન દબાવો</string>
+    <string name="patcher_ready_to_mount_subtitle">માઉન્ટ કરવા માટે નીચેનું બટન દબાવો</string>
+    <!-- Patcher Screen - Patcher Steps -->
+    <!-- Battery optimization pre-flight dialog -->
+    <!-- Patcher Screen - Patcher Worker -->
+    <!-- Patcher Screen - Patcher Messages -->
+    <string name="patcher_message_1">તમારી એપ્લિકેશનને કંઈક અદ્ભુત ઢાળ આપી રહ્યા છીએ… 🏆</string>
+    <string name="patcher_message_2">જૂની એપને નવી યુક્તિઓ શીખવીએ છીએ… 🎩</string>
+    <string name="patcher_message_3">તમારી એપને ડિજિટલ રીતે ઝગમગતી બનાવી રહ્યા છીએ… 🔧</string>
+    <string name="patcher_message_4">ડિજિટલ જાદૂ ઉકાળી રહ્યા છીએ… ☕</string>
+    <string name="patcher_message_5">કોફી બ્રેકની ભલામણ કરવામાં આવી રહી છે... ☕</string>
+    <string name="patcher_message_6">બહાર જુઓ, ત્યાં સરસ છે… 🌤️</string>
+    <string name="patcher_message_7">1 અને 0 ને સમાયોજિત કરી રહ્યા છીએ… 🤖</string>
+    <string name="patcher_message_8">ડિજિટલ સ્પેગેટી ગૂંચવણ ઉકેલી રહ્યા છીએ… 🍝</string>
+    <!-- Morphe patches fix YouTube bugs that Google still has not fixed. -->
+    <string name="patcher_message_9">પેચ વગરની એપમાં બગ ફિક્સ કરી રહ્યા છીએ… 🪲</string>
+    <string name="patcher_message_10">મહાન પેચો માટે રાહ જોવી યોગ્ય છે… ⏳</string>
+    <string name="patcher_message_11">પિક્સેલ ચમકે ત્યાં સુધી પોલિશ કરી રહ્યાં છે… 💎</string>
+    <string name="patcher_message_12">કૃપા કરીને જ્યાં સુધી કેપ્ટન \"પેચિંગ ચાલુ છે\" ચિહ્ન બંધ ન કરે ત્યાં સુધી બેઠેલા રહો... 💺✈️</string>
+    <string name="patcher_message_13">તમારી પેચ થયેલી એપ્લિકેશનને રાંધી રહ્યા છીએ, ગરમ અને તાજી... 🍳</string>
+    <!-- "bytecode" can be translated from "the app code" -->
+    <string name="patcher_message_14">બાઇટકોડ સાથે નમ્રતાપૂર્વક વાટાઘાટો કરી રહ્યાં છીએ… 🤝</string>
+    <!-- Space flight communications callout. -->
+    <string name="patcher_message_15">બધા સિસ્ટમ સરસ રીતે ચાલી રહ્યા છે… પેચિંગનો માર્ગ સ્થિર છે… 🚀</string>
+    <string name="patcher_message_16">વધારે શક્તિથી દબાવી રહ્યા છીએ, જેમ કે ડિજિટલ લીંબુમાંથી રસ... 🍋</string>
+    <string name="patcher_message_17">એપને તેની નવી અને વધુ સારી જાતને સ્વીકારવા પ્રોત્સાહિત કરી રહ્યા છીએ… 🌱</string>
+    <!-- Quantum physics (box emoji is a reference to Schrodinger's cat). -->
+    <string name="patcher_message_18">એપની સુપરપોઝિશન ‘અનપેચડ’ માંથી ‘પેચડ’ તરફ બદલી રહ્યા છીએ… 📦⚛️</string>
+    <!-- Throw away reference to a Saturday Night Live sketch. "fever" means sickness or the flu. "prescription" means medical treatment or can be translated from "cure" -->
+    <string name="patcher_message_19">તમારી ઍપને થોડો તાવ આવ્યો છે, અને એની એક જ દવા છે, ઢગલાબંધ પેચિસ... 🩺🔔</string>
+    <string name="patcher_message_20">થોડો કચરો સાફ કરું છું... બસ બે મિનિટ હો! 🗑️</string>
+    <!-- Expert patcher Screen -->
+    <!-- Patcher Screen - Other hidden strings -->
+    <!-- Patcher Screen - Mini-games -->
+    <!-- Settings -->
+    <!-- Settings - Appearance Tab - Background animation -->
+    <string name="settings_appearance_background">બેકગ્રાઉન્ડ એનિમેશન</string>
+    <string name="settings_appearance_background_circles">વર્તુળો </string>
+    <string name="settings_appearance_background_rings">રિંગ્સ</string>
+    <string name="settings_appearance_background_space">આકાશ</string>
+    <string name="settings_appearance_background_shapes">આકારો</string>
+    <string name="settings_appearance_background_snow">બરફ</string>
+    <string name="settings_appearance_background_none">કોઈપણ નહિ </string>
+    <!-- Settings - Appearance Tab - Theme -->
+    <!-- Settings - Appearance Tab - Language Selector -->
+    <string name="settings_appearance_app_language_current">વર્તમાન ભાષા</string>
+    <string name="settings_appearance_translations_info_title">કેટલીક ભાષાઓ માટે અનુવાદો ખૂટતા અથવા અપૂર્ણ હોઈ શકે છે.</string>
+    <string name="settings_appearance_translations_info_text">નવી ભાષાઓનો અનુવાદ કરવા અથવા હાલના અનુવાદોને સુધારવા માટે, %s ની મુલાકાત લો.</string>
+    <!-- Settings - Appearance Tab - Home Screen Section -->
+    <!-- Settings - Appearance Tab - App Icon Selector -->
+    <string name="settings_appearance_app_icon_default">ડિફૉલ્ટ</string>
+    <string name="settings_appearance_app_icon_light_2">આકાશ</string>
+    <string name="settings_appearance_app_icon_light_3">સૂર્યાસ્ત</string>
+    <string name="settings_appearance_app_icon_dark_1">સમુદ્ર</string>
+    <string name="settings_appearance_app_icon_dark_2">ખાલીપણું</string>
+    <string name="settings_appearance_app_icon_dark_3">ઈન્ડિગો</string>
+    <!-- Settings - Advanced Tab - Updates Section -->
+    <!-- Notification content -->
+    <string name="notification_manager_update_title">મોર્ફે અદ્યતન ઉપલબ્ધ છે</string>
+    <!-- Settings - Advanced Tab - Expert settings Section -->
+    <!-- Bytecode mode -->
+    <!-- Settings - Advanced Tab - GitHub PAT Settings -->
+    <!-- Settings - Advanced Tab - Patch Options Section -->
+    <string name="settings_advanced_patch_options">પેચ વિકલ્પો</string>
+    <string name="settings_advanced_patch_options_restart_message">પેચ વિકલ્પો બદલવાથી નવા પ્રભાવો મેળવવા માટે એપ્લિકેશનને ફરીથી પેચ કરવાની જરૂર છે</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Theme Colors -->
+    <string name="settings_advanced_patch_options_theme_colors">એપ્લિકેશન થીમ રંગો</string>
+    <string name="settings_advanced_patch_options_dark_theme_color">ડાર્ક થીમ પૃષ્ઠભૂમિ રંગ</string>
+    <string name="settings_advanced_patch_options_light_theme_color">લાઇટ થીમ બેકગ્રાઉન્ડ રંગ</string>
+    <string name="settings_advanced_patch_options_theme_color_description">હેક્સ રંગ (#RRGGBB) અથવા રંગ સંસાધન સંદર્ભ હોઈ શકે છે</string>
+    <string name="settings_advanced_patch_options_loading">પેચ વિકલ્પો લોડ કરી રહ્યું છે…</string>
+    <string name="settings_advanced_patch_options_load_error">પેચ વિકલ્પો લોડ કરવામાં નિષ્ફળ થયાં</string>
+    <string name="settings_advanced_patch_options_no_available">આ પેચ માટે કોઈ વિકલ્પો ઉપલબ્ધ નથી.</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Custom Branding -->
+    <string name="settings_advanced_patch_options_custom_branding">કસ્ટમ બ્રાન્ડિંગ</string>
+    <string name="settings_advanced_patch_options_custom_branding_app_name">ઍપ્લિકેશનનું નામ</string>
+    <string name="settings_advanced_patch_options_custom_branding_app_name_hint">તમારી પસંદનું નામ દાખલ કરો</string>
+    <string name="settings_advanced_patch_options_custom_branding_custom_icon">કસ્ટમ આઇકોન</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
+    <string name="settings_advanced_patch_options_custom_header">કસ્ટમ હેડર લોગો</string>
+    <string name="settings_advanced_patch_options_custom_header_instruction">"કસ્ટમ હેડર લોગો તરીકે ઉપયોગ કરવા માટે છબીઓ સાથેનું ફોલ્ડર.
+
+ઉપકરણના DPI પર આધાર રાખીને, ફોલ્ડરમાં નીચેનામાંથી એક અથવા વધુ ફોલ્ડર્સ હોવા આવશ્યક છે:
+- drawable-hdpi
+- drawable-xhdpi
+- drawable-xxhdpi
+- drawable-xxxhdpi
+
+દરેક ફોલ્ડરમાં નીચેની બધી ફાઇલો હોવી આવશ્યક છે:
+morphe_header_custom_light.png
+morphe_header_custom_dark.png
+
+છબીના પરિમાણો નીચે મુજબ હોવા જોઈએ:
+- drawable-hdpi: 194x72 px
+- drawable-xhdpi: 258x96 px
+- drawable-xxhdpi: 387x144 px
+- drawable-xxxhdpi: 512x192 px
+
+"</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Hide Shorts -->
+    <string name="settings_advanced_patch_options_hide_shorts_features">શોર્ટ્સ ફીચર્સ છુપાવો</string>
+    <string name="settings_advanced_patch_options_hide_shorts_app_shortcut">શોર્ટ્સનો ઍપ શોર્ટકટ છુપાવો</string>
+    <string name="settings_advanced_patch_options_hide_shorts_widget">શોર્ટ્સ વિજેટ છુપાવો</string>
+    <!-- Settings - System Tab - Installer Section -->
+    <string name="installer">ઇન્સ્ટૉલર</string>
+    <!-- Settings - System Tab - Performance Section -->
+    <!-- Settings - System Tab - Import and Export Section -->
+    <!-- Settings - System Tab - Files & Storage Section -->
+    <!-- Settings - System Tab - Storage Management - Patched APKs Management -->
+    <!-- Settings - System Tab - Storage Management - Original APKs Management -->
+    <!-- Settings - System Tab - Storage Management - Patch Selection Management -->
+    <!-- Settings - System Tab - Custom file picker -->
+    <!-- File Picker -->
+    <!-- Settings - System Tab - About Section -->
+    <string name="settings_system_share_website">વેબસાઇટ બાટો </string>
+    <!-- Shared strings -->
+    <string name="patches">પેચો</string>
+    <string name="settings">સેટિંગ્સ</string>
+    <string name="search">શોધો</string>
+    <string name="search_no_results">કોઈ પરિણામ મળ્યું નથી.</string>
+    <!-- Onboarding coach marks -->
+    <!-- %1$d = current step number, %2$d = total number of steps (e.g. "3 of 13") -->
+    <!-- Translate "System" the same way as the System settings tab -->
+    <!-- Tour prompt dialog shown after first successful patch install -->
+</resources>

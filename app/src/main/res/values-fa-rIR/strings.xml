@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Home Screen -->
+    <string name="home_other_apps">برنامه دیگر</string>
+    <string name="home_not_patched_yet">هنوز پچ نشده </string>
+    <string name="home_no_patches_available">هیچ پچ ای موجود نیست </string>
+    <string name="home_app_hide_title">برنامه پنهان شود؟ </string>
+    <string name="home_app_will_be_hidden">این برنامه پنهان میشود</string>
+    <string name="home_app_no_hidden">برنامه‌ی پنهانی ندارید</string>
+    <string name="home_app_hidden_apps_title">برنامه های پنهان شده</string>
+    <string name="home_app_hidden_apps_hint">برای پنهان کردن ضربه بزنید</string>
+    <string name="android_11_bug_dialog_title">باگ اندروید 11</string>
+    <string name="android_11_bug_dialog_description">مجوز نصب برنامه باید از قبل صادر شود تا از بروز باگ در سیستم اندروید ۱۱ که تجربه کاربری را تحت تأثیر منفی قرار می دهد، جلوگیری شود </string>
+    <string name="deep_link_add_source_title">افزودن منبع</string>
+    <string name="deep_link_add_source_message">می‌خواهید این منبع پچ را به Morphe اضافه کنید؟</string>
+    <!-- Home Screen - Update Notifications -->
+    <string name="home_update_available">به‌روزرسانی Morphe در دسترس است</string>
+    <string name="home_update_available_subtitle">نسخه جدید آماده نصب است </string>
+    <string name="home_update_error">بروزرسانی شکست خورد</string>
+    <string name="home_update_error_subtitle">وضعیت اینترنتت رو چک‌ کن و دوباره امتحان کن</string>
+    <string name="home_update_skipped_metered">به روزرسانی ها رد شدند </string>
+    <string name="home_update_skipped_metered_subtitle">داده های موبایل فعال است </string>
+    <string name="home_updating_sources">به روزرسانی منابع…</string>
+    <string name="home_update_progress_format">%s پردازش شده</string>
+    <string name="home_update_success">به روزرسانی منابع کامل شد</string>
+    <string name="home_update_success_subtitle">منابع شما به روز هستند </string>
+    <string name="home_sources_are_loading">منابع در حال بارگذاری هستند، لطفا صبر کنید…</string>
+    <!-- Home Screen - Home Greetings -->
+    <string name="home_greeting_1">کدوم نرم‌افزار رو می‌خوای پچ کنی؟</string>
+    <!-- Humorous hype message with light nostalgia -->
+    <string name="home_greeting_2">آماده اید اپلیکیشن ها را دوباره افسانه ای کنید؟ </string>
+    <!-- "Buckle up" referring to fastening your vehicle seat belt. A light-hearted joke to build excitement -->
+    <string name="home_greeting_3">محکم بشین، وقت پچ کردنه!</string>
+    <!-- Sarcastic joke about blocking ads, intentionally over-the-top -->
+    <string name="home_greeting_4">یه روز دیگه، یه شاهکار بدون تبلیغ دیگه</string>
+    <!-- "Watch ads" refers to watching video ads in unpatched apps -->
+    <string name="home_greeting_5">دوست داری تبلیغ تماشا کنی؟ منم نه</string>
+    <!-- Friendly, slightly mischievous joke about controlling app behavior -->
+    <string name="home_greeting_6">بیا کاری کنیم اپ‌هات درست رفتار کنن</string>
+    <!-- Whimsical forecast-style joke, not meant literally -->
+    <string name="home_greeting_7" formatted="false">پیش‌بینی امروز: ۱۰۰٪ احتمال اعمال پچ</string>
+    <!-- From mediocrity to amazing -->
+    <string name="home_greeting_8">آماده‌ای که معمولی رو به بی‌نظیر تبدیل کنی؟</string>
+    <!-- Playful exaggeration, making patching feel heroic -->
+    <string name="home_greeting_9">نجات اپ‌ها از دست خودشون، از امروز!</string>
+    <!-- Light sarcasm, casual and tech-savvy humor -->
+    <string name="home_greeting_10">قدرت گرفته از کافئین و پچ‌های خوب</string>
+    <!-- Morning greetings (5:00–11:59) -->
+    <!-- Afternoon greetings (12:00–16:59) -->
+    <!-- Evening greetings (17:00–21:59) -->
+    <!-- Late night greetings (22:00–23:59) -->
+    <!-- Super late night greetings (0:00–4:59) -->
+    <!-- Home Screen - Sources Management -->
+    <string name="sources_management_title">منابع پچ </string>
+    <string name="sources_management_open_in_browser">باز کردن در مرورگر</string>
+    <string name="sources_management_failed_to_open_url">باز کردن لینک ناموفق بود</string>
+    <string name="sources_management_already_exists">این منبع قبلاً اضافه شده است</string>
+    <!-- Home Screen - Sources Dialogs -->
+    <string name="sources_dialog_display_name">نام نمایشی</string>
+    <string name="sources_dialog_rename">تغییر نام منبع پچ</string>
+    <string name="sources_dialog_duplicate_name_error">یک منبع پچ با این نام قبلا وجود دارد</string>
+    <string name="sources_dialog_missing_error">نتوانستم منبع این پچ را به روزرسانی کنم</string>
+    <string name="sources_dialog_view_any_version">هر نسخه ای</string>
+    <string name="sources_dialog_view_any_package">هر بسته ای</string>
+    <string name="sources_dialog_add_source">افزودن منبع پچ</string>
+    <string name="sources_dialog_delete_confirm_message">حذف منبع  «%s» ؟ این قابل بازگشت نیست</string>
+    <string name="sources_dialog_remote">از راه دور</string>
+    <string name="sources_dialog_remote_url">آدرس منبع</string>
+    <string name="sources_dialog_remote_url_formats_title">نمونه ها:</string>
+    <string name="sources_dialog_local">محلی</string>
+    <string name="sources_dialog_local_file">انتخاب فایل منبع پچ</string>
+    <string name="sources_dialog_local_file_description">یک فایل منبع پچ .mpp را از حافظه داخلی انتخاب کنید</string>
+    <string name="sources_dialog_local_change_file">تغییر فایل</string>
+    <string name="sources_dialog_preinstalled">پیش نصب شده</string>
+    <string name="sources_update_success">به روزرسانی موفقیت آمیز</string>
+    <string name="sources_update_unavailable">هیچ به روزرسانی ای در دسترس نیست</string>
+    <string name="sources_download_fail">دانلود منابع شکست خورد: %s</string>
+    <!-- Home Screen - Dialog 1: APK Availability -->
+    <string name="home_apk_availability_dialog_title">نیاز به کمک برای پیدا کردن یک APK اصلی و بدون پچ دارید؟</string>
+    <string name="home_apk_availability_dialog_simple">برای پچ &lt;b&gt;%s&lt;/b&gt;، به نسخه APK بدون پچ نیاز دارید:</string>
+    <string name="home_apk_availability_dialog_expert">برای پچ کردن &lt;b&gt;%s&lt;/b&gt;;، به یک APK بدون پچ از نسخه ها نیاز دارید:</string>
+    <string name="home_apk_availability_recommended_label">توصیه شده </string>
+    <string name="home_apk_availability_unpatched_label">پچ نشده</string>
+    <string name="home_apk_availability_yes">بله، کمکم کن یک APK پیدا کنم</string>
+    <string name="home_apk_availability_no">نه، من قبلا یک APK دارم</string>
+    <string name="home_app_info_no_saved_apk">هیچ APK ذخیره شده ای وجود ندارد. پچینگ نیازمند انتخاب مجدد فایل APK است</string>
+    <!-- Home Screen - Dialog 2: Download Instructions -->
+    <string name="home_download_instructions_title">دانلود فایل apk اصلی</string>
+    <string name="home_download_instructions_steps_title">دستورالعمل‌ها:</string>
+    <string name="home_download_instructions_step1">دکمه \'%s\' رو در پایین فشار بده</string>
+    <string name="home_download_instructions_step2_part1">به آخر صفحه برو و بزن</string>
+    <string name="home_download_instructions_download_button_toast">دکمه دانلود رو توی وبسایتش بزن، نه اینجا ☺️</string>
+    <string name="home_download_instructions_step3">منتظر بمانید تا دانلود کامل شود، و فایل APK را &lt;b&gt;نصب نکنید&lt;/b&gt;.</string>
+    <string name="home_download_instructions_step3_mount">صبر کنید تا دانلود کامل شود، سپس &lt;b&gt;APK را نصب کنید&lt;/b&gt;</string>
+    <string name="home_download_instructions_step4">پس از پایان دانلود، به Morphe بازگردید</string>
+    <string name="home_download_instructions_step4_mount">پس از نصب APK اصلی، به Morphe بازگردید</string>
+    <string name="home_download_instructions_continue">ادامه در APKMirror.com</string>
+    <!-- Home Screen - Dialog 3: File Picker Prompt -->
+    <string name="home_file_picker_prompt_title">انتخاب APK دانلود شده</string>
+    <string name="home_file_picker_prompt_description">انتخاب &lt;b&gt;%s&lt;/b&gt; فایل APK که همین الان دانلود کردی</string>
+    <string name="home_file_picker_prompt_open_apk">فایل APK را باز کنید</string>
+    <string name="home_recommended_version">نسخه پیشنهادی</string>
+    <string name="home_selected_version">نسخه منتخب</string>
+    <string name="home_select_apk_title">انتخاب APK</string>
+    <!-- Home Screen - Dialog 4: Expert Mode Dialog -->
+    <string name="expert_mode_title">حالت متخصص</string>
+    <string name="expert_mode_search">جستجوی پچ ها</string>
+    <string name="expert_mode_proceed">ادامه برای اعمال پچ</string>
+    <string name="expert_mode_disable_all">غیرفعال کردن همه</string>
+    <string name="expert_mode_enable_all">فعال کردن همه</string>
+    <string name="expert_mode_no_results">هیچ پچی یافت نشد</string>
+    <string name="expert_mode_universal_patches">پچ‌های جهانی</string>
+    <string name="expert_mode_multiple_sources_warning_title">چند منبع پچ انتخاب شده‌اند</string>
+    <string name="expert_mode_multiple_sources_warning_message">"شما پچ‌هایی را از چند منبع پچ انتخاب کرده‌اید. این ممکن است باعث مشکلات سازگاری یا رفتار غیرمنتظره شود.
+
+آیا مطمئن هستید که می‌خواهید ادامه دهید؟"</string>
+    <!-- Home Screen - Home Sub-Dialogs -->
+    <string name="home_invalid_signature_title">تأییدنشده APK</string>
+    <string name="home_invalid_signature_message">فایل APK که برای &lt;b&gt;%s&lt;/b&gt; انتخاب کرده‌اید، با گواهی امضای موردانتظار مطابقت ندارد. ممکن است این فایل APK نسخه اصلی نباشد.</string>
+    <string name="home_invalid_signature_badge">ممکن است این APK نسخه اصلی نباشد</string>
+    <string name="home_split_apk_warning_title">برنامه تقسیم‌شده شناسایی شد</string>
+    <string name="home_split_apk_warning_message">"این فایل یک باندل APK است
+(&lt;b&gt;APKM / APKS / XAPK&lt;/b&gt;).
+
+برای دریافت بهترین نتیجه، این برنامه پچ کردن یک فایل &lt;b&gt;APK کامل&lt;/b&gt; را توصیه می‌کند.
+"</string>
+    <string name="home_split_apk_warning_pick_another">انتخاب فایل APK دیگر</string>
+    <string name="home_dialog_unsupported_version_experimental_label">آزمایشی</string>
+    <string name="home_dialog_unsupported_version_experimental_description">این نسخه از پشتیبانی آزمایشی برخوردار است و ممکن است ناپایدار یا ناقص باشد</string>
+    <string name="morphe_experimental_app_version_dialog_title">می‌خواهید آزمایش کنید؟ 🧪</string>
+    <string name="morphe_experimental_app_version_dialog_message">این نسخه از &lt;b&gt;%s&lt;/b&gt; دارای پشتیبانی آزمایشی اولیه است&lt;br/&gt;&lt;br/&gt;🔧 از آنجایی که پچ‌ها برای این نسخه در حال بهینه‌سازی هستند، احتمال بروز عملکردهای غیرمعمول یا باگ‌های ناشناخته در برنامه وجود دارد.</string>
+    <string name="home_dialog_unsupported_version_dialog_title">نسخه پشتیبانی نشده</string>
+    <string name="home_dialog_unsupported_version_dialog_description">این APK نسخه پیشنهادی برنامه نیست. ادامه ممکن است باعث شود برنامه به درستی کار نکند</string>
+    <string name="home_dialog_unsupported_version_dialog_proceed">با این حال ادامه دهید</string>
+    <string name="home_dialog_unsupported_version_compatible_versions">نسخه‌های سازگار:</string>
+    <string name="home_dialog_unsupported_version_unsupported_label">پشتیبانی نشده</string>
+    <!-- "Build" here refers to a specific compiled version of the app (versionCode) -->
+    <string name="home_dialog_wrong_package_title">بسته اشتباه انتخاب شد</string>
+    <string name="home_dialog_wrong_package_description">APK انتخاب شده برای برنامه ای که قصد وصله آن را داشتید نیست </string>
+    <string name="home_dialog_expected_package">بسته مورد انتظار:</string>
+    <string name="home_dialog_selected_package">بسته منتخب: </string>
+    <string name="home_outdated_patches_dialog_title">ممکن است پچ‌ها قدیمی باشند</string>
+    <string name="home_outdated_patches_dialog_message">داده‌های موبایل فعال است و به‌روزرسانی پچ‌ها غیرفعال شده‌اند</string>
+    <string name="home_outdated_patches_dialog_warning">استفاده از پچ‌های قدیمی ممکن است باعث خراب شدن برنامه شود</string>
+    <string name="home_outdated_patches_dialog_update_and_patch">به‌روزرسانی &amp; پچ</string>
+    <string name="home_low_disk_space_dialog_title">فضای دیسک کم است</string>
+    <string name="home_low_disk_space_dialog_warning">ادامه ممکن است باعث ایجاد خطای «فایل پیدا نشد» یا تولید APK خراب شود</string>
+    <!-- Patch Options -->
+    <string name="custom_color">رنگ سفارشی</string>
+    <string name="hex_color">رنگ شش ضلعی </string>
+    <string name="patch_option_instructions">دستورالعمل‌ها</string>
+    <string name="patch_option_enter_value">مقدار را وارد کنید</string>
+    <string name="patch_option_enter_number">عدد را وارد کنید</string>
+    <string name="patch_option_enter_decimal">عدد اعشاری را وارد کنید</string>
+    <string name="patch_option_list_duplicate">این مقدار قبلاً وجود دارد</string>
+    <string name="patch_option_list_empty">مقدار نمی‌تواند خالی باشد</string>
+    <string name="patch_option_list_empty_state">هنوز هیچ مقداری اضافه نشده است</string>
+    <!-- Adaptive Icon Creator -->
+    <string name="adaptive_icon_create">ایجاد آیکون تطبیقی</string>
+    <string name="adaptive_icon_select_image">یک تصویر انتخاب کنید</string>
+    <string name="adaptive_icon_change_image">تغییر تصویر</string>
+    <string name="adaptive_icon_background_color">رنگ پس‌زمینه</string>
+    <string name="adaptive_icon_reset_transform">بازنشانی موقعیت و مقیاس</string>
+    <string name="adaptive_icon_safe_zone_inner">ناحیه امن (همیشه قابل مشاهده)</string>
+    <string name="adaptive_icon_safe_zone_outer">ناحیه ماسک (ممکن است بریده شود)</string>
+    <string name="adaptive_icon_created_success">آیکون تطبیقی با موفقیت ایجاد شد</string>
+    <string name="adaptive_icon_creation_failed">ایجاد آیکون تطبیقی موفقیت‌آمیز نبود</string>
+    <!-- Header Creator -->
+    <!-- Home Screen - App Info Screen -->
+    <!-- Home Screen - Root Mode -->
+    <!-- Patcher Screen -->
+    <!-- Patcher Screen - Patcher Steps -->
+    <!-- Battery optimization pre-flight dialog -->
+    <!-- Patcher Screen - Patcher Worker -->
+    <!-- Patcher Screen - Patcher Messages -->
+    <!-- Morphe patches fix YouTube bugs that Google still has not fixed. -->
+    <!-- "bytecode" can be translated from "the app code" -->
+    <!-- Space flight communications callout. -->
+    <!-- Quantum physics (box emoji is a reference to Schrodinger's cat). -->
+    <!-- Throw away reference to a Saturday Night Live sketch. "fever" means sickness or the flu. "prescription" means medical treatment or can be translated from "cure" -->
+    <!-- Expert patcher Screen -->
+    <!-- Patcher Screen - Other hidden strings -->
+    <!-- Patcher Screen - Mini-games -->
+    <!-- Settings -->
+    <!-- Settings - Appearance Tab - Background animation -->
+    <string name="settings_appearance_background_none">موردی وجود ندارد</string>
+    <!-- Settings - Appearance Tab - Theme -->
+    <string name="settings_appearance_system">سیستم</string>
+    <!-- Settings - Appearance Tab - Language Selector -->
+    <!-- Settings - Appearance Tab - Home Screen Section -->
+    <!-- Settings - Appearance Tab - App Icon Selector -->
+    <!-- Settings - Advanced Tab - Updates Section -->
+    <!-- Notification content -->
+    <string name="notification_manager_update_title">به‌روزرسانی Morphe در دسترس است</string>
+    <!-- Settings - Advanced Tab - Expert settings Section -->
+    <string name="settings_advanced_expert_mode">حالت متخصص</string>
+    <!-- Bytecode mode -->
+    <!-- Settings - Advanced Tab - GitHub PAT Settings -->
+    <!-- Settings - Advanced Tab - Patch Options Section -->
+    <!-- Settings - Advanced Tab - Patch Options Section: Theme Colors -->
+    <!-- Settings - Advanced Tab - Patch Options Section: Custom Branding -->
+    <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
+    <!-- Settings - Advanced Tab - Patch Options Section: Hide Shorts -->
+    <!-- Settings - System Tab - Installer Section -->
+    <!-- Settings - System Tab - Performance Section -->
+    <string name="settings_system_battery_optimization">بهینه‌سازی باتری</string>
+    <!-- Settings - System Tab - Import and Export Section -->
+    <!-- Settings - System Tab - Files & Storage Section -->
+    <!-- Settings - System Tab - Storage Management - Patched APKs Management -->
+    <!-- Settings - System Tab - Storage Management - Original APKs Management -->
+    <!-- Settings - System Tab - Storage Management - Patch Selection Management -->
+    <!-- Settings - System Tab - Custom file picker -->
+    <!-- File Picker -->
+    <!-- Settings - System Tab - About Section -->
+    <string name="settings_system_about">درباره</string>
+    <!-- Shared strings -->
+    <string name="remove">حذف</string>
+    <string name="enabled">فعال</string>
+    <string name="disabled">غیرفعال</string>
+    <string name="allow">اجازه</string>
+    <string name="details">جزئیات</string>
+    <!-- Onboarding coach marks -->
+    <!-- %1$d = current step number, %2$d = total number of steps (e.g. "3 of 13") -->
+    <!-- Translate "System" the same way as the System settings tab -->
+    <!-- Tour prompt dialog shown after first successful patch install -->
+</resources>

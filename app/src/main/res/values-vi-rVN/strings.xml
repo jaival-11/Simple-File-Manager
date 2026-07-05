@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Home Screen -->
+    <string name="home_other_apps">Các ứng dụng khác</string>
+    <string name="home_not_patched_yet">Chưa vá</string>
+    <string name="home_no_patches_available">Không có bản vá nào</string>
+    <string name="home_app_hide_title">Ẩn ứng dụng này?</string>
+    <string name="home_app_hide_message">Ứng dụng này sẽ bị ẩn khỏi trang chủ. Bạn có thể khôi phục lại từ danh sách ứng dụng đang ẩn ở cuối danh sách</string>
+    <string name="home_app_will_be_hidden">Ứng dụng này sẽ bị ẩn</string>
+    <string name="home_app_no_hidden">Không có ứng dụng nào đang ẩn</string>
+    <string name="home_app_hidden_apps_title">Ứng dụng đã ẩn</string>
+    <string name="home_app_hidden_apps_hint">Bấm để hiện lại</string>
+    <string name="android_11_bug_dialog_title">Lỗi trên Android 11</string>
+    <string name="android_11_bug_dialog_description">Vui lòng cấp quyền cài đặt ứng dụng không rõ nguồn gốc để tránh lỗi trên Android 11 có thể ảnh hưởng đến trải nghiệm</string>
+    <string name="deep_link_add_source_title">Thêm nguồn</string>
+    <string name="deep_link_add_source_message">Bạn có muốn thêm nguồn vá này vào Morphe không?</string>
+    <string name="deep_link_add_source_warning">Chỉ thêm nguồn mà bạn tin tưởng</string>
+    <!-- Home Screen - Update Notifications -->
+    <string name="home_update_available">Đã có bản cập nhật Morphe mới</string>
+    <string name="home_update_available_subtitle">Phiên bản mới đã sẵn sàng để được cài đặt</string>
+    <string name="home_update_error">Không thể cập nhật</string>
+    <string name="home_update_error_subtitle">Kiểm tra kết nối mạng và thử lại</string>
+    <string name="home_update_skipped_metered">Đã bỏ qua bản cập nhật</string>
+    <string name="home_update_skipped_metered_subtitle">Đang bật dữ liệu di động</string>
+    <string name="home_updating_sources">Đang cập nhật nguồn…</string>
+    <string name="home_update_progress_format">Đã xử lý %s</string>
+    <string name="home_update_success">Cập nhật nguồn hoàn tất</string>
+    <string name="home_update_success_subtitle">Đã cập nhật tất cả nguồn lên mới nhất</string>
+    <string name="home_sources_are_loading">Đang tải nguồn, vui lòng chờ…</string>
+    <string name="home_search_apps">Tìm ứng dụng</string>
+    <string name="home_no_apps_title">Không có ứng dụng nào có sẵn</string>
+    <string name="home_no_apps_subtitle">Thêm nguồn vá mới hoặc bật nguồn có sẵn trong %s</string>
+    <string name="home_no_apps_search_subtitle">Không có ứng dụng nào khớp với \"%s\"</string>
+    <string name="home_all_apps_hidden_title">Tất cả ứng dụng đã bị ẩn</string>
+    <string name="home_all_apps_hidden_subtitle">Bạn đã ẩn tất cả ứng dụng khỏi trang chủ</string>
+    <!-- Home Screen - Home Greetings -->
+    <string name="home_greeting_1">Bạn muốn vá ứng dụng nào?</string>
+    <!-- Humorous hype message with light nostalgia -->
+    <string name="home_greeting_2">Sẵn sàng để đưa các ứng dụng trở lại thời hoàng kim chưa?</string>
+    <!-- "Buckle up" referring to fastening your vehicle seat belt. A light-hearted joke to build excitement -->
+    <string name="home_greeting_3">Hãy chuẩn bị sẵn sàng, đã đến lúc vá rồi</string>
+    <!-- Sarcastic joke about blocking ads, intentionally over-the-top -->
+    <string name="home_greeting_4">Ngày mới, kiệt tác mới - nói không với quảng cáo</string>
+    <!-- "Watch ads" refers to watching video ads in unpatched apps -->
+    <string name="home_greeting_5">Bạn thích xem quảng cáo không? Tôi thì không</string>
+    <!-- Friendly, slightly mischievous joke about controlling app behavior -->
+    <string name="home_greeting_6">Hãy làm ứng dụng hoạt động theo cách bạn muốn</string>
+    <!-- Whimsical forecast-style joke, not meant literally -->
+    <string name="home_greeting_7" formatted="false">Dự báo hôm nay: 100% tỉ lệ vá thành công</string>
+    <!-- From mediocrity to amazing -->
+    <string name="home_greeting_8">Sẵn sàng thay đổi từ tầm thường lên đến đỉnh cao?</string>
+    <!-- Playful exaggeration, making patching feel heroic -->
+    <string name="home_greeting_9">Cứu chúng khỏi chính chúng ngay từ hôm nay</string>
+    <!-- Light sarcasm, casual and tech-savvy humor -->
+    <string name="home_greeting_10">Nạp caffein có ngay bản vá xịn</string>
+    <!-- Morning greetings (5:00–11:59) -->
+    <string name="home_greeting_morning_1">Dậy đi, vá thôi</string>
+    <string name="home_greeting_morning_2">Chào ngày mới! Ứng dụng không tự vá đâu nhá</string>
+    <!-- Afternoon greetings (12:00–16:59) -->
+    <string name="home_greeting_afternoon_1">Chiều nay hơi đuối? Thử vá một ứng dụng xem</string>
+    <string name="home_greeting_afternoon_2">Sau bữa trưa mà vá thì cuốn lắm</string>
+    <string name="home_greeting_afternoon_3">Nhiệm vụ ca chiều: vá ứng dụng</string>
+    <!-- Evening greetings (17:00–21:59) -->
+    <string name="home_greeting_evening_1">Tối rồi! Giờ mà vá mới khác bọt</string>
+    <string name="home_greeting_evening_2">Đang thư giãn đấy ah? Hay là vá một ứng dụng đi</string>
+    <string name="home_greeting_evening_3">Sắp tan làm chưa? Về nhớ vá đấy</string>
+    <!-- Late night greetings (22:00–23:59) -->
+    <string name="home_greeting_late_night_1">Chưa vá mà cũng chưa ngủ nữa, trời ơi..</string>
+    <string name="home_greeting_late_night_2">Thức khuya để vá luôn? Respect</string>
+    <string name="home_greeting_late_night_3">Cú đêm đã vào vị trí</string>
+    <!-- Super late night greetings (0:00–4:59) -->
+    <string name="home_greeting_super_late_1">Nghe giang hồ đồn đại, giờ này vá peak lắm</string>
+    <string name="home_greeting_super_late_2">Khó ngủ lắm hay sao? Thôi thì vá gì đấy giết thời gian cũng được</string>
+    <string name="home_greeting_super_late_3">Đến nước này rồi thì thức vá luôn, xem có gì mới hông~</string>
+    <string name="home_greeting_super_late_4">Đêm nay không chỉ mình bạn thức đâu ^^</string>
+    <string name="home_greeting_super_late_5">Cú đêm năng suất thật đấy</string>
+    <!-- Home Screen - Sources Management -->
+    <string name="sources_management_title">Nguồn vá</string>
+    <string name="sources_management_open_in_browser">Mở trong trình duyệt</string>
+    <string name="sources_management_failed_to_open_url">Không thể mở URL</string>
+    <string name="sources_management_prerelease_toggle">Bản vá phát hành trước</string>
+    <string name="sources_management_prerelease_toggle_description">Trải nghiệm sớm các bản vá thử nghiệm mới</string>
+    <string name="sources_management_experimental_versions_toggle">Phiên bản ứng dụng thử nghiệm</string>
+    <string name="sources_management_experimental_versions_toggle_description">Vá phiên bản thử nghiệm (nếu có)</string>
+    <string name="sources_management_already_exists">Nguồn này đã được thêm vào rồi</string>
+    <string name="sources_management_invalid_url">URL nguồn không hợp lệ. Vui lòng kiểm tra địa chỉ và thử lại</string>
+    <string name="sources_management_metadata_unavailable">Không có metadata</string>
+    <string name="sources_management_metadata_unavailable_hint">Không thể truy cập tệp metadata từ máy chủ. Bạn vẫn có thể vá bằng gói ứng dụng đã cài, nhưng tính năng tự động cập nhật sẽ bị tắt cho nguồn này</string>
+    <string name="sources_management_metadata_unavailable_hint_missing">Không thể tải gói vá. URL nguồn có thể không đúng hoặc file không tồn tại</string>
+    <string name="sources_management_source_enabled">Nguồn đã bật</string>
+    <string name="sources_management_source_disabled">Nguồn đã tắt</string>
+    <string name="sources_management_source_updating">Đang cập nhật nguồn</string>
+    <!-- Home Screen - Sources Dialogs -->
+    <string name="sources_dialog_display_name">Tên hiển thị</string>
+    <string name="sources_dialog_rename">Đổi tên nguồn vá</string>
+    <string name="sources_dialog_duplicate_name_error">Đã tồn tại nguồn vá có tên này rồi</string>
+    <string name="sources_dialog_missing_error">Không thể cập nhật nguồn vá này</string>
+    <string name="sources_dialog_view_any_version">Phiên bản bất kỳ</string>
+    <string name="sources_dialog_view_any_package">Gói bất kỳ</string>
+    <string name="sources_dialog_add_source">Thêm nguồn vá</string>
+    <string name="sources_dialog_delete_confirm_message">Bạn có muốn xóa nguồn \"%s\" không? Thao tác này không thể hoàn tác đâu</string>
+    <string name="sources_dialog_remote">Từ URL</string>
+    <string name="sources_dialog_remote_url">URL nguồn</string>
+    <string name="sources_dialog_remote_url_formats_title">Ví dụ:</string>
+    <string name="sources_dialog_local">Từ bộ nhớ trong</string>
+    <string name="sources_dialog_local_file">Chọn tệp nguồn vá</string>
+    <string name="sources_dialog_local_file_tap_hint">Bấm để duyệt bộ nhớ</string>
+    <string name="sources_dialog_local_file_description">Chọn tệp nguồn vá .mpp từ bộ nhớ trong</string>
+    <string name="sources_dialog_local_invalid_extension">Tệp phải có đuôi .mpp</string>
+    <string name="sources_dialog_url_valid">URL repo hoặc JSON hợp lệ</string>
+    <string name="sources_dialog_url_invalid">URL phải trỏ đến kho lưu trữ GitHub/GitLab hoặc tệp .json</string>
+    <string name="sources_dialog_local_change_file">Đổi tệp</string>
+    <string name="sources_dialog_preinstalled">Được cài đặt sẵn</string>
+    <string name="sources_update_success">Cập nhật thành công</string>
+    <string name="sources_update_unavailable">Hiện không có bản cập nhật nào</string>
+    <string name="sources_download_fail">Không thể tải nguồn vá: %s</string>
+    <string name="sources_download_fail_named">Không thể cập nhật \"%s\". Vui lòng kiểm tra kết nối mạng và thử lại</string>
+    <string name="sources_download_endpoint_not_found">\'%s\': không tìm thấy metadata của bản vá</string>
+    <string name="sources_patch_expert_badge">Chuyên gia</string>
+    <string name="sources_patch_expert_badge_tooltip">Bật chế độ Chuyên gia trong Cài đặt để có thể tự thêm bản vá này</string>
+    <!-- Home Screen - Dialog 1: APK Availability -->
+    <string name="home_apk_availability_dialog_title">Chưa tìm được APK gốc chứ gì? Cần giúp không?</string>
+    <string name="home_apk_availability_dialog_simple">Để vá &lt;b&gt;%s&lt;/b&gt;, bạn cần APK chưa vá với phiên bản:</string>
+    <string name="home_apk_availability_dialog_expert">Để vá &lt;b&gt;%s&lt;/b&gt;, bạn cần APK chưa vá thuộc một trong các phiên bản:</string>
+    <string name="home_apk_availability_recommended_label">Khuyên dùng</string>
+    <string name="home_apk_availability_unpatched_label">Chưa vá</string>
+    <string name="home_apk_availability_incompatible_label">Không tương thích</string>
+    <string name="home_apk_availability_yes">Có, giúp tôi vs</string>
+    <string name="home_apk_availability_no">Không, tôi có APK rồi</string>
+    <string name="home_apk_use_saved">Sử dụng APK đã lưu</string>
+    <string name="home_apk_use_installed">Sử dụng APK đã cài đặt</string>
+    <string name="home_app_info_no_saved_apk">Chưa lưu APK nào. Bạn sẽ phải chọn lại APK khi vá</string>
+    <string name="home_version_requires_android">Yêu cầu Android %s+</string>
+    <string name="home_apk_no_compatible_versions_title">Không hỗ trợ trên thiết bị này</string>
+    <string name="home_apk_no_compatible_versions_message">&lt;b&gt;%1$s&lt;/b&gt; không có phiên bản nào hỗ trợ cho Android %2$d (API %3$d). Tất cả các phiên bản đã khai báo đều yêu cầu phiên bản Android cao hơn</string>
+    <!-- Home Screen - Dialog 2: Download Instructions -->
+    <string name="home_download_instructions_title">Tải APK gốc</string>
+    <string name="home_download_instructions_steps_title">Hướng dẫn:</string>
+    <string name="home_download_instructions_step1">Bấm nút \"%s\" ở bên dưới</string>
+    <string name="home_download_instructions_step2_part1">Cuộn xuống trang web và bấm</string>
+    <string name="home_download_instructions_download_button_toast">Bấm tải xuống trên trang web ấy, chứ không phải ở đây 😊</string>
+    <string name="home_download_instructions_download_button_toast_2">Tuyệt! Bây giờ hãy bấm tiếp tục và truy cập trang web 👆</string>
+    <string name="home_download_instructions_download_button_toast_3">Có công mài sắt, có ngày nên kim. Bạn đang làm rất tốt 💪</string>
+    <string name="home_download_instructions_download_button_toast_4">Vẫn chưa... vẫn chưa đâu... 🙈</string>
+    <string name="home_download_instructions_download_button_toast_5">Được rồi, phải công nhận là bạn kiên trì thật đấy 🫡</string>
+    <string name="home_download_instructions_download_button_toast_6">Giờ bạn đã là chuyên gia thử nút của Morphe rồi đấy 🏅</string>
+    <string name="home_download_instructions_step3">Đợi tải xong, &lt;b&gt;không cài&lt;/b&gt; APK</string>
+    <string name="home_download_instructions_step3_mount">Đợi tải xong, sau đó &lt;b&gt;cài APK&lt;/b&gt;</string>
+    <string name="home_download_instructions_step4">Quay lại Morphe</string>
+    <string name="home_download_instructions_step4_mount">Sau khi cài xong, hãy quay lại Morphe</string>
+    <string name="home_download_instructions_continue">Đi đến APKMirror.com</string>
+    <!-- Home Screen - Dialog 3: File Picker Prompt -->
+    <string name="home_file_picker_prompt_title">Chọn APK đã tải</string>
+    <string name="home_file_picker_prompt_description">Chọn tệp APK &lt;b&gt;%s&lt;/b&gt; bạn vừa tải</string>
+    <string name="home_file_picker_prompt_open_apk">Mở tệp APK</string>
+    <string name="home_recommended_version">Phiên bản đề xuất</string>
+    <string name="home_selected_version">Phiên bản đã chọn</string>
+    <string name="home_select_apk_title">Chọn APK</string>
+    <string name="home_select_any_apk_description">Chọn một tệp APK của bất kỳ ứng dụng nào, hoặc chọn một ứng dụng đã được cài đặt trên máy bạn</string>
+    <string name="home_use_installed_app">Dùng ứng dụng đã cài</string>
+    <string name="home_installed_app_picker_title">Chọn ứng dụng đã cài</string>
+    <string name="home_installed_app_picker_empty">Không tìm thấy ứng dụng nào</string>
+    <string name="home_installed_app_picker_filter_all">Tất cả ứng dụng</string>
+    <string name="home_installed_app_picker_filter_user">Chỉ ứng dụng đã cài</string>
+    <string name="home_installed_app_picker_filter_system">Chỉ ứng dụng hệ thống</string>
+    <string name="home_invalid_apk_unreadable">Không thể đọc tệp. Hãy kiểm tra xem \"Bộ nhớ ngoài\" có bị hạn chế pin hay không</string>
+    <string name="home_invalid_apk_not_an_apk">Tệp đã chọn không phải là tệp APK hợp lệ</string>
+    <string name="home_invalid_apk_io_error">Không thể mở tệp. Vui lòng thử lại</string>
+    <string name="home_external_apk_expert_mode_required">Tính năng này chỉ có ở chế độ Chuyên gia</string>
+    <!-- Home Screen - Dialog 4: Expert Mode Dialog -->
+    <string name="expert_mode_title">Chế độ chuyên gia</string>
+    <string name="expert_mode_search">Tìm kiếm</string>
+    <string name="expert_mode_proceed">Tiến hành vá</string>
+    <string name="expert_mode_disable_all">Tắt tất cả</string>
+    <string name="expert_mode_disable_all_done">Đã tắt tất cả bản vá</string>
+    <string name="expert_mode_enable_all">Bật tất cả</string>
+    <string name="expert_mode_enable_all_done">Đã bật tất cả bản vá</string>
+    <string name="expert_mode_reset_to_default">Bật các bản vá đề xuất</string>
+    <string name="expert_mode_reset_to_default_done">Đã áp dụng các bản vá đề xuất</string>
+    <string name="expert_mode_restore_saved">Khôi phục lựa chọn đã lưu</string>
+    <string name="expert_mode_restore_saved_done">Đã khôi phục bản vá đã chọn</string>
+    <string name="expert_mode_no_results">Không tìm thấy bản vá nào</string>
+    <string name="expert_mode_universal_patches">Bản vá phổ quát</string>
+    <string name="expert_mode_new_patches">Mới</string>
+    <string name="expert_mode_multiple_sources_warning_title">Đã chọn nhiều nguồn vá</string>
+    <string name="expert_mode_multiple_sources_warning_message">"Bạn đã chọn các bản vá từ nhiều nguồn khác nhau. Điều đó khiến ứng dụng có thể gặp phải các vấn đề về tương thích hoặc không hoạt động như mong muốn.
+
+Bạn có chắc muốn tiếp tục không?"</string>
+    <!-- Home Screen - Home Sub-Dialogs -->
+    <string name="home_invalid_signature_title">APK chưa xác minh</string>
+    <string name="home_invalid_signature_message">Tệp APK bạn chọn cho &lt;b&gt;%s&lt;/b&gt; không khớp với chữ ký dự kiến. Nó có thể đã bị chỉnh sửa hoặc đến từ một nguồn không đáng tin</string>
+    <string name="home_invalid_signature_badge">Không phải APK gốc</string>
+    <string name="home_split_apk_warning_title">Phát hiện APK chia nhỏ</string>
+    <string name="home_split_apk_warning_message">"Đây là gói APK chia nhỏ
+(&lt;b&gt;APKM / APKS / XAPK&lt;/b&gt;).
+
+Tốt nhất bạn nên chuyển sang &lt;b&gt;APK đầy đủ&lt;/b&gt; để vá tốt nhất"</string>
+    <string name="home_split_apk_warning_pick_another">Chọn APK khác</string>
+    <string name="home_dialog_unsupported_version_experimental_label">Thử nghiệm</string>
+    <string name="home_dialog_unsupported_version_experimental_description">Phiên bản này vẫn đang thử nghiệm và có thể không ổn định hoặc chưa hoàn thiện</string>
+    <string name="morphe_experimental_app_version_dialog_title">Muốn thử không? 🧪</string>
+    <string name="morphe_experimental_app_version_dialog_message">Phiên bản &lt;b&gt;%s&lt;/b&gt; hiện mới được hỗ trợ thử nghiệm&lt;br/&gt;&lt;br/&gt;🔧 Ứng dụng có thể hoạt động chưa ổn định hoặc còn lỗi trong quá trình hoàn thiện bản vá</string>
+    <string name="home_dialog_unsupported_version_dialog_title">Phiên bản không hỗ trợ</string>
+    <string name="home_dialog_unsupported_version_dialog_description">Phiên bản APK này không được đề xuất. Tiếp tục có thể dẫn đến ứng dụng không hoạt động</string>
+    <string name="home_dialog_unsupported_version_dialog_proceed">Vẫn tiếp tục</string>
+    <string name="home_dialog_unsupported_version_compatible_versions">Phiên bản tương thích:</string>
+    <string name="home_dialog_unsupported_version_unsupported_label">Không tương thích</string>
+    <!-- "Build" here refers to a specific compiled version of the app (versionCode) -->
+    <string name="home_dialog_unsupported_version_build">Bản dựng %d</string>
+    <string name="home_dialog_unsupported_version_build_mismatch_description">Mặc dù cùng phiên bản, nhưng đây là bản dựng khác. Các bản vá yêu cầu đúng bản dựng mới hỗ trợ</string>
+    <string name="home_dialog_wrong_package_title">Chọn sai gói rồi</string>
+    <string name="home_dialog_wrong_package_description">APK đã chọn không dành cho ứng dụng mà bạn định vá</string>
+    <string name="home_dialog_expected_package">Cần gói:</string>
+    <string name="home_dialog_selected_package">Nhưng bạn lại chọn gói:</string>
+    <string name="home_outdated_patches_dialog_title">Một số bản vá có thể đã cũ</string>
+    <string name="home_outdated_patches_dialog_message">Bạn đang bật dữ liệu di động vì vậy tự động cập nhật bản vá sẽ bị tắt</string>
+    <string name="home_outdated_patches_dialog_warning">Sử dụng các bản vá cũ có thể khiến ứng dụng bị hỏng</string>
+    <string name="home_outdated_patches_dialog_update_and_patch">Cập nhật &amp; vá</string>
+    <string name="home_low_disk_space_dialog_title">Hết dung lượng lưu trữ</string>
+    <string name="home_low_disk_space_dialog_message">Chỉ còn %1$.2f GB dung lượng trống. Trong khi đó bạn cần tối thiểu %2$.2f GB để quá trình vá ổn định</string>
+    <string name="home_low_disk_space_dialog_warning">Tiếp tục có thể dẫn đến lỗi \"không tìm thấy tệp\" hoặc vá ra apk bị hỏng</string>
+    <string name="home_simple_bundle_select_title">Chọn nguồn vá</string>
+    <!-- Patch Options -->
+    <string name="custom_color">Tùy chỉnh màu</string>
+    <string name="hex_color">Mã hex</string>
+    <string name="patch_option_instructions">Hướng dẫn</string>
+    <string name="patch_option_enter_value">Nhập giá trị</string>
+    <string name="patch_option_enter_number">Nhập số</string>
+    <string name="patch_option_enter_decimal">Nhập số thập phân</string>
+    <string name="patch_option_list_duplicate">Giá trị này đã tồn tại rồi</string>
+    <string name="patch_option_list_empty">Không được để trống</string>
+    <string name="patch_option_list_empty_state">Chưa thêm giá trị nào</string>
+    <string name="patch_option_required_missing">%s: điền vào tất cả các tùy chọn bắt buộc</string>
+    <!-- Adaptive Icon Creator -->
+    <string name="adaptive_icon_create">Tạo biểu tượng thích ứng</string>
+    <string name="adaptive_icon_select_image">Chọn ảnh</string>
+    <string name="adaptive_icon_change_image">Đổi ảnh</string>
+    <string name="adaptive_icon_background_color">Màu nền</string>
+    <string name="adaptive_icon_reset_transform">Đặt lại vị trí và tỷ lệ</string>
+    <string name="adaptive_icon_safe_zone_inner">Vùng an toàn (luôn hiển thị)</string>
+    <string name="adaptive_icon_safe_zone_outer">Vùng mặt nạ (có thể bị cắt)</string>
+    <string name="adaptive_icon_no_transparency_warning">Hình ảnh không có pixel trong suốt. Kết quả có thể không chính xác</string>
+    <string name="adaptive_icon_created_success">Đã tạo biểu tượng thích ứng thành công</string>
+    <string name="adaptive_icon_creation_failed">Không thể tạo biểu tượng thích ứng</string>
+    <string name="adaptive_icon_label">Thích ứng</string>
+    <string name="adaptive_icon_monochrome_label">Đơn sắc</string>
+    <string name="adaptive_icon_guide">Hướng dẫn tạo biểu tượng</string>
+    <string name="adaptive_icon_guide_png_title">Sử dụng tệp PNG có nền trong suốt</string>
+    <string name="adaptive_icon_guide_png_body">Tiền cảnh phải là tệp PNG có nền trong suốt. Nền màu đồng nhất sẽ hiển thị không chính xác - màu nền nên được chọn từ trình chọn nền bên dưới.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Vùng an toàn</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Vùng trong (nét liền): luôn hiển thị đầy đủ trên mọi hình dạng biểu tượng trình khởi chạy.
+Vùng ngoài (nét đứt): có thể bị cắt theo hình dạng biểu tượng trình khởi chạy, nên hãy đặt các chi tiết quan trọng bên trong nét liền."</string>
+    <string name="adaptive_icon_guide_notification_title">Biểu tượng thông báo</string>
+    <string name="adaptive_icon_guide_notification_body">Được tạo tự động từ ảnh tiền cảnh. Điều chỉnh kích thước bằng thanh trượt Thông báo. Tất cả nội dung hiển thị trên thanh trạng thái sẽ có màu trắng.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Biểu tượng đơn sắc</string>
+    <string name="adaptive_icon_guide_monochrome_body">Được tạo tự động từ ảnh tiền cảnh bằng cách sử dụng các phép biến đổi biểu tượng thích ứng tương tự. Từ Android 13 trở đi, biểu tượng sẽ có màu sắc theo màu nổi bật của hình nền.</string>
+    <string name="notification_icon_preview">Thông báo</string>
+    <!-- Header Creator -->
+    <string name="header_creator_create">Tạo logo tùy chỉnh</string>
+    <string name="header_creator_light_theme">Logo chủ đề sáng</string>
+    <string name="header_creator_dark_theme">Logo chủ đề tối</string>
+    <string name="header_creator_no_image">Không có hình ảnh nào được chọn</string>
+    <string name="header_creator_success">Đã tạo logo thành công</string>
+    <string name="header_creator_failed">Không thể tạo logo</string>
+    <string name="header_creator_guide">Hướng dẫn tạo logo đầu trang</string>
+    <string name="header_creator_guide_image_title">Yêu cầu về hình ảnh</string>
+    <string name="header_creator_guide_image_body">Hỗ trợ bất kỳ ảnh PNG hoặc JPEG nào, nhưng để có kết quả tốt nhất bạn nên chọn những hình ảnh có định dạng ngang với tỷ lệ khoảng 2,7:1. Nếu chọn tệp PNG có nền trong suốt, logo trông sẽ tự nhiên với chủ đề ứng dụng.</string>
+    <string name="header_creator_guide_themes_title">Chế độ sáng và tối</string>
+    <string name="header_creator_guide_themes_body">Hầu hết các ứng dụng yêu cầu hình ảnh riêng cho chế độ sáng và tối. Một số ứng dụng (như YouTube Music) chỉ sử dụng chế độ tối, vì vậy chỉ phần đó mới được hiển thị.</string>
+    <string name="header_creator_guide_positioning_title">Căn chỉnh và thu phóng</string>
+    <string name="header_creator_guide_positioning_body">Dùng cử chỉ chụm để thu phóng và kéo trực tiếp trong phần xem trước để căn chỉnh vị trí và kích thước hình ảnh. Các đường căn chỉnh sẽ xuất hiện khi hình ảnh ở gần trung tâm. Bạn cũng có thể dùng thanh trượt bên dưới phần xem trước.</string>
+    <!-- Home Screen - App Info Screen -->
+    <string name="home_app_info_uninstall_app_confirmation">Bạn có chắc muốn gỡ ứng dụng này không?</string>
+    <string name="home_app_info_remove_app_warning">Thao tác này sẽ xóa vĩnh viễn:</string>
+    <string name="home_app_info_delete_item_database">Nhật ký cơ sở dữ liệu</string>
+    <string name="home_app_info_delete_item_patched_apk">Tệp APK đã vá</string>
+    <string name="home_app_info_delete_item_original_apk">Tệp APK gốc</string>
+    <string name="home_app_info_delete_preservation_note">Các bản vá bạn đã chọn và các tuỳ chỉnh sẽ được lưu lại cho những lần vá sau</string>
+    <string name="home_app_info_patches_name_default">Số bản vá</string>
+    <string name="home_app_info_patches_name_fallback">Chưa có tên</string>
+    <string name="home_app_info_patches_replace_fail">Không thể nhập bản vá: %s</string>
+    <string name="home_app_info_repatch_no_original_apk">Không tìm thấy APK gốc nên không thể vá lại ứng dụng này</string>
+    <string name="home_app_info_original_package_name">Tên gói ban đầu</string>
+    <string name="home_app_info_applied_patches">Bản vá đã áp dụng</string>
+    <string name="home_app_info_patch_source_used">Nguồn vá đã dùng</string>
+    <string name="home_app_info_install_type_custom_installer">Trình cài đặt tùy chỉnh</string>
+    <string name="home_app_info_install_type_system_installer">Trình cài đặt hệ thống</string>
+    <string name="home_app_info_patch_update_available"> Đã có bản vá mới</string>
+    <string name="home_app_info_patch_update_available_description">Đã có bản vá mới. Hãy vá lại ứng dụng để áp dụng các cải tiến và bản sửa lỗi mới nhất</string>
+    <string name="home_app_info_app_deleted_warning">Ứng dụng đã bị gỡ cài đặt</string>
+    <string name="home_app_info_app_deleted_description">Ứng dụng này đã bị gỡ bên ngoài Morphe. Hãy vá lại để khôi phục chức năng</string>
+    <string name="home_app_info_apk_size">Kích thước APK</string>
+    <!-- Home Screen - Root Mode -->
+    <string name="root_install_apk_required">Chế độ root yêu cầu APK gốc phải được cài đặt trên thiết bị trước khi vá</string>
+    <string name="root_gmscore_excluded">Chế độ root không cần bản vá \"GmsCore support\"</string>
+    <string name="root_pre_patch_installer_title">Chọn phương thức cài đặt</string>
+    <string name="root_pre_patch_installer_description">Thiết bị của bạn đã có quyền root. Hãy chọn cách bạn muốn cài đặt ứng dụng đã vá</string>
+    <string name="root_pre_patch_installer_mount_title">Gắn kết bằng root</string>
+    <string name="root_pre_patch_installer_mount_description">Gắn APK đã vá đè lên ứng dụng gốc (không cần GmsCore nữa)</string>
+    <string name="root_pre_patch_installer_standard_title">Cài đặt tiêu chuẩn</string>
+    <string name="root_pre_patch_installer_standard_description">Cài đặt thành một ứng dụng riêng với hỗ trợ GmsCore. Sau khi vá xong, bạn có thể chọn trình cài đặt mình muốn</string>
+    <string name="root_pre_patch_installer_hint">Phương thức cài đặt sẽ quyết định bản vá nào được áp dụng và không thể thay đổi sau khi vá</string>
+    <!-- Patcher Screen -->
+    <string name="patcher_error_copied">Đã sao chép lỗi vào bảng nhớ tạm</string>
+    <string name="patcher_error_log">Nhật ký lỗi</string>
+    <string name="patcher_error_technical">Chi tiết kỹ thuật</string>
+    <string name="patcher_error_dialog_app_info">Thông tin ứng dụng</string>
+    <string name="patcher_tab_logs">Nhật ký trình vá</string>
+    <string name="patcher_tab_game">Trò chơi</string>
+    <string name="patcher_long_step_warning">Bước này có thể hơi lâu một chút. Vui lòng chờ…</string>
+    <string name="patcher_installing_subtitle">Gần xong rồi, chuẩn bị quẩy thôi! 🎸</string>
+    <string name="patcher_success_title">Hoàn tất! 🎉</string>
+    <string name="patcher_success_subtitle">Đã vá và cài đặt ứng dụng thành công!</string>
+    <string name="patcher_complete_title">Tèn ten! ✨</string>
+    <string name="patcher_failed_title">Ui, có lỗi xảy ra rồi!</string>
+    <string name="patcher_failed_subtitle">Xem chi tiết lỗi bên dưới</string>
+    <string name="patcher_failed_dialog_title">Không thể vá</string>
+    <string name="patcher_unknown_error">Đã xảy ra lỗi không xác định</string>
+    <string name="patcher_conflict_title">Phát hiện xung đột</string>
+    <string name="patcher_conflict_subtitle">Bạn cần gỡ cài đặt phiên bản hiện có</string>
+    <string name="patcher_conflict_hint">Ứng dụng đã vá dùng chứng chỉ khác với phiên bản đã cài đặt. Gỡ cài đặt sẽ xóa tất cả dữ liệu ứng dụng</string>
+    <string name="patcher_installed_conflict_title">Cần phải gỡ cài đặt</string>
+    <string name="patcher_installed_conflict_body">"Morphe ký các ứng dụng đã vá bằng chứng chỉ của riêng mình, khác với bản gốc. Android yêu cầu xóa phiên bản hiện tại trước khi có thể cài đặt ứng dụng đã vá.
+
+Gỡ cài đặt sẽ xóa vĩnh viễn toàn bộ dữ liệu ứng dụng"</string>
+    <string name="patcher_install_error_title">Lỗi rồiii</string>
+    <string name="patcher_install_error_subtitle">Hãy thử gỡ và cài đặt lại</string>
+    <string name="patcher_ready_to_install_subtitle">Bấm nút bên dưới để cài đặt</string>
+    <string name="patcher_ready_to_mount_subtitle">Bấm nút bên dưới để gắn kết</string>
+    <string name="patcher_storage_permission_dialog_title">Không thể truy cập đường dẫn bộ nhớ</string>
+    <string name="patcher_incompatible_patcher_title">Cần phải cập nhật</string>
+    <string name="patcher_incompatible_patcher_description">Gói &lt;b&gt;%1$s&lt;/b&gt; yêu cầu phiên bản trình vá &lt;b&gt;%2$s&lt;/b&gt; trở lên. Vui lòng cập nhật Morphe để vá ứng dụng này</string>
+    <string name="patcher_incompatible_patcher_update_button">Tải về và cập nhật Morphe</string>
+    <string name="patcher_storage_permission_description_api30">Một hoặc nhiều tuỳ chỉnh bản vá đang trỏ đến thư mục mà Morphe không thể truy cập. Hãy cấp quyền truy cập bộ nhớ, sau đó bấm nút và quá trình vá sẽ tự động bắt đầu</string>
+    <string name="patcher_storage_permission_description_legacy">Một hoặc nhiều tuỳ chỉnh bản vá đang trỏ đến đường dẫn không thể truy cập. Hãy cập nhật lại đường dẫn trong phần tuỳ chỉnh bản vá và thử lại</string>
+    <string name="patcher_storage_permission_grant">Cấp quyền truy cập bộ nhớ</string>
+    <string name="patcher_storage_permission_denied_warning">Quyền truy cập bộ nhớ đã bị từ chối. Hãy cấp quyền để sử dụng đường dẫn này, hoặc di chuyển các tệp vào thư mục riêng của ứng dụng</string>
+    <string name="patcher_storage_permission_open_settings">Mở cài đặt truy cập bộ nhớ</string>
+    <string name="patcher_storage_badge_denied">Quyền truy cập bị từ chối</string>
+    <string name="patcher_storage_badge_missing">Không tìm thấy gì</string>
+    <string name="patcher_storage_permission_hint">Gợi ý: Di chuyển tệp sang /Android/data/app.morphe.manager/files/ - sẽ không cần cấp thêm quyền truy cập</string>
+    <!-- Patcher Screen - Patcher Steps -->
+    <string name="patcher_step_group_preparing">Đang chuẩn bị</string>
+    <string name="patcher_step_load_patches">Đang tải bản vá</string>
+    <string name="patcher_step_prepare_split_apk">Đang gộp APK chia nhỏ</string>
+    <string name="patcher_step_unpack">Đọc tệp APK</string>
+    <string name="patcher_step_group_patching">Đang vá</string>
+    <string name="patcher_step_group_saving">Đang lưu</string>
+    <string name="patcher_step_write_patched">Đang viết APK đã vá</string>
+    <string name="patcher_step_sign_apk">Đang ký APK đã vá</string>
+    <!-- Battery optimization pre-flight dialog -->
+    <string name="battery_optimization_dialog_title">Bảo vệ khi vá nền</string>
+    <string name="battery_optimization_dialog_description">Một số thiết bị có thể tắt trình vá khi ứng dụng bị thu nhỏ. Cho phép Morphe chạy không giới hạn pin để quá trình vá hoàn thành ổn định</string>
+    <string name="battery_optimization_not_now">Từ từ</string>
+    <!-- Patcher Screen - Patcher Worker -->
+    <string name="patcher_notification_title">Đang vá…</string>
+    <string name="patcher_notification_text">Bấm để quay trở lại trình vá</string>
+    <string name="patcher_stop_confirm_title">Dừng vá</string>
+    <string name="patcher_stop_confirm_description">Bạn có chắc chắn muốn dừng tiến trình vá không?</string>
+    <!-- Patcher Screen - Patcher Messages -->
+    <string name="patcher_message_1">Biến ứng dụng của bạn trở nên xịn hơn… 🏆</string>
+    <string name="patcher_message_2">Dạy ứng dụng cũ chiêu mới… 🎩</string>
+    <string name="patcher_message_3">Đang tinh chỉnh ứng dụng của bạn… 🔧</string>
+    <string name="patcher_message_4">Đang pha chế phép màu kỹ thuật số… ☕</string>
+    <string name="patcher_message_5">Làm tách cà phê chill chill… ☕</string>
+    <string name="patcher_message_6">Nhìn ra ngoài trời đi, đẹp lắm… 🌤️</string>
+    <string name="patcher_message_7">Đang chỉnh lại mấy con số 1 và 0… 🤖</string>
+    <string name="patcher_message_8">Đoạn mã này rối phết… 🍝</string>
+    <!-- Morphe patches fix YouTube bugs that Google still has not fixed. -->
+    <string name="patcher_message_9">Đang sửa lỗi trong ứng dụng chưa vá… 🪲</string>
+    <string name="patcher_message_10">Bản vá xịn chờ chút cũng đáng… ⏳</string>
+    <string name="patcher_message_11">Đánh bóng pixel cho đến khi chúng tỏa sáng… 💎</string>
+    <string name="patcher_message_12">Ngồi yên, đang vá, chưa hạ cánh đâu… 💺✈️</string>
+    <string name="patcher_message_13">Đang nấu ứng dụng đã vá, nóng hổi vừa thổi vừa ăn… 🍳</string>
+    <!-- "bytecode" can be translated from "the app code" -->
+    <string name="patcher_message_14">Đang thương lượng với mã nguồn… 🤝</string>
+    <!-- Space flight communications callout. -->
+    <string name="patcher_message_15">Mọi hệ thống hoạt động tốt… quỹ đạo vá ổn định… 🚀</string>
+    <string name="patcher_message_16">Vắt năng lượng, như vắt khô quả chanh kỹ thuật số… 🍋</string>
+    <string name="patcher_message_17">Đang thuyết phục ứng dụng chấp nhận phiên bản mới hơn, tốt hơn… 🌱</string>
+    <!-- Quantum physics (box emoji is a reference to Schrodinger's cat). -->
+    <string name="patcher_message_18">Đang chuyển trạng thái ứng dụng từ chưa vá sang đã vá… 📦⚛️</string>
+    <!-- Throw away reference to a Saturday Night Live sketch. "fever" means sickness or the flu. "prescription" means medical treatment or can be translated from "cure" -->
+    <string name="patcher_message_19">Ứng dụng bị sốt rồi, phương pháp điều trị bây giờ là vá thêm thôi… 🩺🔔</string>
+    <string name="patcher_message_20">Đang dọn dẹp mớ hỗn độn. Chờ tí… 🗑️</string>
+    <!-- Expert patcher Screen -->
+    <string name="patching_app">Đang vá ứng dụng</string>
+    <string name="memory_usage">Bộ nhớ đã dùng</string>
+    <!-- Patcher Screen - Other hidden strings -->
+    <string name="applying_patches">Đang áp dụng các bản vá</string>
+    <string name="failed_to_execute_patch">Không thể áp dụng %s</string>
+    <string name="patched_app_saved_toast">Đã lưu ứng dụng đã vá</string>
+    <string name="patched_app_save_failed_toast">Không thể lưu ứng dụng đã vá</string>
+    <string name="plugin_activity_dialog_body">Bạn vẫn cần tự thao tác để tải ứng dụng</string>
+    <string name="patcher_process_exit_message">Đã dừng tiến trình vá với mã lỗi %s</string>
+    <string name="install_app_success">Đã cài đặt thành công</string>
+    <string name="install_app_fail">Không thể cài đặt ứng dụng: %s</string>
+    <string name="save_apk_success">Đã lưu APK</string>
+    <string name="saved_app_export_failed">Không thể xuất ứng dụng đã vá</string>
+    <string name="saved_app_removed_toast">Đã xoá bản lưu ứng dụng đã vá</string>
+    <string name="saved_app_launch_unavailable">Cài ứng dụng trước khi mở</string>
+    <string name="package_name">Tên gói</string>
+    <string name="failed_to_mount">Không thể gắn: %s</string>
+    <string name="failed_to_unmount">Không thể gỡ gắn: %s</string>
+    <!-- Patcher Screen - Mini-games -->
+    <string name="mini_game_score">Điểm: %d</string>
+    <string name="mini_game_best">Cao nhất %d</string>
+    <string name="mini_game_new_record">Kỷ lục mới!</string>
+    <string name="mini_game_game_over">Bạn đã thua</string>
+    <string name="mini_game_try_again">Thử lại</string>
+    <string name="mini_game_paused">Tạm dừng</string>
+    <string name="mini_game_resume">Tiếp tục</string>
+    <string name="mini_game_2048_picker_subtitle">Vuốt để ghép các ô lại với nhau</string>
+    <string name="mini_game_flappy_picker_subtitle">Chạm để bay lách qua các ống</string>
+    <string name="mini_game_flappy_tap_to_start">Chạm để bay</string>
+    <string name="mini_game_snake_picker_subtitle">Ăn thức ăn, đừng tự đâm vào mình</string>
+    <string name="mini_game_snake_swipe_to_start">Vuốt để bắt đầu</string>
+    <string name="mini_game_dino_picker_subtitle">Chạm để nhảy qua xương rồng</string>
+    <string name="mini_game_dino_tap_to_start">Chạm để chạy</string>
+    <!-- Settings -->
+    <string name="appearance">Giao diện</string>
+    <string name="advanced">Nâng cao</string>
+    <string name="system">Hệ thống</string>
+    <!-- Settings - Appearance Tab - Background animation -->
+    <string name="settings_appearance_background">Hiệu ứng nền</string>
+    <string name="settings_appearance_background_circles">Hình tròn</string>
+    <string name="settings_appearance_background_rings">Vòng tròn</string>
+    <string name="settings_appearance_background_mesh">Lưới</string>
+    <string name="settings_appearance_background_space">Không gian</string>
+    <string name="settings_appearance_background_shapes">Hình khối</string>
+    <string name="settings_appearance_background_snow">Tuyết</string>
+    <string name="settings_appearance_background_grid">Lưới ô</string>
+    <string name="settings_appearance_background_particles">Hạt</string>
+    <string name="settings_appearance_background_none">Không</string>
+    <string name="settings_appearance_background_random">Ngẫu nhiên</string>
+    <string name="settings_appearance_background_random_interval_launch">Khi khởi động</string>
+    <string name="settings_appearance_background_random_interval_daily">Hàng ngày</string>
+    <string name="settings_appearance_background_random_interval_3days">Cứ 3 ngày một lần</string>
+    <string name="settings_appearance_parallax_effect">Hiệu ứng thị sai</string>
+    <string name="settings_appearance_parallax_effect_description">Nền chuyển động nhẹ nhàng khi nghiêng thiết bị</string>
+    <!-- Settings - Appearance Tab - Theme -->
+    <string name="settings_appearance_theme">Chủ đề</string>
+    <string name="settings_appearance_system">Hệ thống</string>
+    <string name="settings_appearance_light">Sáng</string>
+    <string name="settings_appearance_dark">Tối</string>
+    <string name="settings_appearance_dynamic">Cá nhân hóa</string>
+    <string name="settings_appearance_accent_color">Màu nổi bật</string>
+    <string name="settings_appearance_pure_black">Đen tuyền</string>
+    <string name="settings_appearance_pure_black_description">Nền đen thực sự</string>
+    <!-- Settings - Appearance Tab - Language Selector -->
+    <string name="settings_appearance_app_language">Ngôn ngữ</string>
+    <string name="settings_appearance_app_language_current">Ngôn ngữ hiện tại</string>
+    <string name="settings_appearance_translations_info_title">Một số ngôn ngữ có thể bị thiếu hoặc chưa hoàn thiện</string>
+    <string name="settings_appearance_translations_info_text">Bạn có thể yêu cầu thêm ngôn ngữ hoặc cải thiện bản dịch hiện tại bằng cách truy cập %s</string>
+    <!-- Settings - Appearance Tab - Home Screen Section -->
+    <string name="settings_appearance_home_screen">Trang chủ</string>
+    <string name="settings_appearance_greeting_phrases">Thông điệp</string>
+    <string name="settings_appearance_greeting_phrases_subtitle">Hiện thông điệp trên trang chủ</string>
+    <!-- Settings - Appearance Tab - App Icon Selector -->
+    <string name="settings_appearance_app_icon_selector_title">Biểu tượng</string>
+    <string name="settings_appearance_app_icon_default">Mặc định</string>
+    <string name="settings_appearance_app_icon_light_2">Bầu trời</string>
+    <string name="settings_appearance_app_icon_light_3">Hoàng hôn</string>
+    <string name="settings_appearance_app_icon_dark_1">Đại dương</string>
+    <string name="settings_appearance_app_icon_dark_2">Hư không</string>
+    <string name="settings_appearance_app_icon_dark_3">Màu chàm</string>
+    <string name="settings_appearance_app_icon_change_dialog_title">Đổi biểu tượng?</string>
+    <string name="settings_appearance_app_icon_change_dialog_message">Bạn có muốn đổi sang &lt;b&gt;%s&lt;/b&gt; và khởi động lại?</string>
+    <string name="settings_appearance_app_icon_change_dialog_confirm">Chốt</string>
+    <!-- Settings - Advanced Tab - Updates Section -->
+    <string name="settings_advanced_updates">Cập nhật</string>
+    <string name="settings_advanced_updates_use_prereleases">Bản cập nhật trước</string>
+    <string name="settings_advanced_updates_use_prereleases_description">Trải nghiệm sớm các phiên bản mới của Morphe. Bạn có thể bật bản phát hành trước cho từng nguồn trong phần nguồn vá</string>
+    <string name="settings_advanced_updates_allow_metered">Cập nhật bằng dữ liệu di động</string>
+    <string name="settings_advanced_updates_allow_metered_description">Cho phép tải Morphe và cập nhật bản vá qua dữ liệu di động</string>
+    <string name="settings_advanced_updates_background_notifications">Thông báo cập nhật nền</string>
+    <string name="settings_advanced_updates_background_notifications_description">Kiểm tra cập nhật định kỳ khi ứng dụng chạy nền và báo cho bạn khi có phiên bản mới.</string>
+    <string name="settings_advanced_updates_background_notifications_description_fcm">Nhận ngay thông báo khi có phiên bản mới, kể cả khi ứng dụng đang tắt</string>
+    <string name="settings_advanced_update_interval">Tần suất kiểm tra</string>
+    <string name="settings_advanced_update_interval_dialog_title">Kiểm tra cập nhật</string>
+    <string name="settings_advanced_update_interval_hourly">1 giờ/lần</string>
+    <string name="settings_advanced_update_interval_daily">1 ngày/lần</string>
+    <string name="settings_advanced_update_interval_weekly">1 tuần/lần</string>
+    <string name="settings_advanced_update_interval_monthly">1 tháng/lần</string>
+    <string name="settings_advanced_update_interval_chip_subtitle">Tần suất kiểm tra trong nền</string>
+    <string name="settings_advanced_update_interval_battery_warning">Tính năng này có thể không hoạt động trên một số thiết bị như Xiaomi, Huawei, Samsung và OnePlus, vì chúng thường giới hạn ứng dụng chạy nền để tiết kiệm pin</string>
+    <!-- Notification content -->
+    <string name="notification_manager_update_title">Đã có bản cập nhật Morphe mới</string>
+    <string name="notification_bundle_update_title">Đã có bản vá mới</string>
+    <string name="notification_update_text">Phiên bản %s đã sẵn sàng để tải xuống</string>
+    <string name="notification_bundle_update_text_unversioned">Bấm để mở Morphe và cập nhật</string>
+    <string name="notification_permission_dialog_title">Cho phép nhận thông báo</string>
+    <string name="notification_permission_dialog_description">Để thông báo cho bạn về các bản cập nhật mới khi ứng dụng chạy nền, Morphe cần được cấp quyền thông báo</string>
+    <string name="notification_post_patch_dialog_title">Bạn có muốn nhận thông báo khi có bản cập nhật mới không?</string>
+    <string name="notification_channel_fcm_updates">Cập nhật thông báo</string>
+    <string name="notification_channel_fcm_updates_description">Thông báo về các bản cập nhật Morphe và bản vá mới</string>
+    <string name="notification_channel_patcher">Đang vá</string>
+    <string name="notification_channel_patcher_description">Hiển thị khi Morphe đang vá ứng dụng trong nền</string>
+    <!-- Settings - Advanced Tab - Expert settings Section -->
+    <string name="settings_advanced_expert">Chuyên gia</string>
+    <string name="settings_advanced_expert_mode">Chế độ chuyên gia</string>
+    <string name="settings_advanced_expert_mode_description">Mở khoá các tuỳ chỉnh vá nâng cao của Morphe</string>
+    <string name="settings_advanced_expert_mode_dialog_title">Bật chế độ Chuyên gia?</string>
+    <string name="settings_advanced_expert_mode_dialog_message">Chế độ chuyên gia cho phép bạn tùy chỉnh sâu hơn về cách các bản vá được áp dụng, nhưng nếu bạn chỉnh không đúng có thể khiến ứng dụng không hoạt động</string>
+    <string name="settings_advanced_strip_unused_libs">Tối ưu theo kiến trúc thiết bị</string>
+    <string name="settings_advanced_strip_unused_libs_description">Xóa các thư viện CPU và mô-đun APK chia nhỏ không cần thiết</string>
+    <!-- Bytecode mode -->
+    <string name="settings_advanced_bytecode_mode">Chế độ xử lý bytecode</string>
+    <string name="settings_advanced_bytecode_mode_dialog_description">Quy định cách xử lý bytecode trong quá trình vá. Ảnh hưởng đến tốc độ vá, mức dùng bộ nhớ và kích thước APK đầu ra</string>
+    <string name="settings_advanced_bytecode_mode_strip_fast_label">Nhanh (khuyên dùng)</string>
+    <string name="settings_advanced_bytecode_mode_strip_fast">Nhanh</string>
+    <string name="settings_advanced_bytecode_mode_strip_fast_description">Vá nhanh hơn và dùng ít bộ nhớ hơn, đổi lại APK sẽ lớn hơn. Khuyến nghị cho thiết bị RAM thấp hoặc đời cũ</string>
+    <string name="settings_advanced_bytecode_mode_full">Đầy đủ</string>
+    <string name="settings_advanced_bytecode_mode_full_description">Vá chậm hơn, mô phỏng lại cơ chế cũ. Chỉ dùng nếu chế độ nhanh bị lỗi</string>
+    <!-- Settings - Advanced Tab - GitHub PAT Settings -->
+    <string name="settings_advanced_github_pat">Mã PAT GitHub</string>
+    <string name="settings_advanced_github_pat_description">Bắt buộc đối với các nguồn pull request</string>
+    <string name="settings_advanced_github_pat_configured">Đã cấu hình token</string>
+    <string name="settings_advanced_github_pat_how_to_get">Cách lấy token</string>
+    <string name="settings_advanced_github_pat_dialog_title">Thiết lập Personal Access Token của GitHub</string>
+    <string name="settings_advanced_github_pat_dialog_description">Thiết lập GitHub Personal Access Token để có thể thêm Pull Request làm nguồn. Hãy tạo một PAT với quyền public_repo tại github.com</string>
+    <string name="settings_advanced_github_pat_export_include_label">Thêm vào khi xuất cài đặt</string>
+    <string name="settings_advanced_github_pat_export_include_supporting">Thêm PAT vào khi xuất cài đặt Morphe</string>
+    <string name="settings_advanced_github_pat_export_warning">Đừng chia sẻ PAT. Nếu bạn xuất cài đặt có chứa nó, hãy giữ tệp đó thật kín vì bên trong có token</string>
+    <!-- Settings - Advanced Tab - Patch Options Section -->
+    <string name="settings_advanced_patch_options">Tùy chỉnh</string>
+    <string name="settings_advanced_patch_options_youtube_description">Tùy chỉnh chủ đề, logo đầu trang, tên và biểu tượng ứng dụng</string>
+    <string name="settings_advanced_patch_options_restart_message">Sau khi tùy chỉnh bạn cần vá lại ứng dụng để áp dụng những thay đổi</string>
+    <string name="settings_advanced_patch_options_expert_mode_notice">Trong chế độ chuyên gia, bạn có thể tùy chỉnh bản vá ngay trước khi vá</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Theme Colors -->
+    <string name="settings_advanced_patch_options_theme_colors">Màu chủ đề</string>
+    <string name="settings_advanced_patch_options_theme_colors_description">Đổi màu nền</string>
+    <string name="settings_advanced_patch_options_dark_theme_color">Màu nền chủ đề tối</string>
+    <string name="settings_advanced_patch_options_light_theme_color">Màu nền chủ đề sáng</string>
+    <string name="settings_advanced_patch_options_theme_color_description">Có thể dùng mã màu hex (#RRGGBB) hoặc tham chiếu tài nguyên màu</string>
+    <string name="settings_advanced_patch_options_loading">Đang tải tùy chỉnh bản vá…</string>
+    <string name="settings_advanced_patch_options_waiting_for_source">Chờ cho nguồn vá cập nhật xong</string>
+    <string name="settings_advanced_patch_options_load_error">Không thể tải tùy chỉnh bản vá</string>
+    <string name="settings_advanced_patch_options_no_available">Không chỉnh được bản vá này</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Custom Branding -->
+    <string name="settings_advanced_patch_options_custom_branding">Thương hiệu</string>
+    <string name="settings_advanced_patch_options_custom_branding_description">Đổi tên hiển thị của ứng dụng</string>
+    <string name="settings_advanced_patch_options_custom_branding_app_name">Tên ứng dụng</string>
+    <string name="settings_advanced_patch_options_custom_branding_app_name_hint">Nhập tên tùy chỉnh</string>
+    <string name="settings_advanced_patch_options_custom_branding_custom_icon">Biểu tượng tùy chỉnh</string>
+    <string name="settings_advanced_patch_options_custom_branding_custom_icon_instruction">"Thư mục chứa ảnh dùng làm biểu tượng tuỳ chỉnh.
+
+Thư mục này cần có ít nhất một trong các thư mục sau (tuỳ theo DPI của thiết bị):
+- mipmap-mdpi
+- mipmap-hdpi
+- mipmap-xhdpi
+- mipmap-xxhdpi
+- mipmap-xxxhdpi
+
+Mỗi thư mục trên phải chứa đầy đủ các tệp sau:
+morphe_adaptive_background_custom.png
+morphe_adaptive_foreground_custom.png
+
+Kích thước hình ảnh tương ứng:
+- mipmap-mdpi: 108x108 px
+- mipmap-hdpi: 162x162 px
+- mipmap-xhdpi: 216x216 px
+- mipmap-xxhdpi: 324x324 px
+- mipmap-xxxhdpi: 432x432 px
+
+Ngoài ra,
+Có thể thêm thư mục drawable chứa icon đơn sắc:
+morphe_adaptive_monochrome_custom.xml
+
+Có thể thêm icon thông báo theo một trong các cách sau:
+- Vector (XML) trong drawable:
+  morphe_notification_icon_custom.xml
+- Ảnh PNG trong các thư mục drawable-dpi:
+  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
+    <string name="settings_advanced_patch_options_custom_header">Logo đầu trang</string>
+    <string name="settings_advanced_patch_options_custom_header_description">Đổi logo đầu trang</string>
+    <string name="settings_advanced_patch_options_custom_header_instruction">"Thư mục chứa hình ảnh sử dụng làm logo đầu trang tùy chỉnh.
+
+Thư mục này phải chứa một hoặc nhiều thư mục sau, tùy theo DPI của thiết bị:
+- drawable-hdpi
+- drawable-xhdpi
+- drawable-xxhdpi
+- drawable-xxxhdpi
+
+Mỗi thư mục trên bắt buộc phải chứa đầy đủ các tệp sau:
+morphe_header_custom_light.png
+morphe_header_custom_dark.png
+
+Kích thước hình ảnh yêu cầu:
+- drawable-hdpi: 194x72 px
+- drawable-xhdpi: 258x96 px
+- drawable-xxhdpi: 387x144 px
+- drawable-xxxhdpi: 512x192 px"</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Hide Shorts -->
+    <string name="settings_advanced_patch_options_hide_shorts_features">Ẩn tính năng Shorts</string>
+    <string name="settings_advanced_patch_options_hide_shorts_app_shortcut">Ẩn lối tắt Shorts</string>
+    <string name="settings_advanced_patch_options_hide_shorts_app_shortcut_description">Gỡ Shorts khỏi menu khi bấm giữ ứng dụng ngoài màn hình chính</string>
+    <string name="settings_advanced_patch_options_hide_shorts_widget">Ẩn tiện ích Shorts</string>
+    <string name="settings_advanced_patch_options_hide_shorts_widget_description">Gỡ nút Shorts khỏi tiện ích màn hình chính</string>
+    <!-- Settings - System Tab - Installer Section -->
+    <string name="installer">Trình cài đặt</string>
+    <string name="installer_title">Trình cài đặt</string>
+    <string name="installer_internal_name">Trình cài đặt hệ thống</string>
+    <string name="installer_internal_description">Dùng trình cài đặt gói của Android</string>
+    <string name="installer_auto_saved_name">Trình cài đặt gắn kết đã root</string>
+    <string name="installer_auto_saved_description">Gắn APK đã vá lên ứng dụng đã được cài đặt</string>
+    <string name="installer_shizuku_description">Cài ẩn bằng Shizuku hoặc Sui</string>
+    <string name="installer_option_none">Không có</string>
+    <string name="installer_none_description">Chưa cấu hình trình cài đặt dự phòng</string>
+    <string name="installer_status_requires_root">Yêu cầu quyền root</string>
+    <string name="installer_status_not_supported">Không được hỗ trợ thao tác này</string>
+    <string name="installer_status_shizuku_not_installed">Cài Shizuku hoặc Sui để dùng tuỳ chọn này</string>
+    <string name="installer_status_shizuku_not_running">Chạy Shizuku hoặc Sui và thử lại</string>
+    <string name="installer_status_shizuku_permission">Cấp quyền Shizuku cho Morphe trong ứng dụng Shizuku</string>
+    <string name="installer_mount_warning_install">Trình cài đặt chính của bạn đã được đặt là trình cài đặt mount gốc. Ứng dụng đã lưu này không được cài đặt bằng mount</string>
+    <string name="mount_version_mismatch_message">Phiên bản ứng dụng gốc (%2$s) không khớp với phiên bản ứng dụng đã sửa (%1$s). Mount phiên bản gốc khớp, sau đó thử lại</string>
+    <string name="installer_status_shizuku_unsupported">Phiên bản Shizuku đã cài không được hỗ trợ</string>
+    <string name="installer_action_open_shizuku">Mở Shizuku</string>
+    <string name="installer_hint_generic">Không thể cài đặt. Thử lại hoặc đổi sang trình cài đặt khác</string>
+    <string name="installer_hint_conflict">Đã cài đặt ứng dụng khác với cùng tên gói. Hãy gỡ cài ứng dụng đó trước khi tiếp tục</string>
+    <string name="installer_external_launched">Đang mở %s…</string>
+    <string name="installer_external_timeout">%s không xác nhận cài đặt. Kiểm tra ứng dụng khác và thử lại</string>
+    <string name="installer_external_success">%s báo đã cài đặt thành công</string>
+    <string name="installer_unavailable_title">%s không khả dụng</string>
+    <string name="installer_unavailable_message">Trình cài đặt mà bạn ưu tiên (%s) hiện đang không khả dụng. Hãy thử lại sau khi sửa lỗi hoặc chuyển sang dùng trình cài đặt tiêu chuẩn</string>
+    <string name="installer_unavailable_shizuku_hint">Hãy đảm bảo rằng Shizuku đang chạy và bạn đã cấp quyền cho ứng dụng này</string>
+    <string name="installer_use_standard">Trình cài đặt tiêu chuẩn</string>
+    <string name="settings_prompt_installer_on_install">Hỏi chọn trình cài đặt</string>
+    <string name="settings_prompt_installer_on_install_description">Luôn hiện hộp thoại chọn trình cài đặt khi cài ứng dụng đã vá</string>
+    <string name="settings_auto_install_with_shizuku">Tự động cài đặt sau khi vá</string>
+    <string name="settings_auto_install_with_shizuku_description">Tự động cài đặt APK đã vá ngay sau khi quá trình vá hoàn tất</string>
+    <string name="settings_auto_install_prompt_conflict">Đã bật \"%s\" - cài đặt tự động sẽ bị bỏ qua</string>
+    <!-- Settings - System Tab - Performance Section -->
+    <string name="settings_system_battery_optimization">Tối ưu hóa pin</string>
+    <string name="settings_system_battery_optimization_description">Duy trì trình vá tiếp tục chạy kể cả khi ứng dụng bị thu nhỏ</string>
+    <string name="settings_system_performance">Hiệu suất</string>
+    <string name="settings_system_process_runtime">Tiến trình riêng</string>
+    <string name="settings_system_process_runtime_description">Chạy quá trình vá trong tiến trình riêng biệt để cải thiện độ ổn định</string>
+    <string name="settings_system_process_runtime_memory_limit">Giới hạn bộ nhớ</string>
+    <string name="settings_system_process_runtime_memory_limit_description">Tăng giới hạn có thể giúp vá nhanh hơn nếu thiết bị đủ mạnh</string>
+    <string name="settings_system_process_runtime_enable">Bật tiến trình riêng</string>
+    <string name="settings_system_memory_limit_subtitle">Bộ nhớ cho quá trình vá</string>
+    <string name="settings_system_memory_limit_warning">Nếu bộ nhớ quá thấp có thể khiến bạn gặp lỗi trong quá trình vá ứng dụng lớn</string>
+    <string name="settings_system_process_runtime_enabled_description">Giới hạn %s MB</string>
+    <string name="settings_system_process_runtime_disabled_description">Bấm để cấu hình</string>
+    <string name="settings_system_process_runtime_description_not_available">Tính năng này yêu cầu Android 11 trở lên</string>
+    <!-- Settings - System Tab - Import and Export Section -->
+    <string name="settings_system_import_export">Xuất &amp; Nhập</string>
+    <string name="settings_system_keystore">Kho khoá</string>
+    <string name="settings_system_import_keystore_description">Nhập hoặc xuất kho khóa dùng để ký của bạn</string>
+    <string name="settings_system_import_keystore_dialog_title">Nhập thông tin xác thực kho khoá</string>
+    <string name="settings_system_import_keystore_dialog_description">Bạn sẽ cần điền thông tin xác thực của kho khóa để nhập chúng</string>
+    <string name="settings_system_import_keystore_dialog_alias_field">Tên người dùng (Alias)</string>
+    <string name="settings_system_import_keystore_dialog_password_field">Mật khẩu</string>
+    <string name="settings_system_import_keystore_dialog_format_field">Định dạng kho khoá</string>
+    <string name="settings_system_import_keystore_wrong_credentials">Thông tin xác thực kho khóa không đúng</string>
+    <string name="settings_system_import_keystore_success">Đã nhập kho khóa</string>
+    <string name="settings_system_import_keystore_failed">Khổng thể nhập kho khóa</string>
+    <string name="settings_system_export_keystore_unavailable">Không có kho khóa nào để xuất</string>
+    <string name="settings_system_export_keystore_success">Đã xuất kho khóa</string>
+    <string name="settings_system_export_keystore_failed">Không thể xuất kho khóa</string>
+    <string name="settings_system_show_password_field">Hiện mật khẩu</string>
+    <string name="settings_system_hide_password_field">Ẩn mật khẩu</string>
+    <string name="settings_system_morphe_settings">Cài đặt Morphe</string>
+    <string name="settings_system_import_manager_settings_description">Sao lưu và khôi phục lại cài đặt Morphe của bạn</string>
+    <string name="settings_system_import_manager_settings_fail">Không thể nhập cài đặt Morphe: %s</string>
+    <string name="settings_system_import_manager_settings_success">Đã nhập cài đặt Morphe</string>
+    <string name="settings_system_export_manager_settings_fail">Không thể xuất cài đặt Morphe: %s</string>
+    <string name="settings_system_export_manager_settings_success">Đã xuất cài đặt Morphe</string>
+    <string name="settings_system_debug">Gỡ lỗi</string>
+    <string name="settings_system_export_debug_logs_description">Lưu nhật ký hệ thống giúp sửa lỗi</string>
+    <string name="settings_system_export_debug_logs_export_read_failed">Không thể đọc nhật ký (mã thoát %s)</string>
+    <string name="settings_system_export_debug_logs_export_failed">Không thể xuất nhật ký</string>
+    <string name="settings_system_export_debug_logs_export_success">Đã xuất nhật ký</string>
+    <!-- Settings - System Tab - Files & Storage Section -->
+    <string name="settings_system_files">Tệp &amp; bộ nhớ</string>
+    <string name="settings_system_apks_size">Tổng kích thước: %s</string>
+    <!-- Settings - System Tab - Storage Management - Patched APKs Management -->
+    <string name="settings_system_patched_apks_title">APK đã vá</string>
+    <string name="settings_system_patched_apks_description">Quản lý tệp ứng dụng đã vá</string>
+    <string name="settings_system_patched_apks_empty">Chưa có tệp APK đã vá nào được lưu</string>
+    <string name="settings_system_patched_apks_delete_title">Xóa APK đã vá?</string>
+    <string name="settings_system_patched_apks_delete_confirm">Bạn có chắc muốn xóa tệp APK đã vá cho %s không?</string>
+    <string name="settings_system_patched_apks_deleted">Đã xóa APK đã vá thành công</string>
+    <!-- Settings - System Tab - Storage Management - Original APKs Management -->
+    <string name="settings_system_original_apks_title">APK gốc</string>
+    <string name="settings_system_original_apks_description">Lưu để vá lại sau này. Mỗi ứng dụng chỉ lưu một phiên bản</string>
+    <string name="settings_system_original_apks_empty">Không có APK gốc nào được lưu</string>
+    <string name="settings_system_original_apks_deleted">Đã xóa APK gốc thành công</string>
+    <string name="settings_system_original_apks_delete_title">Xóa APK gốc?</string>
+    <string name="settings_system_original_apks_delete_confirm">Bạn có muốn xóa tệp APK gốc của %s? Nếu không có APK mới, bạn sẽ không thể vá lại đâu</string>
+    <!-- Settings - System Tab - Storage Management - Patch Selection Management -->
+    <string name="settings_system_patch_selections_title">Bản vá đã chọn</string>
+    <string name="settings_system_patch_selections_description">Lưu các bản vá đã chọn khi vá, kể cả sau khi gỡ cài đặt</string>
+    <string name="settings_system_patch_selection_reset_all_confirm_title">Đặt lại toàn bộ bản vá đã chọn?</string>
+    <string name="settings_system_patch_selection_reset_package_confirm_title">Đặt lại gói đã chọn?</string>
+    <string name="settings_system_patch_selection_reset_source_confirm_title">Đặt lại nguồn đã chọn?</string>
+    <string name="settings_system_patch_selection_no_saved">Không có bản vá đã chọn được lưu</string>
+    <string name="settings_system_patch_selection_total_summary_format">%1$s đến %2$s</string>
+    <string name="settings_system_patch_selection_patches_in_sources_format">%1$s trong %2$s</string>
+    <string name="settings_system_patch_selection_source_format">Nguồn #%s</string>
+    <string name="settings_system_patch_selection_will_delete">Thao tác này sẽ xóa:</string>
+    <string name="settings_system_patch_selection_reset_all_warning">Toàn bộ bản vá đã lưu (trong mọi gói &amp; nguồn) sẽ bị xóa vĩnh viễn</string>
+    <string name="settings_system_patch_selection_reset_package_warning">Toàn bộ bản vá đã lưu cho %s (trong mọi nguồn) sẽ bị xóa vĩnh viễn</string>
+    <string name="settings_system_patch_selection_reset_source_warning">Toàn bộ bản vá đã lưu cho %1$s (trong nguồn #%2$s) sẽ bị xóa vĩnh viễn</string>
+    <string name="settings_system_export_source_data_fail">Không thể xuất dữ liệu nguồn</string>
+    <string name="settings_system_export_source_data_success">Đã xuất dữ liệu nguồn thành công</string>
+    <string name="settings_system_import_source_data_fail">Không thể nhập dữ liệu nguồn</string>
+    <string name="settings_system_import_source_data_success">Đã nhập dữ liệu nguồn thành công</string>
+    <string name="settings_system_patch_details_title">Chi tiết bản vá</string>
+    <string name="settings_system_selected_patches_title">Số bản vá đã chọn (%s)</string>
+    <string name="settings_system_patch_options_title">Số bản vá đã chỉnh (%s)</string>
+    <string name="settings_system_no_patches_or_options">Không có bản vá hoặc tùy chỉnh được lưu</string>
+    <!-- Settings - System Tab - Custom file picker -->
+    <string name="settings_system_custom_file_picker">Tùy chỉnh trình chọn tệp</string>
+    <string name="settings_system_custom_file_picker_description">Duyệt bộ nhớ bằng trình chọn tệp tích hợp của Morphe thay vì trình chọn mặc định của hệ thống</string>
+    <!-- File Picker -->
+    <string name="file_picker_previous_directory">Thư mục trước</string>
+    <string name="file_picker_no_files">Chẳng có gì ở đây cả</string>
+    <string name="file_picker_read_error">Không thể đọc thư mục này</string>
+    <string name="file_picker_internal_storage">Bộ nhớ trong</string>
+    <string name="file_picker_sd_card">Thẻ SD</string>
+    <string name="file_picker_root">Root (/)</string>
+    <string name="file_picker_sort_name_asc">Tên (A–Z)</string>
+    <string name="file_picker_sort_name_desc">Tên (Z–A)</string>
+    <string name="file_picker_sort_size_desc">Kích thước (lớn nhất trước)</string>
+    <string name="file_picker_sort_size_asc">Kích thước (nhỏ nhất trước)</string>
+    <string name="file_picker_sort_date_desc">Ngày (mới nhất trước)</string>
+    <string name="file_picker_sort_date_asc">Ngày (cũ nhất trước)</string>
+    <!-- Settings - System Tab - About Section -->
+    <string name="settings_system_about">Giới thiệu</string>
+    <string name="settings_system_share_website">Chia sẻ</string>
+    <string name="settings_system_share_website_description">Chia sẻ trang web chính chủ của Morphe</string>
+    <string name="settings_system_manager_description">Một dự án mã nguồn mở, mang đến trải nghiệm vá ứng dụng Android hiệu quả với giao diện hiện đại, được phát triển dựa trên phản hồi và đóng góp từ cộng đồng</string>
+    <string name="credits">Đóng góp</string>
+    <string name="credits_current_development">Hiện tại</string>
+    <string name="credits_prior_development">Trước đây</string>
+    <string name="opensource_licenses">Giấy phép mã nguồn mở</string>
+    <!-- Shared strings -->
+    <string name="select_file">Chọn tệp</string>
+    <string name="select_folder">Chọn thư mục</string>
+    <string name="patches">Số bản vá</string>
+    <string name="home">Trang chủ</string>
+    <string name="settings">Cài đặt</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="all">Tất cả</string>
+    <string name="filter">Bộ lọc</string>
+    <string name="reset">Đặt lại</string>
+    <string name="reset_all">Đặt lại tất cả</string>
+    <string name="confirm">OK</string>
+    <string name="warning">Cảnh báo</string>
+    <string name="error_">Lỗi</string>
+    <string name="retry">Thử lại</string>
+    <string name="refresh">Làm mới</string>
+    <string name="add">Thêm</string>
+    <string name="close">Đóng</string>
+    <string name="back">Trước</string>
+    <string name="next">Tiếp</string>
+    <string name="done">Xong</string>
+    <string name="skip">Thôi</string>
+    <string name="clear">Dọn dẹp</string>
+    <string name="delete">Xoá</string>
+    <string name="remove">Xóa</string>
+    <string name="disable">Tắt</string>
+    <string name="enable">Không sợ</string>
+    <string name="loading">Đang tải…</string>
+    <string name="not_installed">Chưa cài đặt</string>
+    <string name="view">Xem</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="search_no_results">Không tìm thấy kết quả nào</string>
+    <string name="sort">Sắp xếp</string>
+    <string name="any_version">Bất kỳ</string>
+    <string name="enabled">Đang bật</string>
+    <string name="disabled">Đang tắt</string>
+    <string name="selected">Đã chọn</string>
+    <string name="not_selected">Không chọn</string>
+    <string name="select_all">Chọn tất cả</string>
+    <string name="select_all_done">Đã chọn tất cả</string>
+    <string name="deselect_all">Bỏ chọn tất cả</string>
+    <string name="deselect_all_done">Đã bỏ chọn tất cả</string>
+    <string name="reorder_list">Sắp xếp lại danh sách</string>
+    <string name="reorder_list_hint">Kéo để sắp xếp lại</string>
+    <string name="reorder_done">Đã lưu thứ tự</string>
+    <string name="reset_order">Đặt lại thứ tự</string>
+    <string name="reset_order_done">Đặt lại thứ tự</string>
+    <string name="rename">Đổi tên</string>
+    <string name="import_">Nhập</string>
+    <string name="export">Xuất</string>
+    <string name="download">Tải về</string>
+    <string name="less">Thu gọn</string>
+    <string name="expand">Mở rộng</string>
+    <string name="expanded">Đã mở rộng</string>
+    <string name="collapse">Thu gọn</string>
+    <string name="collapsed">Đã thu gọn</string>
+    <string name="available">Khả dụng</string>
+    <string name="continue_">Tiếp</string>
+    <string name="version">Phiên bản</string>
+    <string name="patch">Vá</string>
+    <string name="repatch">Vá lại</string>
+    <string name="open">Mở</string>
+    <string name="mount">Gắn kết</string>
+    <string name="mounted">Đã gắn kết</string>
+    <string name="unmount">Gỡ gắn kết</string>
+    <string name="unmounted">Đã gỡ gắn kết</string>
+    <string name="remount">Gắn kết lại</string>
+    <string name="share">Chia sẻ</string>
+    <string name="install">Cài đặt</string>
+    <string name="installed">Đã cài đặt</string>
+    <string name="reinstall">Cài lại</string>
+    <string name="uninstall">Gỡ</string>
+    <string name="uninstalled">Đã gỡ cài đặt</string>
+    <string name="save">Lưu</string>
+    <string name="saved">Đã lưu</string>
+    <string name="update">Cập nhật</string>
+    <string name="allow">Cho phép</string>
+    <string name="details">Chi tiết</string>
+    <string name="hide">Ẩn</string>
+    <string name="hidden">Ẩn</string>
+    <string name="unhide">Hiện</string>
+    <string name="unhide_done">Đã hiển thị</string>
+    <string name="logs">Nhật ký</string>
+    <string name="sources">Nguồn</string>
+    <string name="installing_ellipsis">Đang cài đặt…</string>
+    <string name="mounting_ellipsis">Đang gắn kết…</string>
+    <string name="unmounting_ellipsis">Đang gỡ gắn…</string>
+    <string name="importing_ellipsis">Đang nhập…</string>
+    <string name="imported_successfully">Đã nhập thành công</string>
+    <string name="changelog">Lịch sử cập nhật</string>
+    <string name="changelog_description">Xem những thay đổi mới nhất trong bản cập nhật này</string>
+    <string name="changelog_download_fail">Không thể tải lịch sử cập nhật: %s</string>
+    <string name="changelog_retry">Thử lại</string>
+    <string name="changelog_empty">Không có lịch sử cập nhật</string>
+    <string name="no_network_toast">Không có kết nối mạng</string>
+    <string name="update_available">Đã có bản cập nhật mới</string>
+    <string name="ready_to_install_update">Sẵn sàng cài đặt bản cập nhật</string>
+    <string name="update_completed">Đã cài đặt bản cập nhật</string>
+    <string name="install_update_manager_failed">Không thể cài đặt bản cập nhật</string>
+    <string name="installing_manager_update">Đang cài đặt bản cập nhật…</string>
+    <string name="downloading_manager_update">Đang tải bản cập nhật…</string>
+    <string name="download_manager_failed">Không thể tải bản cập nhật: %s</string>
+    <string name="failed_to_check_updates">Không thể kiểm tra cập nhật: %s</string>
+    <string name="failed_to_download_update">Không tải được bản cập nhật: %s</string>
+    <string name="resume_download">Tiếp tục tải</string>
+    <string name="download_confirmation_metered">"Bạn đang dùng 4G/5G, tiếp tục có thể phát sinh cước dữ liệu.\n\nBạn vẫn muốn tiếp tục?"</string>
+    <string name="download_update_confirmation">Tải bản cập nhật?</string>
+    <!-- Onboarding coach marks -->
+    <!-- %1$d = current step number, %2$d = total number of steps (e.g. "3 of 13") -->
+    <string name="onboarding_step_of">%1$d / %2$d</string>
+    <string name="onboarding_sources_desc">Quản lý các nguồn vá. Mỗi nguồn cung cấp các bản vá có thể được áp dụng cho ứng dụng của bạn</string>
+    <string name="onboarding_swipe_title">Cử chỉ vuốt</string>
+    <string name="onboarding_swipe_desc">Vuốt phải để xem bản vá. Vuốt trái để ẩn thẻ khỏi màn hình chính</string>
+    <string name="onboarding_settings_desc">Tùy chỉnh Morphe: giao diện, tùy chọn nâng cao và công cụ hệ thống</string>
+    <string name="onboarding_sources_patches_desc">Bấm để xem tất cả các bản vá từ nguồn</string>
+    <string name="onboarding_sources_version_desc">Bấm vào phiên bản để xem chi tiết lịch sử cập nhật của nguồn</string>
+    <string name="onboarding_sources_prerelease_desc">Bật cái này để nhận bản vá được phát hành trước từ nguồn</string>
+    <string name="onboarding_appearance_tab_desc">Tùy chỉnh giao diện của ứng dụng: chủ đề, màu nổi bật và nền</string>
+    <string name="onboarding_appearance_theme_desc">Chọn chủ đề sáng, tối hoặc theo cài đặt hệ thống. Ngoài ra, bạn cũng có thể tùy chỉnh màu nổi bật hoặc bật Dynamic Color</string>
+    <string name="onboarding_expert_mode_desc">Bật chế độ Chuyên gia để mở khóa tính năng tự chọn bản vá, tùy chỉnh bản vá và nhiều tính năng khác</string>
+    <!-- Translate "System" the same way as the System settings tab -->
+    <string name="onboarding_system_tab_title">Tab hệ thống</string>
+    <string name="onboarding_system_tab_desc">Quản lý kho khóa, công cụ nhập xuất và thông tin ứng dụng</string>
+    <string name="onboarding_system_installer_desc">Chọn phương thức cài đặt cho ứng dụng đã vá: tiêu chuẩn, gắn kết root hoặc Shizuku</string>
+    <string name="onboarding_system_process_runtime_desc">Chạy trình vá trong tiến trình riêng để cải thiện độ ổn định và quản lý bộ nhớ hiệu quả hơn. Nên dùng với các ứng dụng có kích thước lớn</string>
+    <string name="onboarding_system_file_picker_desc">Bật để sử dụng trình duyệt tệp tích hợp thay vì trình chọn hệ thống khi chọn APK hoặc kho khóa</string>
+    <!-- Tour prompt dialog shown after first successful patch install -->
+    <string name="tour_prompt_title">Khám phá nhanh</string>
+    <string name="tour_prompt_desc">Bạn muốn xem qua các tính năng nổi bật của Morphe không? Nhanh thôi</string>
+    <string name="tour_prompt_confirm">Cho tôi xem</string>
+    <string name="onboarding_restart_title">Khám phá tính năng</string>
+    <string name="onboarding_restart_desc">Xem hướng dẫn nhanh về các tính năng nổi bật của Morphe</string>
+</resources>

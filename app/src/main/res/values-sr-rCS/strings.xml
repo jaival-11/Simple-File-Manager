@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Home Screen -->
+    <string name="home_other_apps">Ostale aplikacije</string>
+    <string name="home_not_patched_yet">Još nisu ispravljene</string>
+    <string name="home_no_patches_available">Nema dostupnih zakrpa</string>
+    <string name="home_app_hide_title">Sakrij ovu aplikaciju?</string>
+    <string name="home_app_hide_message">Ova aplikacija biće sakrivena sa početne slike. Mošete je vratiti kasnije iz sakrivenih aplikacija pomoću dugmeta na dnu liste.</string>
+    <string name="home_app_will_be_hidden">Ova aplikacija će biti sakrivena</string>
+    <string name="home_app_no_hidden">Nema sakrivenih aplikacija</string>
+    <string name="home_app_hidden_apps_title">Sakrivene aplikacije</string>
+    <string name="home_app_hidden_apps_hint">Dodirnite da otkrijete</string>
+    <string name="android_11_bug_dialog_title">Android 11 greška</string>
+    <string name="android_11_bug_dialog_description">Dozvola za instalaciju aplikacije mora biti odobrena prethodno kako bi se izbjegla greška u Android 11 sistemu koja će negativno utjecati na korisničko iskustvo</string>
+    <string name="deep_link_add_source_title">Dodaj izvor</string>
+    <string name="deep_link_add_source_message">Da li želite da dodate ovaj izvor patch-a u Morphe?</string>
+    <string name="deep_link_add_source_warning">Dodajte samo izvore kojima verujete</string>
+    <!-- Home Screen - Update Notifications -->
+    <string name="home_update_available">Dostupno ažuriranje za Morphe</string>
+    <string name="home_update_available_subtitle">Nova verzija sprema za instalaciju</string>
+    <string name="home_update_error">Ažuriranje nije uspelo</string>
+    <string name="home_update_error_subtitle">Proverite internet vezu i pokušajte ponovo</string>
+    <string name="home_update_skipped_metered">Ažuriranja su preskočena</string>
+    <string name="home_update_skipped_metered_subtitle">Mobilni podaci su aktivni</string>
+    <string name="home_updating_sources">Ažuriranje izvora…</string>
+    <string name="home_update_progress_format">%s obrađeno</string>
+    <string name="home_update_success">Ažuriranje izvora završeno</string>
+    <string name="home_update_success_subtitle">Vaši izvori su ažurirani</string>
+    <string name="home_sources_are_loading">Izvori se učitavaju, molimo sačekajte…</string>
+    <string name="home_search_apps">Pretraživanje aplikacija</string>
+    <string name="home_no_apps_title">Nema dostupnih aplikacija</string>
+    <string name="home_no_apps_subtitle">Dodajte izvor aplikacije ili omogućite postojeći u %s</string>
+    <string name="home_no_apps_search_subtitle">Nijedna aplikacija ne odgovara na \"%s\"</string>
+    <string name="home_all_apps_hidden_title">Sve su aplikacije sakrivene</string>
+    <string name="home_all_apps_hidden_subtitle">Sve ste aplikacije sakrili sa početnog ekrana</string>
+    <!-- Home Screen - Home Greetings -->
+    <string name="home_greeting_1">Koju aplikaciju želite da zakrpite?</string>
+    <!-- Humorous hype message with light nostalgia -->
+    <string name="home_greeting_2">Da li ste spremni da napravimo aplikacije legendarnim ponovo?</string>
+    <!-- "Buckle up" referring to fastening your vehicle seat belt. A light-hearted joke to build excitement -->
+    <string name="home_greeting_3">Vežite se, vreme je za zakpljavanje</string>
+    <!-- Sarcastic joke about blocking ads, intentionally over-the-top -->
+    <string name="home_greeting_4">Još jedan dan, još jedno remek-delo bez reklama</string>
+    <!-- "Watch ads" refers to watching video ads in unpatched apps -->
+    <string name="home_greeting_5">Da li želiš da gledaš reklame? Ni ja</string>
+    <!-- Friendly, slightly mischievous joke about controlling app behavior -->
+    <string name="home_greeting_6">Učinimo da tvoje aplikacije postanu besprekorne</string>
+    <!-- Whimsical forecast-style joke, not meant literally -->
+    <string name="home_greeting_7" formatted="false">Današnja prognoza: 100% verovatno zakrpljavanje</string>
+    <!-- From mediocrity to amazing -->
+    <string name="home_greeting_8">Spreman da pretvoriš obično u fantastično?</string>
+    <!-- Playful exaggeration, making patching feel heroic -->
+    <string name="home_greeting_9">Spašavamo aplikacije od njih samih od danas</string>
+    <!-- Light sarcasm, casual and tech-savvy humor -->
+    <string name="home_greeting_10">Pokrenut kofeinom i dobrim zakrpama</string>
+    <!-- Morning greetings (5:00–11:59) -->
+    <string name="home_greeting_morning_1">Ustani i zakrpi</string>
+    <string name="home_greeting_morning_2">Dobro jutro! Aplikacije se same ne zakrpljuju</string>
+    <!-- Afternoon greetings (12:00–16:59) -->
+    <string name="home_greeting_afternoon_1">Poslepodnevni pad koncentracije? Zakrpi nešto</string>
+    <string name="home_greeting_afternoon_2">Popravka nakon ručka ima drugačiji utisak</string>
+    <string name="home_greeting_afternoon_3">Popodnevna smena: izdanje za popravke</string>
+    <!-- Evening greetings (17:00–21:59) -->
+    <string name="home_greeting_evening_1">Dobra večernja! Večernje popravke je drugačije raditi</string>
+    <string name="home_greeting_evening_2">Opustate se? Prvo popravite aplikaciju</string>
+    <string name="home_greeting_evening_3">Izlazite sa posla? Prvo popravite nešto</string>
+    <!-- Late night greetings (22:00–23:59) -->
+    <string name="home_greeting_late_night_1">Još budni? I aplikacije kojima je potrebna popravka su budne</string>
+    <string name="home_greeting_late_night_2">Kasno noćna sesija popravki? Respekt</string>
+    <string name="home_greeting_late_night_3">Noćni sovac mod: aktiviran</string>
+    <!-- Super late night greetings (0:00–4:59) -->
+    <string name="home_greeting_super_late_1">Vrhunac sati za popravke… navodno</string>
+    <string name="home_greeting_super_late_2">Ne možete da zaspite? Popravite nešto</string>
+    <string name="home_greeting_super_late_3">U ovom trenutku, samo ostanite budni i popravite</string>
+    <string name="home_greeting_super_late_4">Ti i serveri, oboje budni</string>
+    <string name="home_greeting_super_late_5">Noćni i produktivan</string>
+    <!-- Home Screen - Sources Management -->
+    <string name="sources_management_title">Izvori zakrpe</string>
+    <string name="sources_management_open_in_browser">Otvori u pregledaču</string>
+    <string name="sources_management_failed_to_open_url">Otvaranje URL-a nije uspelo</string>
+    <string name="sources_management_prerelease_toggle">Zakrpe u predprodukciji</string>
+    <string name="sources_management_prerelease_toggle_description">Dobija rani pristup novim eksperimentalnim verzijama zakrpa</string>
+    <string name="sources_management_experimental_versions_toggle">Eksperimentalne verzije aplikacije</string>
+    <string name="sources_management_experimental_versions_toggle_description">Zakrpljuje ciljeve eksperimentalnih aplikacija ako su dostupni</string>
+    <string name="sources_management_already_exists">Ovaj izvor je već dodat</string>
+    <string name="sources_management_invalid_url">Nevalidna URL adresa izvora. Molimo proverite adresu i pokušajte ponovo.</string>
+    <string name="sources_management_metadata_unavailable">Metadata N/A</string>
+    <string name="sources_management_metadata_unavailable_hint">Datoteka sa daljinskim metapodacima nije dostupna. Primena instaliranog paketa i dalje funkcioniše, ali automatsko ažuriranje je onemogućeno za ovaj izvor.</string>
+    <string name="sources_management_metadata_unavailable_hint_missing">Paket zakrpa nije uspeo da se preuzme. URL adresa izvora može biti netačna ili datoteka ne postoji.</string>
+    <string name="sources_management_source_enabled">Izvor je uključen</string>
+    <string name="sources_management_source_disabled">Izvor je isključen</string>
+    <string name="sources_management_source_updating">Ažuriranje izvora</string>
+    <!-- Home Screen - Sources Dialogs -->
+    <string name="sources_dialog_display_name">Prikaži ime</string>
+    <string name="sources_dialog_rename">Preimenuj izvor zakrpe</string>
+    <string name="sources_dialog_duplicate_name_error">Izvor zakrpe sa ovim imenom već postoji</string>
+    <string name="sources_dialog_missing_error">Nije moguće ažurirati ovaj izvor zakrpe </string>
+    <string name="sources_dialog_view_any_version">Bilo koja verzija</string>
+    <string name="sources_dialog_view_any_package">Bilo koji paketi</string>
+    <string name="sources_dialog_add_source">Dodaj izvor zakrpe</string>
+    <string name="sources_dialog_delete_confirm_message">Izbriši izvornu \"%s\"? Ova radnja ne može biti poništena</string>
+    <string name="sources_dialog_remote">Udaljeno</string>
+    <string name="sources_dialog_remote_url">URL izvor </string>
+    <string name="sources_dialog_remote_url_formats_title">Primeri:</string>
+    <string name="sources_dialog_local">Lokalno</string>
+    <string name="sources_dialog_local_file">Izaberi datoteku izvora zakrpe </string>
+    <string name="sources_dialog_local_file_tap_hint">Dodirnite da biste pregledali skladište</string>
+    <string name="sources_dialog_local_file_description">Izaberi .mpp datoteku izvora zakrpe iz skladišta</string>
+    <string name="sources_dialog_local_invalid_extension">Datoteka mora imati .mpp ekstenziju</string>
+    <string name="sources_dialog_url_valid">Važeći repozitorijum ili URL adresa</string>
+    <string name="sources_dialog_url_invalid">URL mora da pokazuje na GitHub/GitLab repozitorijum ili .json fajl</string>
+    <string name="sources_dialog_local_change_file">Promeni fajl</string>
+    <string name="sources_dialog_preinstalled">Preinstalirano</string>
+    <string name="sources_update_success">Uspešno ažurirano</string>
+    <string name="sources_update_unavailable">Nema dostupnih ažuriranja</string>
+    <string name="sources_download_fail">Neuspešno preuzimanje izvora: %s</string>
+    <string name="sources_download_fail_named">\'%s\' nije mogao da se ažurira. Proverite vašu internet konekciju i pokušajte ponovo</string>
+    <string name="sources_download_endpoint_not_found">\'%s\': metad podaci o zakrpi nisu pronađeni</string>
+    <string name="sources_patch_expert_badge">Експерт</string>
+    <string name="sources_patch_expert_badge_tooltip">Омогућите Експерт режим у Подешавањима да бисте ручно укључили овај патч</string>
+    <!-- Home Screen - Dialog 1: APK Availability -->
+    <string name="home_apk_availability_dialog_title">Potrebna je pomoć u traženju originalnog neispravljenog APK-a</string>
+    <string name="home_apk_availability_dialog_simple">Da biste patchovali &lt;b&gt;%s&lt;/b&gt;, potrebna je nepatirana APK verzija:</string>
+    <string name="home_apk_availability_dialog_expert">Da bi popravili &lt;b&gt;%s&lt;/b&gt;, potrebno je nepokvarenog APK verzija:</string>
+    <string name="home_apk_availability_recommended_label">Preporučeno</string>
+    <string name="home_apk_availability_unpatched_label">Neopterećeno</string>
+    <string name="home_apk_availability_incompatible_label">Nekompatibilan</string>
+    <string name="home_apk_availability_yes">Da, pomozi mi da pronađem APK</string>
+    <string name="home_apk_availability_no">Ne, već imam APK</string>
+    <string name="home_apk_use_saved">Koristi sačuvani APK</string>
+    <string name="home_apk_use_installed">Koristi instalirani APK</string>
+    <string name="home_app_info_no_saved_apk">Nema sačuvanog APK-a. Krpljenje će zahtevati ponovni odabir APK datoteke</string>
+    <string name="home_version_requires_android">Zahteva Android %s+</string>
+    <string name="home_apk_no_compatible_versions_title">Nije podržano na ovom uređaju</string>
+    <string name="home_apk_no_compatible_versions_message">&lt;b&gt;%1$s&lt;/b&gt; nema podržanih verzija za Android %2$d (API %3$d). Sve deklarisane verzije zahtevaju višu verziju Androida</string>
+    <!-- Home Screen - Dialog 2: Download Instructions -->
+    <string name="home_download_instructions_title">Preuzmi originalnu APK</string>
+    <string name="home_download_instructions_steps_title">Uputstva:</string>
+    <string name="home_download_instructions_step1">Pritisnite dugme \'%s\' ispod</string>
+    <string name="home_download_instructions_step2_part1">Pomerite se nadole na veb-stranici i pritisnite</string>
+    <string name="home_download_instructions_download_button_toast">Pritisnite preuzmi na sajtu, a ne ovde 😊</string>
+    <string name="home_download_instructions_download_button_toast_2">Odlično! Sada kliknite na „nastavi“ i idite na veb-sajt 👆</string>
+    <string name="home_download_instructions_download_button_toast_3">Praksa čini savršenstvo i napreduješ 💪</string>
+    <string name="home_download_instructions_download_button_toast_4">Još nisi tu… još nisi tu… 🙈</string>
+    <string name="home_download_instructions_download_button_toast_5">U redu, poštujem posvećenost 🫡</string>
+    <string name="home_download_instructions_download_button_toast_6">Sada ste zvanični tester Morphe dugmeta 🏅</string>
+    <string name="home_download_instructions_step3">Sačekajte da preuzimanje bude završeno, i &lt;b&gt;nemojte instalirati&lt;/b&gt; APK</string>
+    <string name="home_download_instructions_step3_mount">Sačekajte da preuzimanje bude završeno, a onda &lt;b&gt;instalirajte APK&lt;/b&gt;</string>
+    <string name="home_download_instructions_step4">Nakon što se preuzimanje završi, vratite se na Morphe</string>
+    <string name="home_download_instructions_step4_mount">Nakon instaliranja originalnog APK-a, vratite se na Morphe</string>
+    <string name="home_download_instructions_continue">Nastavi na APKMirror.com</string>
+    <!-- Home Screen - Dialog 3: File Picker Prompt -->
+    <string name="home_file_picker_prompt_title">Izaberite preuzete APK</string>
+    <string name="home_file_picker_prompt_description">Odaberite &lt;b&gt;%s&lt;/b&gt; APK fajl koji ste nedavno preuzeli</string>
+    <string name="home_file_picker_prompt_open_apk">Otvori APK datoteku</string>
+    <string name="home_recommended_version">Preporučena verzija</string>
+    <string name="home_selected_version">Izabrana verzija</string>
+    <string name="home_select_apk_title">Izaberi APK</string>
+    <string name="home_select_any_apk_description">Odaberite APK datoteku bilo koje aplikacije ili odaberite aplikaciju koja je već instalirana na ovom uređaju</string>
+    <string name="home_use_installed_app">Koristi instaliranu aplikaciju</string>
+    <string name="home_installed_app_picker_title">Odabir instalirane aplikacije</string>
+    <string name="home_installed_app_picker_empty">Nema pronađenih aplikacija</string>
+    <string name="home_installed_app_picker_filter_all">Sve aplikacije</string>
+    <string name="home_installed_app_picker_filter_user">Samo korisničke aplikacije</string>
+    <string name="home_installed_app_picker_filter_system">Samo sistemske aplikacije</string>
+    <string name="home_invalid_apk_unreadable">Nije moguće pročitati datoteku. Proverite da \'Eksternu memoriju\' ne ograničava baterija</string>
+    <string name="home_invalid_apk_not_an_apk">Odabrana datoteka nije validan APK</string>
+    <string name="home_invalid_apk_io_error">Nije uspelo otvaranje datoteke. Molimo pokušajte ponovo</string>
+    <string name="home_external_apk_expert_mode_required">Ova funkcionalnost je dostupna samo u režimu stručnjaka.</string>
+    <!-- Home Screen - Dialog 4: Expert Mode Dialog -->
+    <string name="expert_mode_title">Režim eksperta</string>
+    <string name="expert_mode_search">Pretraži patchove</string>
+    <string name="expert_mode_proceed">Pokreni krpljenje</string>
+    <string name="expert_mode_disable_all">Onemogući sve</string>
+    <string name="expert_mode_disable_all_done">Sve zakrpe su isključene</string>
+    <string name="expert_mode_enable_all">Omogući sve</string>
+    <string name="expert_mode_enable_all_done">Sve zakrpe su uključene</string>
+    <string name="expert_mode_reset_to_default">Омогући препоручене пакете</string>
+    <string name="expert_mode_reset_to_default_done">Preporučene zakrpe su primenjene</string>
+    <string name="expert_mode_restore_saved">Ponovi poslednji izbor</string>
+    <string name="expert_mode_restore_saved_done">Vraćena sačuvana selekcija</string>
+    <string name="expert_mode_no_results">Nema pronađenih zakrpa</string>
+    <string name="expert_mode_universal_patches">Univerzalne zakrpe </string>
+    <string name="expert_mode_new_patches">Novo</string>
+    <string name="expert_mode_multiple_sources_warning_title">Izabrali ste patch-ove izvišnje izvora</string>
+    <string name="expert_mode_multiple_sources_warning_message">"Izabrali ste patch-ove izvišnje izvora. Ovo može uzrokovati kompatibilnost problema ili neočekivano ponašanje.
+
+Da li ste sigurni da želite nastaviti?"</string>
+    <!-- Home Screen - Home Sub-Dialogs -->
+    <string name="home_invalid_signature_title">Nepoveren APK</string>
+    <string name="home_invalid_signature_message">APK dat ste izabrali za &lt;b&gt;%s&lt;/b&gt; ne odgovara očekivanom sertifikatu za potpisivanje. Može biti izmenjen ili sa nepouzdanog izvora</string>
+    <string name="home_invalid_signature_badge">Ovaj APK možda nije original</string>
+    <string name="home_split_apk_warning_title">Детектован подељени APK</string>
+    <string name="home_split_apk_warning_message">"Ова датотека је APK пакета
+(&lt;b&gt;APKM / APKS / XAPK&lt;/b&gt;).
+
+За најбоље резултате, ова апликација препоручује исправљање &lt;b&gt;целог APK-а&lt;/b&gt;"</string>
+    <string name="home_split_apk_warning_pick_another">Izaberite neki drugi APK</string>
+    <string name="home_dialog_unsupported_version_experimental_label">Eksperimentalno</string>
+    <string name="home_dialog_unsupported_version_experimental_description">Ova verzija ima eksperimentalnu podršku i može biti nestabilna ili nepotpuna</string>
+    <string name="morphe_experimental_app_version_dialog_title">Da li želite da eksperimentišete? 🧪</string>
+    <string name="morphe_experimental_app_version_dialog_message">Ova verzija &lt;b&gt;%s&lt;/b&gt; ima ranu eksperimentalnu podršku&lt;br/&gt;&lt;br/&gt;🔧 Očekujte čudno ponašanje aplikacije ili neidentifikovane greške dok se zakrpe usavršavaju za ovu verziju aplikacije</string>
+    <string name="home_dialog_unsupported_version_dialog_title">Ova APK nije preporučena verzija aplikacije. Nastavljanje može dovesti nefunkcionalnu aplikaciju.</string>
+    <string name="home_dialog_unsupported_version_dialog_description">Ova verzija APK-a nije preporučena. Nastavljanje može dovesti do nefunkcionalne aplikacije</string>
+    <string name="home_dialog_unsupported_version_dialog_proceed">Pogrešni izvor</string>
+    <string name="home_dialog_unsupported_version_compatible_versions">Kompatibilni verzije:</string>
+    <string name="home_dialog_unsupported_version_unsupported_label">Nepodržano</string>
+    <!-- "Build" here refers to a specific compiled version of the app (versionCode) -->
+    <string name="home_dialog_unsupported_version_build">Izgradi %d</string>
+    <string name="home_dialog_unsupported_version_build_mismatch_description">Ovo je različita verzija iste verzije. Popravke zahteva specifična verzija</string>
+    <string name="home_dialog_wrong_package_title">Izabrani APK nije za aplikaciju koju ste hteli patchirati.</string>
+    <string name="home_dialog_wrong_package_description">Odabrani APK nije za aplikaciju koju ste željeli patchirati</string>
+    <string name="home_dialog_expected_package">Očekivan paket:</string>
+    <string name="home_dialog_selected_package">Izabrani paket:</string>
+    <string name="home_outdated_patches_dialog_title">Patch-ovi mogu biti zastareli</string>
+    <string name="home_outdated_patches_dialog_message">Mobilni podaci su aktivni i ažuriranja patch-ova su onemogućena</string>
+    <string name="home_outdated_patches_dialog_warning">Ažuriranje sa zastarelima patch-ovima može dovesti do pokvarenog aplikacije</string>
+    <string name="home_outdated_patches_dialog_update_and_patch">Ažuriraj &amp; patchiraj</string>
+    <string name="home_low_disk_space_dialog_title">Nedostatak prostora na disku</string>
+    <string name="home_low_disk_space_dialog_message">Samo %1$.2f GB besplatne memorije je dostupno. Popravljanje zahteva najmanje %2$.2f GB besplatnog prostora da bi ispravno radilo</string>
+    <string name="home_low_disk_space_dialog_warning">Nastavak može dovesti do greške „datoteka nije pronađena“ ili oštećenog APK-a za izlaz</string>
+    <string name="home_simple_bundle_select_title">Izaberi izvor zakrpe</string>
+    <!-- Patch Options -->
+    <string name="custom_color">Prilagođena boja</string>
+    <string name="hex_color">Boja u heksadecimalnom formatu</string>
+    <string name="patch_option_instructions">Upute</string>
+    <string name="patch_option_enter_value">Unesite vrednost</string>
+    <string name="patch_option_enter_number">Unesite broj</string>
+    <string name="patch_option_enter_decimal">Unesite decimalni broj</string>
+    <string name="patch_option_list_duplicate">Ova vrednost već postoji</string>
+    <string name="patch_option_list_empty">Vrednost ne može biti prazna</string>
+    <string name="patch_option_list_empty_state">Još nisu dodate vrednosti</string>
+    <string name="patch_option_required_missing">%s: popunite sve obavezne opcije</string>
+    <!-- Adaptive Icon Creator -->
+    <string name="adaptive_icon_create">Napravi adaptivni ikon</string>
+    <string name="adaptive_icon_select_image">Izaberi sliku</string>
+    <string name="adaptive_icon_change_image">Promeni sliku</string>
+    <string name="adaptive_icon_background_color">Boja pozadine</string>
+    <string name="adaptive_icon_reset_transform">Resetuj položaj i razmeru </string>
+    <string name="adaptive_icon_safe_zone_inner">Sigurna zona (uvek vidljiva)</string>
+    <string name="adaptive_icon_safe_zone_outer">Maskirana zona (može biti isečena)</string>
+    <string name="adaptive_icon_no_transparency_warning">Slika nema transparentne piksele. Rezultat može da izgleda netačno</string>
+    <string name="adaptive_icon_created_success">Adaptivni ikona uspešno kreirana</string>
+    <string name="adaptive_icon_creation_failed">Neuspešno kreiranje adaptivne ikone</string>
+    <string name="adaptive_icon_label">Adaptivni</string>
+    <string name="adaptive_icon_monochrome_label">Monohrom</string>
+    <string name="adaptive_icon_guide">Uputstvo za kreiranje ikone</string>
+    <string name="adaptive_icon_guide_png_title">Koristite PNG sa transparentnom pozadinom</string>
+    <string name="adaptive_icon_guide_png_body">Prednji plan mora biti PNG datoteka sa transparentnom pozadinom. Jednobojna pozadina će izgledati pogrešno – boja pozadine bi trebalo da bude izabran iz birača pozadine ispod.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Sigurne zone</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Unutrašnja zona (puna): sadržaj je uvek potpuno vidljiv na svim oblicima pokretača.
+Spoljna zona (isprekidana): može biti isečena maskom pokretača – držite važne detalje unutar unutrašnje zone."</string>
+    <string name="adaptive_icon_guide_notification_title">Ikona obaveštenja</string>
+    <string name="adaptive_icon_guide_notification_body">Automatski generisana iz prednje slike. Prilagodite veličinu pomoću klizača obaveštenja. Savi vidljivi sadržaji se pojavljuju belo u statusnoj traci.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Monohromna ikona</string>
+    <string name="adaptive_icon_guide_monochrome_body">Automatski generisana iz prednje slike, koristeći iste transformacije adaptivne ikone. Prikazuje se sa nijansom boje akcenta pozadine na Android 13 i novijim verzijama.</string>
+    <string name="notification_icon_preview">Obaveštenje</string>
+    <!-- Header Creator -->
+    <string name="header_creator_create">Napravi personalizovanu zaglavlje</string>
+    <string name="header_creator_light_theme">Glavna tema za svetlo</string>
+    <string name="header_creator_dark_theme">Glavna tema za tamno</string>
+    <string name="header_creator_no_image">Nema odabrane slike</string>
+    <string name="header_creator_success">Glavna tema uspešno kreirana</string>
+    <string name="header_creator_failed">Neuspešno kreiranje glavne teme</string>
+    <string name="header_creator_guide">Uputstvo za kreiranje zaglavlja</string>
+    <string name="header_creator_guide_image_title">Zahtevi za sliku</string>
+    <string name="header_creator_guide_image_body">Koristite bilo koju datoteku slike (PNG ili JPEG). Za najbolje rezultate, koristite širokoformatnu sliku sa pribličnim odnosom stranica 2.7:1. PNG datoteke sa transparentnom pozadinom će se prirodno uklopiti sa temom aplikacije.</string>
+    <string name="header_creator_guide_themes_title">Svetle i tamne teme</string>
+    <string name="header_creator_guide_themes_body">Većini aplikacija su potrebne zasebne slike za svetlu i tamnu temu. Neke aplikacije (kao što je YouTube Music) koriste samo tamnu temu, pa se prikazuje samo taj deo.</string>
+    <string name="header_creator_guide_positioning_title">Pozicioniranje i skaliranje</string>
+    <string name="header_creator_guide_positioning_body">Koristite geste zumiranja i povlačenja direktno u pregledu da biste pozicionirali i skalirali sliku. Vodeće linije se pojavljuju kada je slika blizu centra. Takođe možete koristiti klizač ispod pregleda.</string>
+    <!-- Home Screen - App Info Screen -->
+    <string name="home_app_info_uninstall_app_confirmation">Da li zaista želite da ponišete ovu aplikaciju?</string>
+    <string name="home_app_info_remove_app_warning">Ovo će trajno obrisati:</string>
+    <string name="home_app_info_delete_item_database">Unos u bazu podataka</string>
+    <string name="home_app_info_delete_item_patched_apk">Patchiran fajl APK</string>
+    <string name="home_app_info_delete_item_original_apk">Originalni fajl APK</string>
+    <string name="home_app_info_delete_preservation_note">Vaš odabir patch-a i opcije će biti sačuvane za buduće patchiranje</string>
+    <string name="home_app_info_patches_name_default">Patches</string>
+    <string name="home_app_info_patches_name_fallback">Nema imena</string>
+    <string name="home_app_info_patches_replace_fail">Nijeleženo uvoz patchova: %s</string>
+    <string name="home_app_info_repatch_no_original_apk">Originalni APK nije pronađen. Nemoguće je repatchirati ovu aplikaciju</string>
+    <string name="home_app_info_original_package_name">Orginalno ime paketa</string>
+    <string name="home_app_info_applied_patches">Primenuti patchovi</string>
+    <string name="home_app_info_patch_source_used">Korišten je patch izvora</string>
+    <string name="home_app_info_install_type_custom_installer">Prilagođeni instalater</string>
+    <string name="home_app_info_install_type_system_installer">Sistemski instalater</string>
+    <string name="home_app_info_patch_update_available">Dostupno je nova verzija patchova</string>
+    <string name="home_app_info_patch_update_available_description">Nova verzija patchova je dostupna. Ponovno patchirajte svoju aplikaciju da bi dobili najnovije poboljšanja i ispravke</string>
+    <string name="home_app_info_app_deleted_warning">Aplikacija je deinstalirana</string>
+    <string name="home_app_info_app_deleted_description">Ova aplikacija je deinstalirana izvan Morphe. Ponovo je instalirajte da bi obnovili funkcionalnost</string>
+    <string name="home_app_info_apk_size">Veličina APK-a</string>
+    <!-- Home Screen - Root Mode -->
+    <string name="root_install_apk_required">Režim korena zahteva da je originalni APK instaliran na vašem uređaju pre patchanja</string>
+    <string name="root_gmscore_excluded">GmsCore zakrpa za podršku je isključena u root modu</string>
+    <string name="root_pre_patch_installer_title">Odaberi način instalacije</string>
+    <string name="root_pre_patch_installer_description">Vaš uređaj ima pristup korenovom direktorijumu. Odaberite način instalacije ispravljenog programa</string>
+    <string name="root_pre_patch_installer_mount_title">Montiraj ispravljeni APK preko stokovnog programa</string>
+    <string name="root_pre_patch_installer_mount_description">Montira zakrpljeni APK preko fabričke aplikacije. Nije potreban GmsCore</string>
+    <string name="root_pre_patch_installer_standard_title">Standardna instalacija</string>
+    <string name="root_pre_patch_installer_standard_description">Instalira se kao zasebna aplikacija uz podršku GmsCore. Mogući je izbor instalera nakon patchovanja</string>
+    <string name="root_pre_patch_installer_hint">Način instalacije određuje koje ispravke su uključene i ne može se promijeniti nakon ispravljanja</string>
+    <!-- Patcher Screen -->
+    <string name="patcher_error_copied">Greška kopirana u privremenu memoriju</string>
+    <string name="patcher_error_log">Dnevnik grešaka</string>
+    <string name="patcher_error_technical">Tehničke informacije</string>
+    <string name="patcher_error_dialog_app_info">Informacije o aplikaciji</string>
+    <string name="patcher_tab_logs">Evidencije zakrpa</string>
+    <string name="patcher_tab_game">Igre</string>
+    <string name="patcher_long_step_warning">Ovaj korak može potrajati. Molimo sačekajte…</string>
+    <string name="patcher_installing_subtitle">Skoro spremni za akciju! 🎸</string>
+    <string name="patcher_success_title">Sve je završeno! 🎉</string>
+    <string name="patcher_success_subtitle">Vaša aplikacija je zakrpljena i instalirana!</string>
+    <string name="patcher_complete_title">Zakrpa završena! ✨</string>
+    <string name="patcher_failed_title">Ups! Nešto je pošlo po zlu</string>
+    <string name="patcher_failed_subtitle">Proverite detalje greške ispod</string>
+    <string name="patcher_failed_dialog_title">Zakrpa nije uspela</string>
+    <string name="patcher_unknown_error">Dogodila se nepoznata greška</string>
+    <string name="patcher_conflict_title">Konflikt paketa</string>
+    <string name="patcher_conflict_subtitle">Morate deinstalirati postojeću verziju</string>
+    <string name="patcher_conflict_hint">Popravljena aplikacija koristi drugačiji sertifikat od instalirane verzije. Deinstalacija će obrisati sve podatke aplikacije.</string>
+    <string name="patcher_installed_conflict_title">Potrebno je deinstalirati</string>
+    <string name="patcher_installed_conflict_body">"Morphe potpisuje modifikovane aplikacije sopstvenim sertifikatom, koji se razlikuje od originalnog. Android zahteva uklanjanje postojeće verzije pre instalacije modifikovane aplikacije.
+
+Deinstalacija će trajno obrisati sve podatke aplikacije"</string>
+    <string name="patcher_install_error_title">Greška pri instalaciji</string>
+    <string name="patcher_install_error_subtitle">Pokušajte deinstalirati pa ponovo instalirati</string>
+    <string name="patcher_ready_to_install_subtitle">Pritisnite dugme ispod za instalaciju</string>
+    <string name="patcher_ready_to_mount_subtitle">Pritisnite dugme ispod za postavljanje</string>
+    <string name="patcher_storage_permission_dialog_title">Ne mogu pristupiti putu za pohranu</string>
+    <string name="patcher_incompatible_patcher_title">Ažuriranje je potrebno</string>
+    <string name="patcher_incompatible_patcher_description">Paket &lt;b&gt;%1$s&lt;/b&gt; zahteva verziju zakrpe &lt;b&gt;%2$s&lt;/b&gt; ili noviju. Molimo ažurirajte Morphe da biste zakrpili ovu aplikaciju</string>
+    <string name="patcher_incompatible_patcher_update_button">Preuzmi i ažuriraj Morphe</string>
+    <string name="patcher_storage_permission_description_api30">Jedna ili više opcija patch-a pokazuju na putanje koje Morphe ne može da čita. Dajte dozvolu za skladište i dodirnite dugme, a zatim će se patching automatski pokrenuti</string>
+    <string name="patcher_storage_permission_description_legacy">Jedan ili više opcija za patching ukazuju na putove koje ne mogu biti pristupili. Ažurirajte putove u opcijama za patching i pokušajte ponovo</string>
+    <string name="patcher_storage_permission_grant">Dajte dozvolu za pohranu</string>
+    <string name="patcher_storage_permission_denied_warning">Dozvola za pohranu je odbijena. Dopustite ovu putanju da biste je koristili ili premestite fajlove u privatni direktorijum aplikacije</string>
+    <string name="patcher_storage_permission_open_settings">Otvori postavke pohrane</string>
+    <string name="patcher_storage_badge_denied">Odbijena dopuštenja</string>
+    <string name="patcher_storage_badge_missing">Nema pronađenih</string>
+    <string name="patcher_storage_permission_hint">Savet: Premestite fajlove u /Android/data/app.morphe.manager/files/ - ne potrebne su dodatne dopuštenja</string>
+    <!-- Patcher Screen - Patcher Steps -->
+    <string name="patcher_step_group_preparing">Priprema</string>
+    <string name="patcher_step_load_patches">Učitavanje zakrpa</string>
+    <string name="patcher_step_prepare_split_apk">Spojivanje APK-ova</string>
+    <string name="patcher_step_unpack">Pročitajte datoteku APK</string>
+    <string name="patcher_step_group_patching">Zakrpljivanje</string>
+    <string name="patcher_step_group_saving">Čuvanje</string>
+    <string name="patcher_step_write_patched">Pisanje zakrpljene APK datoteke</string>
+    <string name="patcher_step_sign_apk">Potpisivanje zakrpljene APK datoteke</string>
+    <!-- Battery optimization pre-flight dialog -->
+    <string name="battery_optimization_dialog_title">Zaštita od zakrpljivanja u pozadini</string>
+    <string name="battery_optimization_dialog_description">Neki uređaji mogu zaustaviti program za zakrpljivanje kada je aplikacija minimizovana. Dopustite programu Morphe da radi bez ograničenja potrošnje baterije kako biste osigurali pouzdano završavanje zakrpljivanja.</string>
+    <string name="battery_optimization_not_now">Ne sada</string>
+    <!-- Patcher Screen - Patcher Worker -->
+    <string name="patcher_notification_title">Zakrpljivanje je u toku…</string>
+    <string name="patcher_notification_text">Dodirnite za povratak na zakrpu</string>
+    <string name="patcher_stop_confirm_title">Zaustavi zakrpu</string>
+    <string name="patcher_stop_confirm_description">Da li ste sigurni da želite da zaustavite proces zakrpa?</string>
+    <!-- Patcher Screen - Patcher Messages -->
+    <string name="patcher_message_1">Transformišemo vašu aplikaciju u nešto sjajno… 🏆</string>
+    <string name="patcher_message_2">Učenje starih aplikacija novim trikovima… 🎩</string>
+    <string name="patcher_message_3">Digitalno doterivanje vaše aplikacije… 🔧</string>
+    <string name="patcher_message_4">Priprema digitalne čarolije… ☕</string>
+    <string name="patcher_message_5">Preporučena pauza za kafu… ☕</string>
+    <string name="patcher_message_6">Pogledajte napolje, lepo je tamo… 🌤️</string>
+    <string name="patcher_message_7">Podešavanje 1 i 0… 🤖</string>
+    <string name="patcher_message_8">Odvajanje digitalnih špageta… 🍝</string>
+    <!-- Morphe patches fix YouTube bugs that Google still has not fixed. -->
+    <string name="patcher_message_9">Popravljam greške u nepatchiranoj aplikaciji… 🪲</string>
+    <string name="patcher_message_10">Vredi čekati sjajne zakrpe… ⏳</string>
+    <string name="patcher_message_11">Poliranje piksela dok ne zasijaju… 💎</string>
+    <string name="patcher_message_12">Molimo vas da ostanete u sedištima dok kapetan ne isključi znak \"Zakrpa u toku\"... 💺✈️</string>
+    <string name="patcher_message_13">Pripremamo vašu zakrpljenu aplikaciju, vruću i svežu… 🍳</string>
+    <!-- "bytecode" can be translated from "the app code" -->
+    <string name="patcher_message_14">Ljubazno pregovaranje sa bajt-kodom</string>
+    <!-- Space flight communications callout. -->
+    <string name="patcher_message_15">Svi sistemi su normalni… putanja zakrpe je stabilna… 🚀</string>
+    <string name="patcher_message_16">Iscedimo dodatnu snagu, poput soka iz digitalnog limuna… 🍋</string>
+    <string name="patcher_message_17">Podstičemo aplikaciju da prihvati sebe, novu i bolju… 🌱</string>
+    <!-- Quantum physics (box emoji is a reference to Schrodinger's cat). -->
+    <string name="patcher_message_18">Menjamo superpoziciju aplikacije iz nezakrpljene u zakrpljenu… 📦⚛️</string>
+    <!-- Throw away reference to a Saturday Night Live sketch. "fever" means sickness or the flu. "prescription" means medical treatment or can be translated from "cure" -->
+    <string name="patcher_message_19">Vaša aplikacija ima temperaturu, a jedini lek je više zakrpa… 🩺🔔</string>
+    <string name="patcher_message_20">Uklanjanje besmislica. Molimo pričekajte… 🗑️</string>
+    <!-- Expert patcher Screen -->
+    <string name="patching_app">Uređivanje aplikacija</string>
+    <string name="memory_usage">Upotreba memorije</string>
+    <!-- Patcher Screen - Other hidden strings -->
+    <string name="applying_patches">Primenjivanje zakrpe</string>
+    <string name="failed_to_execute_patch">Došlo je do greške pri primeni %s</string>
+    <string name="patched_app_saved_toast">Zakrpljena aplikacija sačuvana za kasnije</string>
+    <string name="patched_app_save_failed_toast">Došlo je do greške pri čuvanju zakrpljene aplikacije</string>
+    <string name="plugin_activity_dialog_body">Potrebna je interakcija korisnika da bi se nastavilo sa ovim dodatkom</string>
+    <string name="patcher_process_exit_message">Proces zakrpivanja je završen sa kodom %s</string>
+    <string name="install_app_success">Uspešno instalirano</string>
+    <string name="install_app_fail">Nije uspelo instaliranje aplikacije: %s</string>
+    <string name="save_apk_success">Sačuvana APK datoteka</string>
+    <string name="saved_app_export_failed">Nije uspelo izvoz zakrpljene aplikacije</string>
+    <string name="saved_app_removed_toast">Uklonjena sačuvana zakrpljena aplikacija</string>
+    <string name="saved_app_launch_unavailable">Instalirajte aplikaciju prije otvaranja</string>
+    <string name="package_name">Naziv paketa</string>
+    <string name="failed_to_mount">Nije moguće montirati: %s</string>
+    <string name="failed_to_unmount">Nije moguće demontirati: %s</string>
+    <!-- Patcher Screen - Mini-games -->
+    <string name="mini_game_score">Rezultat %d</string>
+    <string name="mini_game_best">Najbolji %d</string>
+    <string name="mini_game_new_record">Novi rekord!</string>
+    <string name="mini_game_game_over">Igra je završena</string>
+    <string name="mini_game_try_again">Pokušaj ponovo</string>
+    <string name="mini_game_paused">Pauza</string>
+    <string name="mini_game_resume">Nastavi</string>
+    <string name="mini_game_2048_picker_subtitle">Kliznite pločicama da biste ih spojili</string>
+    <string name="mini_game_flappy_picker_subtitle">Dodirnite da letite kroz cevi</string>
+    <string name="mini_game_flappy_tap_to_start">Dodirnite da letite</string>
+    <string name="mini_game_snake_picker_subtitle">Jedite hranu, nemojte se udarati</string>
+    <string name="mini_game_snake_swipe_to_start">Prevucite prstom da biste počeli</string>
+    <string name="mini_game_dino_picker_subtitle">Dodirnite da preskočite kaktuse</string>
+    <string name="mini_game_dino_tap_to_start">Dodirnite da trčite</string>
+    <!-- Settings -->
+    <string name="appearance">Izgled</string>
+    <string name="advanced">Napredno</string>
+    <string name="system">Sistem</string>
+    <!-- Settings - Appearance Tab - Background animation -->
+    <string name="settings_appearance_background">Animacija pozadine</string>
+    <string name="settings_appearance_background_circles">Krugovi</string>
+    <string name="settings_appearance_background_rings">Zvona</string>
+    <string name="settings_appearance_background_mesh">Mreža</string>
+    <string name="settings_appearance_background_space">Prostor</string>
+    <string name="settings_appearance_background_shapes">Oblici</string>
+    <string name="settings_appearance_background_snow">Sneg</string>
+    <string name="settings_appearance_background_grid">Rešetka</string>
+    <string name="settings_appearance_background_particles">Čestice</string>
+    <string name="settings_appearance_background_none">Bez</string>
+    <string name="settings_appearance_background_random">Nasumično</string>
+    <string name="settings_appearance_background_random_interval_launch">Pokretanje</string>
+    <string name="settings_appearance_background_random_interval_daily">Dnevno</string>
+    <string name="settings_appearance_background_random_interval_3days">Svaki 3 dana</string>
+    <string name="settings_appearance_parallax_effect">Paralaksni efekat</string>
+    <string name="settings_appearance_parallax_effect_description">Glatko pomeranje pozadine pri naginjanju uređaja</string>
+    <!-- Settings - Appearance Tab - Theme -->
+    <string name="settings_appearance_theme">Tema</string>
+    <string name="settings_appearance_system">Sistem</string>
+    <string name="settings_appearance_light">Svetla</string>
+    <string name="settings_appearance_dark">Tamna</string>
+    <string name="settings_appearance_dynamic">Dinamičko</string>
+    <string name="settings_appearance_accent_color">Naglašena boja</string>
+    <string name="settings_appearance_pure_black">Čisto Crna</string>
+    <string name="settings_appearance_pure_black_description">Koristi istinski crne pozadine</string>
+    <!-- Settings - Appearance Tab - Language Selector -->
+    <string name="settings_appearance_app_language">Jezik aplikacije</string>
+    <string name="settings_appearance_app_language_current">Trenutni jezik</string>
+    <string name="settings_appearance_translations_info_title">Prevodi za neke jezike mogu biti nepotpuni ili nedostajati</string>
+    <string name="settings_appearance_translations_info_text">Da biste preveli novi jezike ili poboljšali postojeće prevode, posetite %s</string>
+    <!-- Settings - Appearance Tab - Home Screen Section -->
+    <string name="settings_appearance_home_screen">Početni ekran</string>
+    <string name="settings_appearance_greeting_phrases">Pozdravne poruke</string>
+    <string name="settings_appearance_greeting_phrases_subtitle">Prikaži poruku dobrodošlice na početnom ekranu</string>
+    <!-- Settings - Appearance Tab - App Icon Selector -->
+    <string name="settings_appearance_app_icon_selector_title">Ikonica aplikacije</string>
+    <string name="settings_appearance_app_icon_default">Podrazumevana</string>
+    <string name="settings_appearance_app_icon_light_2">Nebesno</string>
+    <string name="settings_appearance_app_icon_light_3">Zalazni</string>
+    <string name="settings_appearance_app_icon_dark_1">Okean</string>
+    <string name="settings_appearance_app_icon_dark_2">Praznina</string>
+    <string name="settings_appearance_app_icon_dark_3">Indigo</string>
+    <string name="settings_appearance_app_icon_change_dialog_title">Promeni ikonu aplikacije? </string>
+    <string name="settings_appearance_app_icon_change_dialog_message">Prebaci na &lt;b&gt;%s&lt;/b&gt; i ponovo pokreni?</string>
+    <string name="settings_appearance_app_icon_change_dialog_confirm">Promeni ikonu</string>
+    <!-- Settings - Advanced Tab - Updates Section -->
+    <string name="settings_advanced_updates">Ažuriranja</string>
+    <string name="settings_advanced_updates_use_prereleases">Pre-release ažuriranja</string>
+    <string name="settings_advanced_updates_use_prereleases_description">Rani pristup novim verzijama aplikacije Morphe. Omogućite pre-release po izvoru u izvorima patchovanja</string>
+    <string name="settings_advanced_updates_allow_metered">Ažuriranja putem mobilnih podataka</string>
+    <string name="settings_advanced_updates_allow_metered_description">Omogućava preuzimanje ažuriranja aplikacije Morphe i patchovanja putem mobilnih podataka</string>
+    <string name="settings_advanced_updates_background_notifications">Ažuriranja u pozadini</string>
+    <string name="settings_advanced_updates_background_notifications_description">Periodično proveravaj za ažuriranja u pozadini i obaveštavaj kada su dostupna</string>
+    <string name="settings_advanced_updates_background_notifications_description_fcm">Push obaveštenja za nove verzije, čak i kada je aplikacija zatvorena</string>
+    <string name="settings_advanced_update_interval">Pronalaženje frekvencije</string>
+    <string name="settings_advanced_update_interval_dialog_title">Pronalaženje ažuriranja</string>
+    <string name="settings_advanced_update_interval_hourly">Jedanput na sat</string>
+    <string name="settings_advanced_update_interval_daily">Jednom dnevno</string>
+    <string name="settings_advanced_update_interval_weekly">Jednom sedmično</string>
+    <string name="settings_advanced_update_interval_monthly">Jednom mesečno</string>
+    <string name="settings_advanced_update_interval_chip_subtitle">Učestalost pozadinskog proveravanja</string>
+    <string name="settings_advanced_update_interval_battery_warning">Pronalaženje u pozadini možda neće funkcionisati pouzdano na nekim uređajima. Proizvođači poput Xiaomi, Huawei, Samsunga i OnePlus često agresivno ograničavaju processe u pozadini da bi sačuvali bateriju</string>
+    <!-- Notification content -->
+    <string name="notification_manager_update_title">Доступна је надоградња Morphe-а</string>
+    <string name="notification_bundle_update_title">Dostupne ispravke</string>
+    <string name="notification_update_text">Verzija %s je spremna za preuzimanje</string>
+    <string name="notification_bundle_update_text_unversioned">Додирните да бисте отворили Morphe и надоградили</string>
+    <string name="notification_permission_dialog_title">Dozvoli obaveštenja</string>
+    <string name="notification_permission_dialog_description">Morphe треба дозволу за обавештења да вас упозори када су доступне надоградње у позадини</string>
+    <string name="notification_post_patch_dialog_title">Da li biste hteli da budete obavešteni kada su ažuriranja dostupna?</string>
+    <string name="notification_channel_fcm_updates">Ažuriranja obaveštenja</string>
+    <string name="notification_channel_fcm_updates_description">Obaveštenja o novim Morphe izdanjima i ažuriranjima zakrpa</string>
+    <string name="notification_channel_patcher">Zakrpavanje</string>
+    <string name="notification_channel_patcher_description">Prikazuje se dok Morphe zakrpava aplikaciju u pozadini</string>
+    <!-- Settings - Advanced Tab - Expert settings Section -->
+    <string name="settings_advanced_expert">Napredne postavke</string>
+    <string name="settings_advanced_expert_mode">Napredni način</string>
+    <string name="settings_advanced_expert_mode_description">Omogućava kompleksna podešavanja i opcije prilagođavanja patchovanja u aplikaciji Morphe</string>
+    <string name="settings_advanced_expert_mode_dialog_title">Omogućiti režim eksperta?</string>
+    <string name="settings_advanced_expert_mode_dialog_message">Režim eksperta daje više kontrole nad primenom patchova, ali pogrešno podešavanje u režimu eksperta može da rezultuje u nefunkcionalnoj aplikaciji</string>
+    <string name="settings_advanced_strip_unused_libs">Optimizujte za arhitekturu uređaja</string>
+    <string name="settings_advanced_strip_unused_libs_description">Uklanja neiskorišćene CPU arhitektonske biblioteke i split APK module</string>
+    <!-- Bytecode mode -->
+    <string name="settings_advanced_bytecode_mode">Način obrade bajtkoda</string>
+    <string name="settings_advanced_bytecode_mode_dialog_description">Kontroliše kako se bajtkod obrađuje tokom popravki. Utiče na brzinu popravki, korišćenje memorije i veličinu izlaznog APK fajla</string>
+    <string name="settings_advanced_bytecode_mode_strip_fast_label">Brzo (Preporučeno)</string>
+    <string name="settings_advanced_bytecode_mode_strip_fast">Brzo</string>
+    <string name="settings_advanced_bytecode_mode_strip_fast_description">Brže ispravljanje i manja upotreba memorije, uz veći APK. Preporučeno za uređaje sa malo RAM-a ili starije uređaje</string>
+    <string name="settings_advanced_bytecode_mode_full">Puno</string>
+    <string name="settings_advanced_bytecode_mode_full_description">Sporije patchovanje, replikuje prethodno ponašanje. Preporučeno samo ako brzi režim izaziva probleme</string>
+    <!-- Settings - Advanced Tab - GitHub PAT Settings -->
+    <string name="settings_advanced_github_pat">GitHub PAT</string>
+    <string name="settings_advanced_github_pat_description">Potrebno za izvore zahtjeva za povlačenje</string>
+    <string name="settings_advanced_github_pat_configured">Token je konfigurisan</string>
+    <string name="settings_advanced_github_pat_how_to_get">Kako dobiti token</string>
+    <string name="settings_advanced_github_pat_dialog_title">Postavi GitHub Personal Access Token</string>
+    <string name="settings_advanced_github_pat_dialog_description">Postavite GitHub Personal Access Token kako biste mogli dodati pull requests kao vanjske izvore. Kreirajte PAT sa opsegom public_repo github.com</string>
+    <string name="settings_advanced_github_pat_export_include_label">Uključeno u postavke izvoza</string>
+    <string name="settings_advanced_github_pat_export_include_supporting">Додаје овај PAT у извозене подешавања Morphe-а</string>
+    <string name="settings_advanced_github_pat_export_warning">Ne deli svoj PAT. Ako ga uključiš u postavke izvoza, drž taj fajl privatno jer sadrži token</string>
+    <!-- Settings - Advanced Tab - Patch Options Section -->
+    <string name="settings_advanced_patch_options">Opcije patchiranja</string>
+    <string name="settings_advanced_patch_options_youtube_description">Tema, brendiranje i opcije zaglavlja</string>
+    <string name="settings_advanced_patch_options_restart_message">Promene u patchiranju se primenjuju tek kada se ponovno patchira aplikacija</string>
+    <string name="settings_advanced_patch_options_expert_mode_notice">U naprednom načinu opcije patchiranja će biti dostupne tokom procesa patchiranja</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Theme Colors -->
+    <string name="settings_advanced_patch_options_theme_colors">Boje aplikacije</string>
+    <string name="settings_advanced_patch_options_theme_colors_description">Menja boju pozadine</string>
+    <string name="settings_advanced_patch_options_dark_theme_color">Mapa sa slikama za korištenje kao prilagođena pozadina</string>
+    <string name="settings_advanced_patch_options_light_theme_color">Boja pozadine za svjetlo</string>
+    <string name="settings_advanced_patch_options_theme_color_description">Moguće je hex boja (#RRGGBB) ili referenca na resurs boje</string>
+    <string name="settings_advanced_patch_options_loading">Učitavanje opcija patchiranja…</string>
+    <string name="settings_advanced_patch_options_waiting_for_source">Čekajte dok se patch izvor ne ažurira</string>
+    <string name="settings_advanced_patch_options_load_error">Nijeleženo učitavanje opcija patchiranja</string>
+    <string name="settings_advanced_patch_options_no_available">Prilagođeni filtr</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Custom Branding -->
+    <string name="settings_advanced_patch_options_custom_branding">Mapa sa slikama za korištenje kao prilagođena zaglavlje</string>
+    <string name="settings_advanced_patch_options_custom_branding_description">Menja naziv aplikacije</string>
+    <string name="settings_advanced_patch_options_custom_branding_app_name">Naziv aplikacije</string>
+    <string name="settings_advanced_patch_options_custom_branding_app_name_hint">Unesi ime</string>
+    <string name="settings_advanced_patch_options_custom_branding_custom_icon">Promeni ikonu</string>
+    <string name="settings_advanced_patch_options_custom_branding_custom_icon_instruction">"Mapa sa slikama koje će se koristiti kao prilagođena ikona.
+
+Mapa mora da sadrži jednu ili više sledećih mapa, u zavisnosti od DPI uređaja:
+- mipmap-mdpi
+- mipmap-hdpi
+- mipmap-xhdpi
+- mipmap-xxhdpi
+- mipmap-xxxhdpi
+
+Svaka od mapa mora da sadrži sve sledeće datoteke:
+morphe_adaptive_background_custom.png
+morphe_adaptive_foreground_custom.png
+
+Dimenzije slike moraju biti sledeće:
+- mipmap-mdpi: 108x108 px
+- mipmap-hdpi: 162x162 px
+- mipmap-xhdpi: 216x216 px
+- mipmap-xxhdpi: 324x324 px
+- mipmap-xxxhdpi: 432x432 px
+
+Opciono, putanja sadrži mapu 'drawable' sa datotekom ikone u boji:
+morphe_adaptive_monochrome_custom.xml
+
+Opciono, putanja sadrži ikonu obaveštenja u jednom od sledećih formata:
+- XML vektorski crtež u 'drawable':
+  morphe_notification_icon_custom.xml
+- PNG rasturne slike u mape 'drawable-dpi':
+  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
+    <string name="settings_advanced_patch_options_custom_header">Promeni ikonu zaglavlja</string>
+    <string name="settings_advanced_patch_options_custom_header_description">Menja logo zaglavlja</string>
+    <string name="settings_advanced_patch_options_custom_header_instruction">"Sakrij dugme „Shorts”"</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Hide Shorts -->
+    <string name="settings_advanced_patch_options_hide_shorts_features">Ukloni dugme „Shorts” iz izbornog menija</string>
+    <string name="settings_advanced_patch_options_hide_shorts_app_shortcut">Ukloni dugme „Shorts” iz dugmeta izbornog menija</string>
+    <string name="settings_advanced_patch_options_hide_shorts_app_shortcut_description">Uklanja Shorts iz dugog pritiska na meni pokretača</string>
+    <string name="settings_advanced_patch_options_hide_shorts_widget">Ukloni dugme „Shorts” iz dugmeta widgeta</string>
+    <string name="settings_advanced_patch_options_hide_shorts_widget_description">Uklanja Shorts dugme iz widget-a pokretača</string>
+    <!-- Settings - System Tab - Installer Section -->
+    <string name="installer">Instalator</string>
+    <string name="installer_title">Odaberite instalera</string>
+    <string name="installer_internal_name">Sistemski instalacioni program</string>
+    <string name="installer_internal_description">Koristi Android paketni instalator</string>
+    <string name="installer_auto_saved_name">Instalator za montažu sa root-om</string>
+    <string name="installer_auto_saved_description">Instalira nadinstaliranu APK na postojeću aplikaciju</string>
+    <string name="installer_shizuku_description">Instalira se tiho koristeći Shizuku ili Sui</string>
+    <string name="installer_option_none">Bez rezervnog rešenja</string>
+    <string name="installer_none_description">Nije konfigurisano nijedno rezervno instalaciono rešenje</string>
+    <string name="installer_status_requires_root">Zahteva root pristup</string>
+    <string name="installer_status_not_supported">Nije podržano za ovu akciju</string>
+    <string name="installer_status_shizuku_not_installed">Instalirajte Shizuku ili Sui da biste koristili ovu opciju</string>
+    <string name="installer_status_shizuku_not_running">Pokrenite Shizuku ili Sui i pokušajte ponovo</string>
+    <string name="installer_status_shizuku_permission">Dodijeli Morpheu odobrenje za Shizuku iz aplikacije Shizuku</string>
+    <string name="installer_mount_warning_install">Vaš primarni instalera je postavljen na instalera s korijenskim mountom. Ova sačuvana aplikacija nije instalirana koristeći mount</string>
+    <string name="mount_version_mismatch_message">Verzija originalne aplikacije (%2$s) ne podudara se sa verzijom patchane aplikacije (%1$s). Mountujte podudaranu verziju originalne aplikacije, a zatim pokušajte ponovo</string>
+    <string name="installer_status_shizuku_unsupported">Instalirana verzija Shizuku nije podržana</string>
+    <string name="installer_action_open_shizuku">Otvori Shizuku</string>
+    <string name="installer_hint_generic">Instalacija nije uspjela. Pokušajte ponovo ili prebacite na različitog instalera</string>
+    <string name="installer_hint_conflict">Druga aplikacija sa istim imenom paketa je već instalirana. Deinstalirajte je prije nastavka</string>
+    <string name="installer_external_launched">Otvaranje %s…</string>
+    <string name="installer_external_timeout">%s nije potvrdio instalaciju. Proverite drugu aplikaciju i pokušajte ponovo</string>
+    <string name="installer_external_success">%s je prijavio uspešnu instalaciju</string>
+    <string name="installer_unavailable_title">%s nedostupan</string>
+    <string name="installer_unavailable_message">Vaš preferirani instalera (%s) je trenutno nedostupan. Moguće je ispraviti problem i pokušati ponovo ili koristiti standardni instalera</string>
+    <string name="installer_unavailable_shizuku_hint">Uvjerite se da je Shizuku pokrenut i da je dozvola dodijeljena ovoj aplikaciji</string>
+    <string name="installer_use_standard">Koristi standard</string>
+    <string name="settings_prompt_installer_on_install">Prompt za izbor instalera</string>
+    <string name="settings_prompt_installer_on_install_description">Prikazuje dijalog za izbor instalera svaki put kada se instalira patchovana aplikacija</string>
+    <string name="settings_auto_install_with_shizuku">Automatska instalacija nakon zakrpljivanja</string>
+    <string name="settings_auto_install_with_shizuku_description">Tiho instalira zakrpljeni APK čim se zakrpljivanje završi</string>
+    <string name="settings_auto_install_prompt_conflict">\"%s\" je omogućen - automatska instalacija će biti preskočena</string>
+    <!-- Settings - System Tab - Performance Section -->
+    <string name="settings_system_battery_optimization">Optimizacija baterije</string>
+    <string name="settings_system_battery_optimization_description">Drži patcher pokrenutim kada je aplikacija minimizovana</string>
+    <string name="settings_system_performance">Vrijedi vrijeme izvođenja</string>
+    <string name="settings_system_process_runtime">Pokrenite proces izvođenja za bolju stabilnost</string>
+    <string name="settings_system_process_runtime_description">Pokreće patchovanje u zasebnom procesu za bolju stabilnost</string>
+    <string name="settings_system_process_runtime_memory_limit">Viši ograničenja mogu usporediti patchiranje ali možda neće funkcionisati na stariji uređenicima</string>
+    <string name="settings_system_process_runtime_memory_limit_description">Veće granice ubrzavaju patchovanje na sposobnim uređajima</string>
+    <string name="settings_system_process_runtime_enable">Memorija dostupna za patchiranje</string>
+    <string name="settings_system_memory_limit_subtitle">Upozorenje: Niska memorija ograničenja može dovesti neuspeh u patchiranju većih aplikacija</string>
+    <string name="settings_system_memory_limit_warning">%d MB ograničenje</string>
+    <string name="settings_system_process_runtime_enabled_description">%s MB ograničenje</string>
+    <string name="settings_system_process_runtime_disabled_description">Dodirni za konfigurisanje</string>
+    <string name="settings_system_process_runtime_description_not_available">Ova funkcionalnost zahteva Android 11 ili noviji</string>
+    <!-- Settings - System Tab - Import and Export Section -->
+    <string name="settings_system_import_export">Uvoz i izvoz</string>
+    <string name="settings_system_keystore">Keystore</string>
+    <string name="settings_system_import_keystore_description">Uvozi ili izvozi vaš keystore za potpisivanje</string>
+    <string name="settings_system_import_keystore_dialog_title">Pogrešni izvor</string>
+    <string name="settings_system_import_keystore_dialog_description">Morate unijeti podacima o keystore-u za njegovo uvođenje</string>
+    <string name="settings_system_import_keystore_dialog_alias_field">Pogrešni izvor</string>
+    <string name="settings_system_import_keystore_dialog_password_field">Lozinka </string>
+    <string name="settings_system_import_keystore_dialog_format_field">Format kejstora</string>
+    <string name="settings_system_import_keystore_wrong_credentials">Pogrešni izvor</string>
+    <string name="settings_system_import_keystore_success">Kejtore uvezeno</string>
+    <string name="settings_system_import_keystore_failed">Nijeleženo uvoz kejtora</string>
+    <string name="settings_system_export_keystore_unavailable">Nema dostupnih kejtora za izvoz</string>
+    <string name="settings_system_export_keystore_success">Kejtore izvezeno</string>
+    <string name="settings_system_export_keystore_failed">Nije uspelo izvozivanje skladišta ključeva</string>
+    <string name="settings_system_show_password_field">Prikaži lozinku</string>
+    <string name="settings_system_hide_password_field">Sakrij lozinku</string>
+    <string name="settings_system_morphe_settings">Morphe podešavanja</string>
+    <string name="settings_system_import_manager_settings_description">Pravi backup i vraća vaše podešavanje aplikacije Morphe</string>
+    <string name="settings_system_import_manager_settings_fail">Није успело увожење подешавања Morphe-а: %s</string>
+    <string name="settings_system_import_manager_settings_success">Увезена су подешавања Morphe-а</string>
+    <string name="settings_system_export_manager_settings_fail">Није успело извожење подешавања Morphe-а: %s</string>
+    <string name="settings_system_export_manager_settings_success">Извезена су подешавања Morphe-а</string>
+    <string name="settings_system_debug">Debug</string>
+    <string name="settings_system_export_debug_logs_description">Čuva sistemske logove za rešavanje problema</string>
+    <string name="settings_system_export_debug_logs_export_read_failed">Neuspeh pri čitanju dnevnika (kôd izlaza %s)</string>
+    <string name="settings_system_export_debug_logs_export_failed">Neuspešan izvoz evidencija</string>
+    <string name="settings_system_export_debug_logs_export_success">Lozove izvezeno</string>
+    <!-- Settings - System Tab - Files & Storage Section -->
+    <string name="settings_system_files">Datoteke i skladište</string>
+    <string name="settings_system_apks_size">Ukupna veličina: %s</string>
+    <!-- Settings - System Tab - Storage Management - Patched APKs Management -->
+    <string name="settings_system_patched_apks_title">Patcheirani APK(s)</string>
+    <string name="settings_system_patched_apks_description">Upravlja sačuvanim patchovanim datotekama aplikacija</string>
+    <string name="settings_system_patched_apks_empty">Još patcheiranih APK(s) nije sačuvano</string>
+    <string name="settings_system_patched_apks_delete_title">Da li zaista želite da obrišete ovaj patcheirani APK?</string>
+    <string name="settings_system_patched_apks_delete_confirm">Da li zaista želite da obrišete patcheirani APK za %s?</string>
+    <string name="settings_system_patched_apks_deleted">Patcheirani APK obrisan</string>
+    <!-- Settings - System Tab - Storage Management - Original APKs Management -->
+    <string name="settings_system_original_apks_title">Originalni APK(s)</string>
+    <string name="settings_system_original_apks_description">Sačuvano za ponovno patchovanje. Čuva se jedna verzija po aplikaciji</string>
+    <string name="settings_system_original_apks_empty">Nema sačuvanih originalnih APK fajlova</string>
+    <string name="settings_system_original_apks_deleted">Da li zaista želite da obrišete ovaj originalni APK?</string>
+    <string name="settings_system_original_apks_delete_title">Da li zaista želite da obrišete originalni APK za %s? Nećete moći repatchirati bez pružnog novog APK fajla.</string>
+    <string name="settings_system_original_apks_delete_confirm">Izbrišite originalni fajl APK za %s? Bez novog fajla APK nećete moći ponovo patchirati</string>
+    <!-- Settings - System Tab - Storage Management - Patch Selection Management -->
+    <string name="settings_system_patch_selections_title">Upravljanje sačuvanim patch-ovima i opcijama. Ovo ostaje nakon deinstalacije aplikacije</string>
+    <string name="settings_system_patch_selections_description">Čuva odabrane patchove, zadržane nakon deinstalacije</string>
+    <string name="settings_system_patch_selection_reset_all_confirm_title">Poništiti sve odabire?</string>
+    <string name="settings_system_patch_selection_reset_package_confirm_title">Poništiti odabire paketa?</string>
+    <string name="settings_system_patch_selection_reset_source_confirm_title">Poništiti odabir izvora?</string>
+    <string name="settings_system_patch_selection_no_saved">Nema sačuvanih odabira patch-a</string>
+    <string name="settings_system_patch_selection_total_summary_format">%1$s po %2$s</string>
+    <string name="settings_system_patch_selection_patches_in_sources_format">%1$s u %2$s</string>
+    <string name="settings_system_patch_selection_source_format">Izvor #%s</string>
+    <string name="settings_system_patch_selection_will_delete">Ovo će da obriše:</string>
+    <string name="settings_system_patch_selection_reset_all_warning">Ovo će permanentno obrisati sve sačuvane odabire patch-a za sve pakete i izvore</string>
+    <string name="settings_system_patch_selection_reset_package_warning">Ovo će permanentno obrisati sve sačuvane odabire patch-a za %s po svim izvorištima</string>
+    <string name="settings_system_patch_selection_reset_source_warning">Ovo će permanentno obrisati sačuvane izborke za %1$s u izvoru #%2$s</string>
+    <string name="settings_system_export_source_data_fail">Neuspešno izvoz podataka izvorišta</string>
+    <string name="settings_system_export_source_data_success">Podaci izvorišta uspešno izvozeni</string>
+    <string name="settings_system_import_source_data_fail">Neuspešno uvođenje podataka izvorišta</string>
+    <string name="settings_system_import_source_data_success">Podaci izvorišta uspešno uvezeni</string>
+    <string name="settings_system_patch_details_title">Detalji patch-a</string>
+    <string name="settings_system_selected_patches_title">Izabrane ispravke (%s)</string>
+    <string name="settings_system_patch_options_title">Opcije ispravke (%s)</string>
+    <string name="settings_system_no_patches_or_options">Nema sačuvanih patch-ova ili opcija</string>
+    <!-- Settings - System Tab - Custom file picker -->
+    <string name="settings_system_custom_file_picker">Prilagođeni odabir datoteka</string>
+    <string name="settings_system_custom_file_picker_description">Koristite ugrađeni odabir datoteka u Morpheu umesto fabričkog sistema</string>
+    <!-- File Picker -->
+    <string name="file_picker_previous_directory">Prethodna direktorijum</string>
+    <string name="file_picker_no_files">Ovde nema datoteka</string>
+    <string name="file_picker_read_error">Ne mogu da pročitam ovu direktoriju</string>
+    <string name="file_picker_internal_storage">Interna memorija</string>
+    <string name="file_picker_sd_card">SD kartica</string>
+    <string name="file_picker_root">Koren (/)</string>
+    <string name="file_picker_sort_name_asc">Naziv (A–Š)</string>
+    <string name="file_picker_sort_name_desc">Naziv (Š–A)</string>
+    <string name="file_picker_sort_size_desc">Veličina (od najveće)</string>
+    <string name="file_picker_sort_size_asc">Veličina (od najmanje)</string>
+    <string name="file_picker_sort_date_desc">Datum (najnovije prvo)</string>
+    <string name="file_picker_sort_date_asc">Datum (najstarije prvo)</string>
+    <!-- Settings - System Tab - About Section -->
+    <string name="settings_system_about">O programu</string>
+    <string name="settings_system_share_website">Podeli mrežni-sajt</string>
+    <string name="settings_system_share_website_description">Podele zvanični veb sajt aplikacije Morphe</string>
+    <string name="settings_system_manager_description">Otvoreni projekat za moderno, pojednostavljeno ispravljanje popularnih Android aplikacija, pokretan povratnim odzivom i doprinosima zajednice</string>
+    <string name="credits">Заслуге</string>
+    <string name="credits_current_development">Тренутни развој</string>
+    <string name="credits_prior_development">Претходни развој</string>
+    <string name="opensource_licenses">Open-source licence</string>
+    <!-- Shared strings -->
+    <string name="select_file">Izaberi datoteku</string>
+    <string name="select_folder">Izaberi folder</string>
+    <string name="patches">Zakrpe</string>
+    <string name="home">Početna</string>
+    <string name="settings">Podešavanja</string>
+    <string name="yes">Da</string>
+    <string name="no">Ne</string>
+    <string name="all">Sve</string>
+    <string name="filter">Filter</string>
+    <string name="reset">Poništi</string>
+    <string name="reset_all">Poništi sve</string>
+    <string name="confirm">Potvrdi</string>
+    <string name="warning">Upozorenje</string>
+    <string name="error_">Greška</string>
+    <string name="retry">Pokušaj ponovo</string>
+    <string name="refresh">Osveži</string>
+    <string name="add">Dodaj</string>
+    <string name="close">Zatvori</string>
+    <string name="back">Nazad</string>
+    <string name="next">Sledeće</string>
+    <string name="done">Gotovo</string>
+    <string name="skip">Preskoči</string>
+    <string name="clear">Obriši</string>
+    <string name="delete">Izbriši</string>
+    <string name="remove">Ukloni</string>
+    <string name="disable">Onemogući</string>
+    <string name="enable">Omogući</string>
+    <string name="loading">Učitavanje…</string>
+    <string name="not_installed">Nije instalirano</string>
+    <string name="view">Pogledaj</string>
+    <string name="search">Pretraži</string>
+    <string name="search_no_results">Nije pronađen nijedan rezultat</string>
+    <string name="sort">Sortiraj</string>
+    <string name="any_version">Bilo koja</string>
+    <string name="enabled">Omogućen</string>
+    <string name="disabled">Onemogućen</string>
+    <string name="selected">Odabrano</string>
+    <string name="not_selected">Nije odabrano</string>
+    <string name="select_all">Izaberi sve</string>
+    <string name="select_all_done">Svi su izabrani</string>
+    <string name="deselect_all">Poništi izbor svih</string>
+    <string name="deselect_all_done">Ništa nije izabrano</string>
+    <string name="reorder_list">Ponovo sortiraj listu</string>
+    <string name="reorder_list_hint">Povucite da biste ponovo sortiralii</string>
+    <string name="reorder_done">Redosled je sačŪvan</string>
+    <string name="reset_order">Vrati redosled</string>
+    <string name="reset_order_done">Narudžba je resetovana</string>
+    <string name="rename">Preimenovanje</string>
+    <string name="import_">Uvoz</string>
+    <string name="export">Izvezi</string>
+    <string name="download">Preuzmi</string>
+    <string name="less">Manje</string>
+    <string name="expand">Proširi</string>
+    <string name="expanded">Proširen</string>
+    <string name="collapse">Smanji</string>
+    <string name="collapsed">Sklopljen</string>
+    <string name="available">Dostupno</string>
+    <string name="continue_">Nastavi</string>
+    <string name="version">Verzija</string>
+    <string name="patch">Zakrpi</string>
+    <string name="repatch">Vrati zakrpu</string>
+    <string name="open">Otvori</string>
+    <string name="mount">Montiraj</string>
+    <string name="mounted">Montirano</string>
+    <string name="unmount">Izbaci</string>
+    <string name="unmounted">Demontirano</string>
+    <string name="remount">Ponovo priključaj</string>
+    <string name="share">Podeli</string>
+    <string name="install">Instaliraj</string>
+    <string name="installed">Instalirano</string>
+    <string name="reinstall">Ponovo instaliraj</string>
+    <string name="uninstall">Deinstaliraj</string>
+    <string name="uninstalled">Uklonjeno</string>
+    <string name="save">Sačuvaj</string>
+    <string name="saved">Sačuvano</string>
+    <string name="update">Ažuriraj</string>
+    <string name="allow">Dozvoli</string>
+    <string name="details">Detalji</string>
+    <string name="hide">Sakrij</string>
+    <string name="hidden">Skriven</string>
+    <string name="unhide">Pokaži</string>
+    <string name="unhide_done">Prikazano</string>
+    <string name="logs">Dnevnici</string>
+    <string name="sources">Izvori</string>
+    <string name="installing_ellipsis">Instaliranje…</string>
+    <string name="mounting_ellipsis">Montiranje…</string>
+    <string name="unmounting_ellipsis">Ponovo priključaj…</string>
+    <string name="importing_ellipsis">Uvozi…</string>
+    <string name="imported_successfully">Uspelo uveženo</string>
+    <string name="changelog">Prikaži zapise o promenama</string>
+    <string name="changelog_description">Pogledaj najnovije promene u ovom ažuriranju</string>
+    <string name="changelog_download_fail">Preuzimanje zapisa o promenama nije uspelo: %s</string>
+    <string name="changelog_retry">Ponovo pokreni</string>
+    <string name="changelog_empty">Nema dostupne verzije promjene</string>
+    <string name="no_network_toast">Nema dostupne mrežne veze</string>
+    <string name="update_available">Dostupno je ažuriranje</string>
+    <string name="ready_to_install_update">Spremno za instaliranje ažuriranja</string>
+    <string name="update_completed">Ažuriranje instalirano</string>
+    <string name="install_update_manager_failed">Neuspešno instaliranje ažuriranja</string>
+    <string name="installing_manager_update">Instaliranje ažuriranja…</string>
+    <string name="downloading_manager_update">Preuzimanje ažuriranja…</string>
+    <string name="download_manager_failed">Nije uspelo preuzimanje ažuriranja: %s</string>
+    <string name="failed_to_check_updates">Nije uspelo proveravanje ažuriranja: %s</string>
+    <string name="failed_to_download_update">Neuspešno preuzimanje ažuriranja: %s</string>
+    <string name="resume_download">Nastavi preuzimanje</string>
+    <string name="download_confirmation_metered">"Trenutno ste povezani na plaćenu vezu i mogu se primeniti troškovi prenosa podataka od vašeg provajdera usluga.
+
+Da li i dalje želite da nastavite?"</string>
+    <string name="download_update_confirmation">Preuzeti ažuriranje?</string>
+    <!-- Onboarding coach marks -->
+    <!-- %1$d = current step number, %2$d = total number of steps (e.g. "3 of 13") -->
+    <string name="onboarding_step_of">%1$d od %2$d</string>
+    <string name="onboarding_sources_desc">Upravljajte izvorima zakrpa. Svaki izvor obezbeđuje zakrpe koje se mogu primeniti na vaše aplikacije.</string>
+    <string name="onboarding_swipe_title">Gestovi prevlačenja</string>
+    <string name="onboarding_swipe_desc">Prevučite prstom udesno na kartici aplikacije da biste videli dostupne zakrpe. Prevučite prstom ulevo da biste sakrili karticu sa početnog ekrana.</string>
+    <string name="onboarding_settings_desc">Prilagodite Morphe: izgled, napredne opcije i sistemske alate.</string>
+    <string name="onboarding_sources_patches_desc">Dodirnite da biste videli sve zakrpe dostupne iz ovog izvora.</string>
+    <string name="onboarding_sources_version_desc">Dodirnite verziju da biste videli kompletan spisak izmena za ovaj izvor.</string>
+    <string name="onboarding_sources_prerelease_desc">Omogućite ovo da biste primali verzije zakrpa u beta fazi iz ovog izvora.</string>
+    <string name="onboarding_appearance_tab_desc">Prilagodite izgled aplikacije: temu, boju naglaska i pozadinu.</string>
+    <string name="onboarding_appearance_theme_desc">Izaberite između svetle, tamne ili sistemske teme. Takođe možete odabrati prilagođenu boju naglaska ili uključiti dinamičku boju.</string>
+    <string name="onboarding_expert_mode_desc">Omogućite režim eksperta da biste otključali izbor zakrpa, prilagođene opcije i druge napredne funkcije.</string>
+    <!-- Translate "System" the same way as the System settings tab -->
+    <string name="onboarding_system_tab_title">Sistemska kartica</string>
+    <string name="onboarding_system_tab_desc">Upravljanje kejstorom, alati za uvoz/izvoz i informacije o aplikaciji.</string>
+    <string name="onboarding_system_installer_desc">Izaberite kako se zakrljane aplikacije instaliraju: standardno, root mount ili Shizuku.</string>
+    <string name="onboarding_system_process_runtime_desc">Pokrenite zakrpljivanje u odvojenom procesu da biste poboljšali stabilnost i kontrolisali upotrebu memorije. Preporučeno za velike aplikacije.</string>
+    <string name="onboarding_system_file_picker_desc">Omogućite ovo da biste koristili ugrađeni pregledač datoteka umesto sistemskog pikera prilikom odabira APK ili kejstora.</string>
+    <!-- Tour prompt dialog shown after first successful patch install -->
+    <string name="tour_prompt_title">Brza tura po funkcijama</string>
+    <string name="tour_prompt_desc">Želite brzu turu po ključnim funkcijama Morphe?</string>
+    <string name="tour_prompt_confirm">Pokaži mi</string>
+    <string name="onboarding_restart_title">Tura po funkcijama</string>
+    <string name="onboarding_restart_desc">Prođite kroz vođenu turu po ključnim funkcijama Morphe.</string>
+</resources>

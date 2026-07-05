@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="patch_count">
+        <item quantity="one">%s fláki</item>
+        <item quantity="other">%s flákir</item>
+    </plurals>
+    <plurals name="option_count">
+        <item quantity="one">%s fláka valmöguleiki</item>
+        <item quantity="other">%s fláka valmöguleikar</item>
+    </plurals>
+    <plurals name="source_count">
+        <item quantity="one">%s uppspretta</item>
+        <item quantity="other">%s uppsprettur</item>
+    </plurals>
+    <plurals name="package_count">
+        <item quantity="one">%s pakkinn</item>
+        <item quantity="other">%s pakkar</item>
+    </plurals>
+    <plurals name="patches_executed">
+        <item quantity="one">Keyrði %s flák</item>
+        <item quantity="other">Keyrði %s fláka</item>
+    </plurals>
+    <plurals name="settings_system_apks_count">
+        <item quantity="one">%s APK skrá</item>
+        <item quantity="other">%s APK skrár</item>
+    </plurals>
+    <plurals name="home_app_info_repatch_cleaned_invalid_data">
+        <item quantity="one">Fjarlægði %s úreldna flákann frá vistaðri vali</item>
+        <item quantity="other">Fjarlægði %s úreldna fláka frá vistaðri vali</item>
+    </plurals>
+    <plurals name="sources_management_subtitle">
+        <item quantity="one">%s uppspretta sett upp</item>
+        <item quantity="other">%s uppsprettur settar upp</item>
+    </plurals>
+    <plurals name="patch_selection_total_patches">
+        <item quantity="one">%s fláki valinn</item>
+        <item quantity="other">%s flákir valdir</item>
+    </plurals>
+    <plurals name="home_app_show_hidden_count">
+        <item quantity="one">%s falinn app</item>
+        <item quantity="other">%s falin app</item>
+    </plurals>
+</resources>

@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Home Screen -->
+    <string name="home_other_apps">其他应用</string>
+    <string name="home_not_patched_yet">尚未修补</string>
+    <string name="home_no_patches_available">没有可用的补丁</string>
+    <string name="home_app_hide_title">隐藏此应用？</string>
+    <string name="home_app_hide_message">此应用将从主屏幕隐藏。您可以使用列表底部的按钮稍后从隐藏的应用中恢复它。</string>
+    <string name="home_app_will_be_hidden">此应用将被隐藏</string>
+    <string name="home_app_no_hidden">没有隐藏的应用</string>
+    <string name="home_app_hidden_apps_title">隐藏的应用</string>
+    <string name="home_app_hidden_apps_hint">点一下以取消隐藏</string>
+    <string name="android_11_bug_dialog_title">Android 11 错误</string>
+    <string name="android_11_bug_dialog_description">必须提前授予应用安装权限，以避免 Android 11 系统中的某个错误对用户体验造成负面影响。</string>
+    <string name="deep_link_add_source_title">添加来源</string>
+    <string name="deep_link_add_source_message">您想将此补丁源添加到Morphe吗？</string>
+    <string name="deep_link_add_source_warning">仅添加您信任的来源</string>
+    <!-- Home Screen - Update Notifications -->
+    <string name="home_update_available">Morphe更新可用</string>
+    <string name="home_update_available_subtitle">新版本已准备好安装</string>
+    <string name="home_update_error">更新失败</string>
+    <string name="home_update_error_subtitle">请检查您的互联网连接并重试</string>
+    <string name="home_update_skipped_metered">更新已跳过</string>
+    <string name="home_update_skipped_metered_subtitle">移动数据已激活</string>
+    <string name="home_updating_sources">正在更新源…</string>
+    <string name="home_update_progress_format">已处理 %s / </string>
+    <string name="home_update_success">源更新完成</string>
+    <string name="home_update_success_subtitle">您的源已是最新的</string>
+    <string name="home_sources_are_loading">源正在加载，请稍等…</string>
+    <string name="home_search_apps">搜索应用</string>
+    <string name="home_no_apps_title">没有可用的应用</string>
+    <string name="home_no_apps_subtitle">添加一个补丁源或在 %s 中启用现有补丁源</string>
+    <string name="home_no_apps_search_subtitle">没有应用匹配“%s”</string>
+    <string name="home_all_apps_hidden_title">所有应用已隐藏</string>
+    <string name="home_all_apps_hidden_subtitle">您已将所有应用从主屏幕隐藏</string>
+    <!-- Home Screen - Home Greetings -->
+    <string name="home_greeting_1">您想要修补哪个应用程序？</string>
+    <!-- Humorous hype message with light nostalgia -->
+    <string name="home_greeting_2">准备好再次让应用变得传奇吗？</string>
+    <!-- "Buckle up" referring to fastening your vehicle seat belt. A light-hearted joke to build excitement -->
+    <string name="home_greeting_3">系好安全带,开始修补了</string>
+    <!-- Sarcastic joke about blocking ads, intentionally over-the-top -->
+    <string name="home_greeting_4">又一天,又一件屏蔽广告的杰作</string>
+    <!-- "Watch ads" refers to watching video ads in unpatched apps -->
+    <string name="home_greeting_5">想看广告吗？我也不想</string>
+    <!-- Friendly, slightly mischievous joke about controlling app behavior -->
+    <string name="home_greeting_6">让你的应用程序更安分一点</string>
+    <!-- Whimsical forecast-style joke, not meant literally -->
+    <string name="home_greeting_7" formatted="false">今天的预报:100%的修补几率</string>
+    <!-- From mediocrity to amazing -->
+    <string name="home_greeting_8">准备把平庸变成出众吗？</string>
+    <!-- Playful exaggeration, making patching feel heroic -->
+    <string name="home_greeting_9">从今天开始,拯救应用程序</string>
+    <!-- Light sarcasm, casual and tech-savvy humor -->
+    <string name="home_greeting_10">本应用的动力来自咖啡因和优秀的补丁</string>
+    <!-- Morning greetings (5:00–11:59) -->
+    <string name="home_greeting_morning_1">起床并修补</string>
+    <string name="home_greeting_morning_2">早上好！应用不会自行修补</string>
+    <!-- Afternoon greetings (12:00–16:59) -->
+    <string name="home_greeting_afternoon_1">下午低迷？修补点什么</string>
+    <string name="home_greeting_afternoon_2">午饭后更新真香</string>
+    <string name="home_greeting_afternoon_3">下午班次：更新时刻</string>
+    <!-- Evening greetings (17:00–21:59) -->
+    <string name="home_greeting_evening_1">晚上好！晚间更新，别有一番风味</string>
+    <string name="home_greeting_evening_2">准备休息？先更新个应用吧</string>
+    <string name="home_greeting_evening_3">准备下班？先更新个应用再说</string>
+    <!-- Late night greetings (22:00–23:59) -->
+    <string name="home_greeting_late_night_1">还在熬夜？应用们也在等待更新</string>
+    <string name="home_greeting_late_night_2">深夜更新会话？点赞</string>
+    <string name="home_greeting_late_night_3">夜猫模式：已启动</string>
+    <!-- Super late night greetings (0:00–4:59) -->
+    <string name="home_greeting_super_late_1">更新高峰时段…据说</string>
+    <string name="home_greeting_super_late_2">睡不着？更新个应用</string>
+    <string name="home_greeting_super_late_3">到这个点，干脆起来更新吧</string>
+    <string name="home_greeting_super_late_4">你和服务器，都在线上</string>
+    <string name="home_greeting_super_late_5">夜间且高效</string>
+    <!-- Home Screen - Sources Management -->
+    <string name="sources_management_title">补丁源</string>
+    <string name="sources_management_open_in_browser">在浏览器中打开链接</string>
+    <string name="sources_management_failed_to_open_url">无法打开URL</string>
+    <string name="sources_management_prerelease_toggle">预发布补丁</string>
+    <string name="sources_management_prerelease_toggle_description">接收新实验性补丁版本的早期访问权限</string>
+    <string name="sources_management_experimental_versions_toggle">实验版应用版本</string>
+    <string name="sources_management_experimental_versions_toggle_description">如果可用，对实验性应用目标进行修补</string>
+    <string name="sources_management_already_exists">此资源已添加</string>
+    <string name="sources_management_invalid_url">无效的源URL。请检查地址并重试</string>
+    <string name="sources_management_metadata_unavailable">元数据不可用</string>
+    <string name="sources_management_metadata_unavailable_hint">远程元数据文件不可用。使用已安装的程序包进行修补仍然有效，但此源的自动更新已禁用</string>
+    <string name="sources_management_metadata_unavailable_hint_missing">无法下载补丁包。源URL可能不正确或文件不存在</string>
+    <string name="sources_management_source_enabled">源已启用</string>
+    <string name="sources_management_source_disabled">源已禁用</string>
+    <string name="sources_management_source_updating">正在更新源</string>
+    <!-- Home Screen - Sources Dialogs -->
+    <string name="sources_dialog_display_name">显示名称</string>
+    <string name="sources_dialog_rename">重命名补丁配置文件</string>
+    <string name="sources_dialog_duplicate_name_error">已存在同名的补丁包</string>
+    <string name="sources_dialog_missing_error">无法更新此补丁源。</string>
+    <string name="sources_dialog_view_any_version">任意版本</string>
+    <string name="sources_dialog_view_any_package">任意包</string>
+    <string name="sources_dialog_add_source">添加补丁源</string>
+    <string name="sources_dialog_delete_confirm_message">删除源“%s”吗？此操作无法撤销</string>
+    <string name="sources_dialog_remote">远程</string>
+    <string name="sources_dialog_remote_url">源 URL</string>
+    <string name="sources_dialog_remote_url_formats_title">示例：</string>
+    <string name="sources_dialog_local">本地</string>
+    <string name="sources_dialog_local_file">选择补丁源文件</string>
+    <string name="sources_dialog_local_file_tap_hint">点击浏览存储空间</string>
+    <string name="sources_dialog_local_file_description">从存储中选择 .mpp 补丁源文件</string>
+    <string name="sources_dialog_local_invalid_extension">文件必须为.mpp扩展名</string>
+    <string name="sources_dialog_url_valid">有效的仓库或JSON网址</string>
+    <string name="sources_dialog_url_invalid">URL 必须指向 GitHub/GitLab 仓库或 .json 文件</string>
+    <string name="sources_dialog_local_change_file">更改文件</string>
+    <string name="sources_dialog_preinstalled">预安装</string>
+    <string name="sources_update_success">更新成功</string>
+    <string name="sources_update_unavailable">无可用更新</string>
+    <string name="sources_download_fail">下载补丁失败：%s</string>
+    <string name="sources_download_fail_named">无法更新“%s”。请检查您的互联网连接并重试。</string>
+    <string name="sources_download_endpoint_not_found">找不到“%s”的补丁元数据。</string>
+    <string name="sources_patch_expert_badge">专家</string>
+    <string name="sources_patch_expert_badge_tooltip">在设置中启用专家模式以手动包含此补丁</string>
+    <!-- Home Screen - Dialog 1: APK Availability -->
+    <string name="home_apk_availability_dialog_title">需要帮助找到原始未打补丁的APK吗？</string>
+    <string name="home_apk_availability_dialog_simple">要修补&lt;b&gt;%s&lt;/b&gt;，需要未修补的 APK 版本：</string>
+    <string name="home_apk_availability_dialog_expert">补丁&lt;b&gt;%s&lt;/b&gt;需要未补丁的APK版本</string>
+    <string name="home_apk_availability_recommended_label">推荐</string>
+    <string name="home_apk_availability_unpatched_label">未修补</string>
+    <string name="home_apk_availability_incompatible_label">不兼容</string>
+    <string name="home_apk_availability_yes">是的，帮我找个 APK</string>
+    <string name="home_apk_availability_no">不，我已经有APK了</string>
+    <string name="home_apk_use_saved">使用保存的 APK</string>
+    <string name="home_apk_use_installed">使用已安装的 APK</string>
+    <string name="home_app_info_no_saved_apk">没有已保存的 APK 文件, 需要重新选择 APK 文件进行修补</string>
+    <string name="home_version_requires_android">需要 Android %s+。</string>
+    <string name="home_apk_no_compatible_versions_title">不支持此设备</string>
+    <string name="home_apk_no_compatible_versions_message">&lt;b&gt;%1$s&lt;/b&gt; 没有适用于 Android %2$d (API %3$d) 的支持版本。所有声明的版本都需要更高版本的 Android</string>
+    <!-- Home Screen - Dialog 2: Download Instructions -->
+    <string name="home_download_instructions_title">下载原始 APK</string>
+    <string name="home_download_instructions_steps_title">说明：</string>
+    <string name="home_download_instructions_step1">请按下下面的“%s”按钮。</string>
+    <string name="home_download_instructions_step2_part1">向下滚动网页并按</string>
+    <string name="home_download_instructions_download_button_toast">在网站上按下下载，而不是在这里 😊</string>
+    <string name="home_download_instructions_download_button_toast_2">太棒了！现在点击继续并访问网站👆</string>
+    <string name="home_download_instructions_download_button_toast_3">熟能生巧，你做得越来越好了💪</string>
+    <string name="home_download_instructions_download_button_toast_4">还没到…还没到…🙈</string>
+    <string name="home_download_instructions_download_button_toast_5">好的，我尊重您的奉献精神 🫡</string>
+    <string name="home_download_instructions_download_button_toast_6">您现在是 Morphe 按钮的官方测试员 🏅</string>
+    <string name="home_download_instructions_step3">等待下载完成，并 &lt;b&gt;不要安装&lt;/b&gt; APK</string>
+    <string name="home_download_instructions_step3_mount">等待下载完成，然后 &lt;b&gt;安装 APK&lt;/b&gt;</string>
+    <string name="home_download_instructions_step4">下载完成后，返回 Morphe</string>
+    <string name="home_download_instructions_step4_mount">安装原始APK后，返回Morphe</string>
+    <string name="home_download_instructions_continue">继续到 APKMirror.com</string>
+    <!-- Home Screen - Dialog 3: File Picker Prompt -->
+    <string name="home_file_picker_prompt_title">选择下载的 APK</string>
+    <string name="home_file_picker_prompt_description">选择您刚刚下载的&lt;b&gt;%s&lt;/b&gt; APK 文件</string>
+    <string name="home_file_picker_prompt_open_apk">打开APK文件</string>
+    <string name="home_recommended_version">推荐版本</string>
+    <string name="home_selected_version">已选版本</string>
+    <string name="home_select_apk_title">选择APK</string>
+    <string name="home_select_any_apk_description">选择任何应用程序的 APK 文件，或选择已安装在此设备上的应用程序</string>
+    <string name="home_use_installed_app">使用已安装的应用程序</string>
+    <string name="home_installed_app_picker_title">选择已安装的应用程序</string>
+    <string name="home_installed_app_picker_empty">未找到应用</string>
+    <string name="home_installed_app_picker_filter_all">所有应用</string>
+    <string name="home_installed_app_picker_filter_user">仅用户应用</string>
+    <string name="home_installed_app_picker_filter_system">仅系统应用</string>
+    <string name="home_invalid_apk_unreadable">无法读取文件。请检查“外部存储”是否被限制电池使用</string>
+    <string name="home_invalid_apk_not_an_apk">所选文件不是有效的 APK</string>
+    <string name="home_invalid_apk_io_error">无法打开文件。请重试</string>
+    <string name="home_external_apk_expert_mode_required">此功能仅在专家模式下可用</string>
+    <!-- Home Screen - Dialog 4: Expert Mode Dialog -->
+    <string name="expert_mode_title">高级模式</string>
+    <string name="expert_mode_search">搜索补丁</string>
+    <string name="expert_mode_proceed">开始打补丁</string>
+    <string name="expert_mode_disable_all">禁用所有</string>
+    <string name="expert_mode_disable_all_done">所有补丁已禁用</string>
+    <string name="expert_mode_enable_all">启用所有</string>
+    <string name="expert_mode_enable_all_done">所有补丁已启用</string>
+    <string name="expert_mode_reset_to_default">启用推荐补丁</string>
+    <string name="expert_mode_reset_to_default_done">已应用推荐补丁</string>
+    <string name="expert_mode_restore_saved">还原已保存的选择</string>
+    <string name="expert_mode_restore_saved_done">已保存的选择已恢复</string>
+    <string name="expert_mode_no_results">未找到修补的应用</string>
+    <string name="expert_mode_universal_patches">通用补丁</string>
+    <string name="expert_mode_new_patches">新</string>
+    <string name="expert_mode_multiple_sources_warning_title">已选择多个补丁源</string>
+    <string name="expert_mode_multiple_sources_warning_message">"您已选择来自多个补丁源的补丁。这可能会导致兼容性问题或意想不到的行为。
+
+您确定要继续吗？"</string>
+    <!-- Home Screen - Home Sub-Dialogs -->
+    <string name="home_invalid_signature_title">未经验证的 APK</string>
+    <string name="home_invalid_signature_message">您选择的 APK，对于 &lt;b&gt;%s&lt;/b&gt;，签名证书不匹配。它可能已被修改或来自不受信任的来源</string>
+    <string name="home_invalid_signature_badge">此 APK 可能不是原始版本</string>
+    <string name="home_split_apk_warning_title">检测到拆分 APK</string>
+    <string name="home_split_apk_warning_message">"此文件是 APK 捆绑包
+(&lt;b&gt;APKM / APKS / XAPK&lt;/b&gt;).
+
+为了获得最佳结果，此应用建议补丁 &lt;b&gt;完整 APK&lt;/b&gt;"</string>
+    <string name="home_split_apk_warning_pick_another">选择另一个 APK</string>
+    <string name="home_dialog_unsupported_version_experimental_label">实验性</string>
+    <string name="home_dialog_unsupported_version_experimental_description">此版本具有实验性支持，可能不稳定或不完整</string>
+    <string name="morphe_experimental_app_version_dialog_title">您想进行实验吗？ 🧪</string>
+    <string name="morphe_experimental_app_version_dialog_message">这个版本的 &lt;b&gt;%s&lt;/b&gt; 补丁目前处于实验性支持中&lt;br/&gt;&lt;br/&gt; 在补丁完善期间, 应用可能会出现非预期行为或出现未识别的错误. </string>
+    <string name="home_dialog_unsupported_version_dialog_title">其他支持的版本</string>
+    <string name="home_dialog_unsupported_version_dialog_description">此 APK 不是推荐的应用版本。继续可能会导致应用无法使用</string>
+    <string name="home_dialog_unsupported_version_dialog_proceed">仍然继续</string>
+    <string name="home_dialog_unsupported_version_compatible_versions">兼容版本：</string>
+    <string name="home_dialog_unsupported_version_unsupported_label">不支持</string>
+    <!-- "Build" here refers to a specific compiled version of the app (versionCode) -->
+    <string name="home_dialog_unsupported_version_build">构建 %d</string>
+    <string name="home_dialog_unsupported_version_build_mismatch_description">这是同一版本的不同构建。补丁需要特定的构建</string>
+    <string name="home_dialog_wrong_package_title">选择的 APK 不是您打算修补的应用。</string>
+    <string name="home_dialog_wrong_package_description">您选择的 APK 不是您打算修补的应用</string>
+    <string name="home_dialog_expected_package">预期包：</string>
+    <string name="home_dialog_selected_package">已选择包：</string>
+    <string name="home_outdated_patches_dialog_title">补丁可能已过期</string>
+    <string name="home_outdated_patches_dialog_message">移动数据已激活，已禁用补丁更新</string>
+    <string name="home_outdated_patches_dialog_warning">使用过期补丁可能会导致应用程序无法使用</string>
+    <string name="home_outdated_patches_dialog_update_and_patch">更新并补丁</string>
+    <string name="home_low_disk_space_dialog_title">磁盘空间不足</string>
+    <string name="home_low_disk_space_dialog_message">只有 %1$.2f GB 的可用存储空间。修复至少需要 %2$.2f GB 的可用空间才能正常工作</string>
+    <string name="home_low_disk_space_dialog_warning">继续可能会导致“文件未找到”错误或损坏的输出 APK</string>
+    <string name="home_simple_bundle_select_title">选择补丁来源</string>
+    <!-- Patch Options -->
+    <string name="custom_color">自定义颜色</string>
+    <string name="hex_color">十六进制颜色</string>
+    <string name="patch_option_instructions">说明</string>
+    <string name="patch_option_enter_value">输入值</string>
+    <string name="patch_option_enter_number">输入数字</string>
+    <string name="patch_option_enter_decimal">输入小数</string>
+    <string name="patch_option_list_duplicate">此值已存在</string>
+    <string name="patch_option_list_empty">值不能为空</string>
+    <string name="patch_option_list_empty_state">尚未添加任何值</string>
+    <string name="patch_option_required_missing">%s: 填写所有必填选项</string>
+    <!-- Adaptive Icon Creator -->
+    <string name="adaptive_icon_create">创建自适应图标</string>
+    <string name="adaptive_icon_select_image">选择图像</string>
+    <string name="adaptive_icon_change_image">更改图像</string>
+    <string name="adaptive_icon_background_color">背景颜色</string>
+    <string name="adaptive_icon_reset_transform">重置位置和缩放</string>
+    <string name="adaptive_icon_safe_zone_inner">安全区域（始终可见）</string>
+    <string name="adaptive_icon_safe_zone_outer">遮罩区域（可能会被剪切）</string>
+    <string name="adaptive_icon_no_transparency_warning">图片没有透明像素。结果可能看起来不正确</string>
+    <string name="adaptive_icon_created_success">自适应图标创建成功</string>
+    <string name="adaptive_icon_creation_failed">创建自适应图标失败</string>
+    <string name="adaptive_icon_label">自适应</string>
+    <string name="adaptive_icon_monochrome_label">单色</string>
+    <string name="adaptive_icon_guide">图标创建指南</string>
+    <string name="adaptive_icon_guide_png_title">使用带有透明背景的PNG</string>
+    <string name="adaptive_icon_guide_png_body">前景必须是带有透明背景的PNG文件。纯色背景看起来会不正确——背景颜色应来自下面的背景选择器。</string>
+    <string name="adaptive_icon_guide_safe_zones_title">安全区域</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"内区（实线）：内容在所有启动器形状上始终完全可见。
+外区（虚线）：可能会被启动器蒙版剪裁——将重要细节保留在内区内。"</string>
+    <string name="adaptive_icon_guide_notification_title">通知图标</string>
+    <string name="adaptive_icon_guide_notification_body">从前景色图像自动生成。使用通知滑块调整其大小。所有可见内容在状态栏中显示为白色。</string>
+    <string name="adaptive_icon_guide_monochrome_title">单色图标</string>
+    <string name="adaptive_icon_guide_monochrome_body">使用相同的自适应图标变换从前景色图像自动生成。在Android 13及更高版本上，它会以墙纸强调色进行着色。</string>
+    <string name="notification_icon_preview">通知</string>
+    <!-- Header Creator -->
+    <string name="header_creator_create">创建自定义标头</string>
+    <string name="header_creator_light_theme">亮色主题标题</string>
+    <string name="header_creator_dark_theme">暗色主题标题</string>
+    <string name="header_creator_no_image">未选择任何图像</string>
+    <string name="header_creator_success">标题创建成功</string>
+    <string name="header_creator_failed">创建标题失败</string>
+    <string name="header_creator_guide">页眉创建指南</string>
+    <string name="header_creator_guide_image_title">图像要求</string>
+    <string name="header_creator_guide_image_body">使用任何图像文件（PNG或JPEG）。为了获得最佳效果，请使用宽高比约为 2.7:1 的宽格式图像。带有透明背景的PNG文件将与应用程序主题自然融合。</string>
+    <string name="header_creator_guide_themes_title">浅色和深色主题</string>
+    <string name="header_creator_guide_themes_body">大多数应用程序需要浅色和深色主题的单独图像。一些应用程序（如YouTube Music）仅使用深色主题，因此仅显示该部分。</string>
+    <string name="header_creator_guide_positioning_title">定位和缩放</string>
+    <string name="header_creator_guide_positioning_body">直接在预览中使用捏合缩放和平移手势来定位和缩放图像。当图像靠近中心时，会出现捕捉指南。您还可以使用预览下方的滑块。</string>
+    <!-- Home Screen - App Info Screen -->
+    <string name="home_app_info_uninstall_app_confirmation">是否要卸载此应用？</string>
+    <string name="home_app_info_remove_app_warning">这将永久删除：</string>
+    <string name="home_app_info_delete_item_database">数据库条目</string>
+    <string name="home_app_info_delete_item_patched_apk">修补后的 APK 文件</string>
+    <string name="home_app_info_delete_item_original_apk">原始 APK 文件</string>
+    <string name="home_app_info_delete_preservation_note">您的修补选择和选项将保留以进行将来修补</string>
+    <string name="home_app_info_patches_name_default">补丁</string>
+    <string name="home_app_info_patches_name_fallback">未命名</string>
+    <string name="home_app_info_patches_replace_fail">导入补丁失败：%s</string>
+    <string name="home_app_info_repatch_no_original_apk">找不到原始 APK。无法修补此应用</string>
+    <string name="home_app_info_original_package_name">原始包名</string>
+    <string name="home_app_info_applied_patches">已应用的补丁</string>
+    <string name="home_app_info_patch_source_used">使用的补丁源</string>
+    <string name="home_app_info_install_type_custom_installer">自定义安装程序</string>
+    <string name="home_app_info_install_type_system_installer">系统安装程序</string>
+    <string name="home_app_info_patch_update_available">有可用的补丁更新</string>
+    <string name="home_app_info_patch_update_available_description">有新的修补版本可用。重新修补您的应用以获取最新改进和修复</string>
+    <string name="home_app_info_app_deleted_warning">应用已卸载</string>
+    <string name="home_app_info_app_deleted_description">此应用已在 Morphe 外卸载。重新安装以恢复功能</string>
+    <string name="home_app_info_apk_size">APK大小</string>
+    <!-- Home Screen - Root Mode -->
+    <string name="root_install_apk_required">Root 模式需要先将原始 APK 安装到您的设备上再进行修补</string>
+    <string name="root_gmscore_excluded">Root模式下已排除GmsCore支持补丁</string>
+    <string name="root_pre_patch_installer_title">选择安装方法</string>
+    <string name="root_pre_patch_installer_description">您的设备已获取 root 访问权限。请选择完成修补后安装应用的方式</string>
+    <string name="root_pre_patch_installer_mount_title">Root 挂载模式</string>
+    <string name="root_pre_patch_installer_mount_description">将修补后的APK加载到原生应用之上。无需GmsCore</string>
+    <string name="root_pre_patch_installer_standard_title">标准安装</string>
+    <string name="root_pre_patch_installer_standard_description">作为支持 GmsCore 的独立应用安装。修补后可以选择安装程序</string>
+    <string name="root_pre_patch_installer_hint">安装方法确定哪些修补程序包含，修补后无法更改</string>
+    <!-- Patcher Screen -->
+    <string name="patcher_error_copied">错误已复制到剪贴板</string>
+    <string name="patcher_error_log">错误日志</string>
+    <string name="patcher_error_technical">技术细节</string>
+    <string name="patcher_error_dialog_app_info">应用信息</string>
+    <string name="patcher_tab_logs">补丁日志</string>
+    <string name="patcher_tab_game">游戏</string>
+    <string name="patcher_long_step_warning">此步骤可能需要一段时间。请稍候…</string>
+    <string name="patcher_installing_subtitle">准备摇滚！ 🎸</string>
+    <string name="patcher_success_title">全部完成！ 🎉</string>
+    <string name="patcher_success_subtitle">您的应用已修补并安装！</string>
+    <string name="patcher_complete_title">修补完成！ ✨</string>
+    <string name="patcher_failed_title">哎呀！出现错误</string>
+    <string name="patcher_failed_subtitle">请查看下方的错误详情</string>
+    <string name="patcher_failed_dialog_title">修补失败</string>
+    <string name="patcher_unknown_error">发生未知错误</string>
+    <string name="patcher_conflict_title">包冲突</string>
+    <string name="patcher_conflict_subtitle">您需要卸载现有版本</string>
+    <string name="patcher_conflict_hint">修补后的应用使用的证书与已安装版本不同。卸载将清除所有应用数据</string>
+    <string name="patcher_installed_conflict_title">需要卸载</string>
+    <string name="patcher_installed_conflict_body">"Morphe 使用自己的证书对已打补丁的应用进行签名，该证书与原始证书不同。Android 要求在安装已打补丁的应用之前，移除现有版本。
+
+卸载将永久删除所有应用数据"</string>
+    <string name="patcher_install_error_title">安装错误</string>
+    <string name="patcher_install_error_subtitle">尝试重新卸载并安装</string>
+    <string name="patcher_ready_to_install_subtitle">按下方按钮安装</string>
+    <string name="patcher_ready_to_mount_subtitle">按下方按钮挂载</string>
+    <string name="patcher_storage_permission_dialog_title">无法访问存储路径</string>
+    <string name="patcher_incompatible_patcher_title">更新要求</string>
+    <string name="patcher_incompatible_patcher_description">该补丁包&lt;b&gt;%1$s&lt;/b&gt;需要补丁程序版本&lt;b&gt;%2$s&lt;/b&gt;或更高版本。请更新 Morphe 以补丁此应用</string>
+    <string name="patcher_incompatible_patcher_update_button">下载并更新 Morphe</string>
+    <string name="patcher_storage_permission_description_api30">一个或多个补丁选项指向Morphe无法读取的路径。授予存储访问权限并点击按钮，然后补丁将自动开始</string>
+    <string name="patcher_storage_permission_description_legacy">一个或多个补丁选项指向无法访问的路径。更新补丁选项中的路径，然后重试</string>
+    <string name="patcher_storage_permission_grant">授予存储权限</string>
+    <string name="patcher_storage_permission_denied_warning">存储权限已被拒绝。授予权限以使用此路径，或将文件移动到应用的私有目录</string>
+    <string name="patcher_storage_permission_open_settings">打开存储设置</string>
+    <string name="patcher_storage_badge_denied">权限被拒绝</string>
+    <string name="patcher_storage_badge_missing">未找到</string>
+    <string name="patcher_storage_permission_hint">提示：将文件移动到/Android/data/app.morphe.manager/files/ - 不需要额外权限</string>
+    <!-- Patcher Screen - Patcher Steps -->
+    <string name="patcher_step_group_preparing">准备中</string>
+    <string name="patcher_step_load_patches">加载补丁</string>
+    <string name="patcher_step_prepare_split_apk">合并分割的APK</string>
+    <string name="patcher_step_unpack">读取APK文件</string>
+    <string name="patcher_step_group_patching">修补中</string>
+    <string name="patcher_step_group_saving">保存中</string>
+    <string name="patcher_step_write_patched">写入修补后的 APK 文件</string>
+    <string name="patcher_step_sign_apk">为修补后的 APK 文件签名</string>
+    <!-- Battery optimization pre-flight dialog -->
+    <string name="battery_optimization_dialog_title">后台补丁保护</string>
+    <string name="battery_optimization_dialog_description">一些设备在应用被最小化时可能会停止补丁程序。允许 Morphe 在没有电池限制的情况下运行，以确保补丁完成可靠。</string>
+    <string name="battery_optimization_not_now">暂不</string>
+    <!-- Patcher Screen - Patcher Worker -->
+    <string name="patcher_notification_title">正在修补…</string>
+    <string name="patcher_notification_text">点击返回修补程序</string>
+    <string name="patcher_stop_confirm_title">停止修补程序</string>
+    <string name="patcher_stop_confirm_description">您确定要停止修补过程吗？</string>
+    <!-- Patcher Screen - Patcher Messages -->
+    <string name="patcher_message_1">正在将您的应用塑造成令人赞叹的样子… 🏆</string>
+    <string name="patcher_message_2">教旧应用新技巧… 🎩</string>
+    <string name="patcher_message_3">正在为您的应用进行数字调优… 🔧</string>
+    <string name="patcher_message_4">正在醸造数字魔法… ☕</string>
+    <string name="patcher_message_5">建议休息一下… ☕</string>
+    <string name="patcher_message_6">看看外面，天气真好… 🌤️</string>
+    <string name="patcher_message_7">正在调整 1 和 0… 🤖</string>
+    <string name="patcher_message_8">正在解开数字意大利面条… 🍝</string>
+    <!-- Morphe patches fix YouTube bugs that Google still has not fixed. -->
+    <string name="patcher_message_9">正在修复未修补应用中的错误… 🪲</string>
+    <string name="patcher_message_10">精彩的补丁值得等待… ⏳</string>
+    <string name="patcher_message_11">抛光像素直到它们闪耀… 💎</string>
+    <string name="patcher_message_12">在机长关掉\"正在进行补丁\"标识之前请保持座位…💺✈️</string>
+    <string name="patcher_message_13">正在为您烹饪打好补丁的应用，热腾腾…… 🍳</string>
+    <!-- "bytecode" can be translated from "the app code" -->
+    <string name="patcher_message_14">正在与字节码礼貌地协商… 🤝</string>
+    <!-- Space flight communications callout. -->
+    <string name="patcher_message_15">所有系统正常……打补丁轨迹稳定…… 🚀</string>
+    <string name="patcher_message_16">榨取额外动力，就像从数字柠檬中榨取果汁一样…… 🍋</string>
+    <string name="patcher_message_17">鼓励应用接受其全新、更好的自我…… 🌱</string>
+    <!-- Quantum physics (box emoji is a reference to Schrodinger's cat). -->
+    <string name="patcher_message_18">将应用叠加从未打补丁更改为已打补丁…… 📦⚛️</string>
+    <!-- Throw away reference to a Saturday Night Live sketch. "fever" means sickness or the flu. "prescription" means medical treatment or can be translated from "cure" -->
+    <string name="patcher_message_19">您的应用发烧了，唯一的治疗方法是更多的补丁…… 🩺🔔</string>
+    <string name="patcher_message_20">正在移除无意义的内容。请稍等… 🗑️</string>
+    <!-- Expert patcher Screen -->
+    <string name="patching_app">修补应用</string>
+    <string name="memory_usage">内存使用</string>
+    <!-- Patcher Screen - Other hidden strings -->
+    <string name="applying_patches">应用补丁</string>
+    <string name="failed_to_execute_patch">执行 %s 失败</string>
+    <string name="patched_app_saved_toast">修补后的应用已保存以备后用</string>
+    <string name="patched_app_save_failed_toast">保存修补后的应用失败</string>
+    <string name="plugin_activity_dialog_body">需要用户交互才能继续使用此插件</string>
+    <string name="patcher_process_exit_message">修補程式程序結束，傳回代碼 %s</string>
+    <string name="install_app_success">安装成功</string>
+    <string name="install_app_fail">应用安装失败：%s</string>
+    <string name="save_apk_success">APK 已保存</string>
+    <string name="saved_app_export_failed">导出修补的应用失败</string>
+    <string name="saved_app_removed_toast">已移除保存的修补应用</string>
+    <string name="saved_app_launch_unavailable">请在打开应用前安装它</string>
+    <string name="package_name">包名</string>
+    <string name="failed_to_mount">挂载失败：%s</string>
+    <string name="failed_to_unmount">取消挂载失败：%s</string>
+    <!-- Patcher Screen - Mini-games -->
+    <string name="mini_game_score">得分：%d</string>
+    <string name="mini_game_best">最佳 %d</string>
+    <string name="mini_game_new_record">新的记录！</string>
+    <string name="mini_game_game_over">游戏结束</string>
+    <string name="mini_game_try_again">重试</string>
+    <string name="mini_game_paused">暂停</string>
+    <string name="mini_game_resume">继续</string>
+    <string name="mini_game_2048_picker_subtitle">滑动方块进行合并</string>
+    <string name="mini_game_flappy_picker_subtitle">点击穿过管道</string>
+    <string name="mini_game_flappy_tap_to_start">点击飞行</string>
+    <string name="mini_game_snake_picker_subtitle">吃食物，不要撞到自己</string>
+    <string name="mini_game_snake_swipe_to_start">滑动开始</string>
+    <string name="mini_game_dino_picker_subtitle">点击跳过仙人掌</string>
+    <string name="mini_game_dino_tap_to_start">点击奔跑</string>
+    <!-- Settings -->
+    <string name="appearance">外观</string>
+    <string name="advanced">高级</string>
+    <string name="system">系统</string>
+    <!-- Settings - Appearance Tab - Background animation -->
+    <string name="settings_appearance_background">背景动画</string>
+    <string name="settings_appearance_background_circles">圆圈</string>
+    <string name="settings_appearance_background_rings">环形</string>
+    <string name="settings_appearance_background_mesh">网格</string>
+    <string name="settings_appearance_background_space">空间</string>
+    <string name="settings_appearance_background_shapes">形状</string>
+    <string name="settings_appearance_background_snow">雪花</string>
+    <string name="settings_appearance_background_grid">网格</string>
+    <string name="settings_appearance_background_particles">粒子</string>
+    <string name="settings_appearance_background_none">无</string>
+    <string name="settings_appearance_background_random">随机</string>
+    <string name="settings_appearance_background_random_interval_launch">启动时</string>
+    <string name="settings_appearance_background_random_interval_daily">每日</string>
+    <string name="settings_appearance_background_random_interval_3days">每3天</string>
+    <string name="settings_appearance_parallax_effect">视差效果</string>
+    <string name="settings_appearance_parallax_effect_description">倾斜设备时平滑背景过渡</string>
+    <!-- Settings - Appearance Tab - Theme -->
+    <string name="settings_appearance_theme">主题</string>
+    <string name="settings_appearance_system">系统</string>
+    <string name="settings_appearance_light">浅色</string>
+    <string name="settings_appearance_dark">深色</string>
+    <string name="settings_appearance_dynamic">Material You</string>
+    <string name="settings_appearance_accent_color">强调色</string>
+    <string name="settings_appearance_pure_black">纯黑</string>
+    <string name="settings_appearance_pure_black_description">使用真正的黑色背景</string>
+    <!-- Settings - Appearance Tab - Language Selector -->
+    <string name="settings_appearance_app_language">应用语言</string>
+    <string name="settings_appearance_app_language_current">当前语言</string>
+    <string name="settings_appearance_translations_info_title">某些语言的翻译可能缺失或不完整</string>
+    <string name="settings_appearance_translations_info_text">访问 %s 以翻译新语言或改进现有翻译。</string>
+    <!-- Settings - Appearance Tab - Home Screen Section -->
+    <string name="settings_appearance_home_screen">主屏幕</string>
+    <string name="settings_appearance_greeting_phrases">问候语</string>
+    <string name="settings_appearance_greeting_phrases_subtitle">在主屏幕上显示问候消息</string>
+    <!-- Settings - Appearance Tab - App Icon Selector -->
+    <string name="settings_appearance_app_icon_selector_title">应用图标</string>
+    <string name="settings_appearance_app_icon_default">默认</string>
+    <string name="settings_appearance_app_icon_light_2">天空</string>
+    <string name="settings_appearance_app_icon_light_3">日落</string>
+    <string name="settings_appearance_app_icon_dark_1">大海</string>
+    <string name="settings_appearance_app_icon_dark_2">虚空</string>
+    <string name="settings_appearance_app_icon_dark_3">靛青</string>
+    <string name="settings_appearance_app_icon_change_dialog_title">更改应用图标？</string>
+    <string name="settings_appearance_app_icon_change_dialog_message">更改为&lt;b&gt;%s&lt;/b&gt;并重启？</string>
+    <string name="settings_appearance_app_icon_change_dialog_confirm">更改图标</string>
+    <!-- Settings - Advanced Tab - Updates Section -->
+    <string name="settings_advanced_updates">更新</string>
+    <string name="settings_advanced_updates_use_prereleases">预发布更新</string>
+    <string name="settings_advanced_updates_use_prereleases_description">提前访问新的 Morphe 应用版本。在补丁来源中启用预发布版本</string>
+    <string name="settings_advanced_updates_allow_metered">移动数据更新</string>
+    <string name="settings_advanced_updates_allow_metered_description">允许 Morphe 通过移动数据下载应用和补丁更新</string>
+    <string name="settings_advanced_updates_background_notifications">后台更新通知</string>
+    <string name="settings_advanced_updates_background_notifications_description">定期在后台检查更新并通知可用</string>
+    <string name="settings_advanced_updates_background_notifications_description_fcm">即使应用已关闭，也推送新版本的通知</string>
+    <string name="settings_advanced_update_interval">检查频率</string>
+    <string name="settings_advanced_update_interval_dialog_title">检查更新</string>
+    <string name="settings_advanced_update_interval_hourly">每小时一次</string>
+    <string name="settings_advanced_update_interval_daily">每天一次</string>
+    <string name="settings_advanced_update_interval_weekly">每周一次</string>
+    <string name="settings_advanced_update_interval_monthly">每月一次</string>
+    <string name="settings_advanced_update_interval_chip_subtitle">后台检查频率</string>
+    <string name="settings_advanced_update_interval_battery_warning">后台检查在某些设备上可能无法可靠工作。制造商如小米、华为、三星和一加经常积极限制后台进程以节省电池</string>
+    <!-- Notification content -->
+    <string name="notification_manager_update_title">Morphe update available</string>
+    <string name="notification_bundle_update_title">有新的补丁可用</string>
+    <string name="notification_update_text">版本 %s 已准备好下载。</string>
+    <string name="notification_bundle_update_text_unversioned">点按打开 Morphe 并更新</string>
+    <string name="notification_permission_dialog_title">允许通知</string>
+    <string name="notification_permission_dialog_description">Morphe needs notification permission to alert you when updates are available in the background</string>
+    <string name="notification_post_patch_dialog_title">您是否希望在有更新时收到通知？</string>
+    <string name="notification_channel_fcm_updates">更新通知</string>
+    <string name="notification_channel_fcm_updates_description">关于 Morphe 新版本和补丁的通知</string>
+    <string name="notification_channel_patcher">修补中</string>
+    <string name="notification_channel_patcher_description">当 Morphe 在后台为应用打补丁时显示</string>
+    <!-- Settings - Advanced Tab - Expert settings Section -->
+    <string name="settings_advanced_expert">高级设置</string>
+    <string name="settings_advanced_expert_mode">高级模式</string>
+    <string name="settings_advanced_expert_mode_description">启用复杂 Morphe 修补设置和自定义选项</string>
+    <string name="settings_advanced_expert_mode_dialog_title">启用专家模式？</string>
+    <string name="settings_advanced_expert_mode_dialog_message">专家模式提供了更多控制如何应用补丁的选项，但如果错误配置专家模式设置，可能会导致应用程序无法使用</string>
+    <string name="settings_advanced_strip_unused_libs">为设备架构优化</string>
+    <string name="settings_advanced_strip_unused_libs_description">删除未使用的 CPU 架构库和分体 APK 模块</string>
+    <!-- Bytecode mode -->
+    <string name="settings_advanced_bytecode_mode">字节码处理模式</string>
+    <string name="settings_advanced_bytecode_mode_dialog_description">控制打补丁期间字节码的处理方式。影响打补丁的速度、内存使用情况和输出 APK 大小</string>
+    <string name="settings_advanced_bytecode_mode_strip_fast_label">快速（推荐）</string>
+    <string name="settings_advanced_bytecode_mode_strip_fast">快速</string>
+    <string name="settings_advanced_bytecode_mode_strip_fast_description">更快地进行补丁，且内存占用更低，但 APK 文件会更大。 推荐用于内存较低或较旧的设备</string>
+    <string name="settings_advanced_bytecode_mode_full">完整</string>
+    <string name="settings_advanced_bytecode_mode_full_description">较慢的修补速度，复制旧版行为。仅当快速模式导致问题时才推荐使用</string>
+    <!-- Settings - Advanced Tab - GitHub PAT Settings -->
+    <string name="settings_advanced_github_pat">GitHub访问令牌</string>
+    <string name="settings_advanced_github_pat_description">用于拉取请求源所需</string>
+    <string name="settings_advanced_github_pat_configured">已配置令牌</string>
+    <string name="settings_advanced_github_pat_how_to_get">如何获取令牌</string>
+    <string name="settings_advanced_github_pat_dialog_title">设置 GitHub 个人访问令牌</string>
+    <string name="settings_advanced_github_pat_dialog_description">设置 GitHub 个人访问令牌以能够将 pull 请求添加为外部源。创建具有公共仓库范围的 PAT</string>
+    <string name="settings_advanced_github_pat_export_include_label">包含在设置导出中</string>
+    <string name="settings_advanced_github_pat_export_include_supporting">在导出 Morphe 设置时也导出令牌</string>
+    <string name="settings_advanced_github_pat_export_warning">请勿共享您的 PAT。如果您在设置导出中包含它，请将该文件保持为私有，因为它包含令牌</string>
+    <!-- Settings - Advanced Tab - Patch Options Section -->
+    <string name="settings_advanced_patch_options">补丁选项</string>
+    <string name="settings_advanced_patch_options_youtube_description">主题、品牌和标头选项</string>
+    <string name="settings_advanced_patch_options_restart_message">更改补丁选项需要重新修补应用以生效</string>
+    <string name="settings_advanced_patch_options_expert_mode_notice">高级模式下补丁选项将在修补过程中可用</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Theme Colors -->
+    <string name="settings_advanced_patch_options_theme_colors">应用主题颜色</string>
+    <string name="settings_advanced_patch_options_theme_colors_description">更改背景颜色</string>
+    <string name="settings_advanced_patch_options_dark_theme_color">深色主题背景颜色</string>
+    <string name="settings_advanced_patch_options_light_theme_color">浅色主题背景颜色</string>
+    <string name="settings_advanced_patch_options_theme_color_description">可以是十六进制颜色 (#RRGGBB) 或颜色资源引用</string>
+    <string name="settings_advanced_patch_options_loading">加载补丁选项…</string>
+    <string name="settings_advanced_patch_options_waiting_for_source">等待源更新</string>
+    <string name="settings_advanced_patch_options_load_error">无法加载补丁选项</string>
+    <string name="settings_advanced_patch_options_no_available">此补丁没有可用选项</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Custom Branding -->
+    <string name="settings_advanced_patch_options_custom_branding">自定义品牌</string>
+    <string name="settings_advanced_patch_options_custom_branding_description">更改应用显示名称</string>
+    <string name="settings_advanced_patch_options_custom_branding_app_name">应用名称</string>
+    <string name="settings_advanced_patch_options_custom_branding_app_name_hint">输入自定义名称</string>
+    <string name="settings_advanced_patch_options_custom_branding_custom_icon">自定义图标</string>
+    <string name="settings_advanced_patch_options_custom_branding_custom_icon_instruction">"用于作为自定义图标的图像文件夹。
+
+该文件夹必须包含一个或多个以下文件夹，具体取决于设备的 DPI：
+- mipmap-mdpi
+- mipmap-hdpi
+- mipmap-xhdpi
+- mipmap-xxhdpi
+- mipmap-xxxhdpi
+
+每个文件夹都必须包含以下所有文件：
+morphe_adaptive_background_custom.png
+morphe_adaptive_foreground_custom.png
+
+图像尺寸应如下所示：
+- mipmap-mdpi: 108x108 px
+- mipmap-hdpi: 162x162 px
+- mipmap-xhdpi: 216x216 px
+- mipmap-xxhdpi: 324x324 px
+- mipmap-xxxhdpi: 432x432 px
+
+可选地，路径包含一个带有单色图标文件的 'drawable' 文件夹：
+morphe_adaptive_monochrome_custom.xml
+
+可选地，路径包含一个在以下格式之一的通知图标：
+- 在 'drawable' 中 XML 矢量绘图：
+  morphe_notification_icon_custom.xml
+- 在 'drawable-dpi' 文件夹中的 PNG 光栅图像：
+  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
+    <string name="settings_advanced_patch_options_custom_header">自定义标题logo</string>
+    <string name="settings_advanced_patch_options_custom_header_description">更改标题 Logo</string>
+    <string name="settings_advanced_patch_options_custom_header_instruction">"包含图像用作自定义标题logo 的文件夹。
+
+文件夹必须包含一个或多个以下文件夹，取决于设备的 DPI：
+- drawable-hdpi
+- drawable-xhdpi
+- drawable-xxhdpi
+- drawable-xxxhdpi
+
+每个文件夹必须包含以下所有文件：
+morphe_header_custom_light.png
+morphe_header_custom_dark.png
+
+图像维度必须如下：
+- drawable-hdpi: 194x72 px
+- drawable-xhdpi: 258x96 px
+- drawable-xxhdpi: 387x144 px
+- drawable-xxxhdpi: 512x192 px"</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Hide Shorts -->
+    <string name="settings_advanced_patch_options_hide_shorts_features">隐藏 Shorts 功能</string>
+    <string name="settings_advanced_patch_options_hide_shorts_app_shortcut">隐藏 Shorts 应用快捷方式</string>
+    <string name="settings_advanced_patch_options_hide_shorts_app_shortcut_description">从启动器长按菜单中删除 Shorts</string>
+    <string name="settings_advanced_patch_options_hide_shorts_widget">隐藏 Shorts 小部件</string>
+    <string name="settings_advanced_patch_options_hide_shorts_widget_description">从启动器小部件中删除 Shorts 按钮</string>
+    <!-- Settings - System Tab - Installer Section -->
+    <string name="installer">安装程序</string>
+    <string name="installer_title">选择安装程序</string>
+    <string name="installer_internal_name">系统安装程序</string>
+    <string name="installer_internal_description">使用 Android 包安装程序</string>
+    <string name="installer_auto_saved_name">Rooted 挂载安装器</string>
+    <string name="installer_auto_saved_description">将修补后的 APK 安装在已安装的应用程序上</string>
+    <string name="installer_shizuku_description">使用 Shizuku 或 Sui 静默安装。</string>
+    <string name="installer_option_none">无备用</string>
+    <string name="installer_none_description">未配置备用安装程序</string>
+    <string name="installer_status_requires_root">需要 root 权限</string>
+    <string name="installer_status_not_supported">此操作不支持</string>
+    <string name="installer_status_shizuku_not_installed">安装 Shizuku 或 Sui 以使用此选项</string>
+    <string name="installer_status_shizuku_not_running">启动 Shizuku 或 Sui 后重试</string>
+    <string name="installer_status_shizuku_permission">从 Shizuku 应用授予 Morphe Shizuku 权限</string>
+    <string name="installer_mount_warning_install">您的主要安装程序设置为根挂载安装程序。此保存的应用未使用挂载安装</string>
+    <string name="mount_version_mismatch_message">原始应用版本（%2$s）与修补后的应用版本（%1$s）不匹配。挂载匹配的原始版本，然后重试</string>
+    <string name="installer_status_shizuku_unsupported">已安装的 Shizuku 版本不受支持</string>
+    <string name="installer_action_open_shizuku">打开 Shizuku</string>
+    <string name="installer_hint_generic">安装失败。请重试或切换到其他安装程序</string>
+    <string name="installer_hint_conflict">已安装具有相同包名的其他应用。请在继续之前卸载它</string>
+    <string name="installer_external_launched">正在打开 %s…</string>
+    <string name="installer_external_timeout">%s 未确认安装。请检查其他应用并重试。</string>
+    <string name="installer_external_success">%s 报告安装成功。</string>
+    <string name="installer_unavailable_title">%s (不可用)</string>
+    <string name="installer_unavailable_message">您的首选安装程序（%s）当前不可用。您可以修复问题并重试，或使用标准安装程序</string>
+    <string name="installer_unavailable_shizuku_hint">确保 Shizuku 正在运行并已授予此应用权限</string>
+    <string name="installer_use_standard">使用标准</string>
+    <string name="settings_prompt_installer_on_install">安装程序选择提示</string>
+    <string name="settings_prompt_installer_on_install_description">每次安装已修补的应用时，都会显示安装程序选择对话框</string>
+    <string name="settings_auto_install_with_shizuku">补丁应用后自动安装</string>
+    <string name="settings_auto_install_with_shizuku_description">在补丁完成安装后，静默安装补丁后的 APK</string>
+    <string name="settings_auto_install_prompt_conflict">已启用 \"%s\" - 将跳过自动安装</string>
+    <!-- Settings - System Tab - Performance Section -->
+    <string name="settings_system_battery_optimization">电池优化</string>
+    <string name="settings_system_battery_optimization_description">在应用最小化时，保持修补程序运行</string>
+    <string name="settings_system_performance">性能</string>
+    <string name="settings_system_process_runtime">修补程序运行时</string>
+    <string name="settings_system_process_runtime_description">在单独的进程中运行修补以提高稳定性</string>
+    <string name="settings_system_process_runtime_memory_limit">内存限制</string>
+    <string name="settings_system_process_runtime_memory_limit_description">更高的限制可以加速在兼容设备上的修补</string>
+    <string name="settings_system_process_runtime_enable">启用独立进程</string>
+    <string name="settings_system_memory_limit_subtitle">修补程序可用的内存大小</string>
+    <string name="settings_system_memory_limit_warning">较低的内存限制可能会导致修补较大应用时失败</string>
+    <string name="settings_system_process_runtime_enabled_description">%s MB限制</string>
+    <string name="settings_system_process_runtime_disabled_description">点击以配置</string>
+    <string name="settings_system_process_runtime_description_not_available">此功能需要 Android 11 或更高版本</string>
+    <!-- Settings - System Tab - Import and Export Section -->
+    <string name="settings_system_import_export">导入 &amp; 导出</string>
+    <string name="settings_system_keystore">密钥库</string>
+    <string name="settings_system_import_keystore_description">导入或导出您的签名密钥库</string>
+    <string name="settings_system_import_keystore_dialog_title">输入密钥库凭据</string>
+    <string name="settings_system_import_keystore_dialog_description">您需要输入密钥库的凭据才能导入它</string>
+    <string name="settings_system_import_keystore_dialog_alias_field">用户名 (别名)</string>
+    <string name="settings_system_import_keystore_dialog_password_field">密码</string>
+    <string name="settings_system_import_keystore_dialog_format_field">密钥库格式</string>
+    <string name="settings_system_import_keystore_wrong_credentials">密钥库凭据错误</string>
+    <string name="settings_system_import_keystore_success">密钥库已导入</string>
+    <string name="settings_system_import_keystore_failed">导入密钥库失败</string>
+    <string name="settings_system_export_keystore_unavailable">无可用密钥库可导出</string>
+    <string name="settings_system_export_keystore_success">密钥库已导出</string>
+    <string name="settings_system_export_keystore_failed">密钥库导出失败</string>
+    <string name="settings_system_show_password_field">显示密码</string>
+    <string name="settings_system_hide_password_field">隐藏密码</string>
+    <string name="settings_system_morphe_settings">Morphe 设置</string>
+    <string name="settings_system_import_manager_settings_description">备份和还原您的 Morphe 设置</string>
+    <string name="settings_system_import_manager_settings_fail">导入 Morphe 设置失败：%s</string>
+    <string name="settings_system_import_manager_settings_success">Morphe 设置已导入</string>
+    <string name="settings_system_export_manager_settings_fail">导出 Morphe 设置失败：%s</string>
+    <string name="settings_system_export_manager_settings_success">Morphe 设置已导出</string>
+    <string name="settings_system_debug">调试</string>
+    <string name="settings_system_export_debug_logs_description">保存系统日志以便进行故障排除</string>
+    <string name="settings_system_export_debug_logs_export_read_failed">读取日志失败 (退出代码 %s)</string>
+    <string name="settings_system_export_debug_logs_export_failed">导出日志失败</string>
+    <string name="settings_system_export_debug_logs_export_success">日志已导出</string>
+    <!-- Settings - System Tab - Files & Storage Section -->
+    <string name="settings_system_files">文件和存储</string>
+    <string name="settings_system_apks_size">总大小：%s</string>
+    <!-- Settings - System Tab - Storage Management - Patched APKs Management -->
+    <string name="settings_system_patched_apks_title">已修补 APK</string>
+    <string name="settings_system_patched_apks_description">管理保存的已修补应用文件</string>
+    <string name="settings_system_patched_apks_empty">尚未保存任何已修补 APK</string>
+    <string name="settings_system_patched_apks_delete_title">是否要删除已保存的修补 APK？</string>
+    <string name="settings_system_patched_apks_delete_confirm">是否要删除选中的修补 APK？</string>
+    <string name="settings_system_patched_apks_deleted">已成功删除修补 APK</string>
+    <!-- Settings - System Tab - Storage Management - Original APKs Management -->
+    <string name="settings_system_original_apks_title">原始 APK</string>
+    <string name="settings_system_original_apks_description">保留应用以供重新修补。每个应用只会保留一个版本</string>
+    <string name="settings_system_original_apks_empty">尚未存储任何原始 APK</string>
+    <string name="settings_system_original_apks_deleted">已成功删除原始 APK</string>
+    <string name="settings_system_original_apks_delete_title">是否要删除原始 APK？</string>
+    <string name="settings_system_original_apks_delete_confirm">删除 %s 的原始 APK？没有新的 APK，您将无法重新修补</string>
+    <!-- Settings - System Tab - Storage Management - Patch Selection Management -->
+    <string name="settings_system_patch_selections_title">补丁选择项</string>
+    <string name="settings_system_patch_selections_description">保存的补丁选择项，在程序卸载后也会保留</string>
+    <string name="settings_system_patch_selection_reset_all_confirm_title">重置补丁选择?</string>
+    <string name="settings_system_patch_selection_reset_package_confirm_title">重置补丁选择?</string>
+    <string name="settings_system_patch_selection_reset_source_confirm_title">重置补丁选择?</string>
+    <string name="settings_system_patch_selection_no_saved">重置补丁选择</string>
+    <string name="settings_system_patch_selection_total_summary_format">%1$s 到 %2$s</string>
+    <string name="settings_system_patch_selection_patches_in_sources_format">%1$s 到 %2$s</string>
+    <string name="settings_system_patch_selection_source_format">源 #%s</string>
+    <string name="settings_system_patch_selection_will_delete">这将删除：</string>
+    <string name="settings_system_patch_selection_reset_all_warning">这将永久删除所有保存的补丁选择，适用于所有包和源</string>
+    <string name="settings_system_patch_selection_reset_package_warning">这将永久删除所有源当中, 为 %s 保存的补丁选择</string>
+    <string name="settings_system_patch_selection_reset_source_warning">这将永久删除已保存的补丁选择，包括 %1$s 在源 #%2$s 中</string>
+    <string name="settings_system_export_source_data_fail">导出源数据失败</string>
+    <string name="settings_system_export_source_data_success">源数据导出成功</string>
+    <string name="settings_system_import_source_data_fail">导入源数据失败</string>
+    <string name="settings_system_import_source_data_success">源数据导入成功</string>
+    <string name="settings_system_patch_details_title">补丁详情</string>
+    <string name="settings_system_selected_patches_title">已选择的补丁 (%s)</string>
+    <string name="settings_system_patch_options_title">补丁选项 (%s)</string>
+    <string name="settings_system_no_patches_or_options">没有保存的补丁或选项</string>
+    <!-- Settings - System Tab - Custom file picker -->
+    <string name="settings_system_custom_file_picker">自定义文件选择器</string>
+    <string name="settings_system_custom_file_picker_description">使用Morphe内置的文件选择器代替系统默认的文件选择器</string>
+    <!-- File Picker -->
+    <string name="file_picker_previous_directory">上一级目录</string>
+    <string name="file_picker_no_files">这里没有文件</string>
+    <string name="file_picker_read_error">无法读取此目录</string>
+    <string name="file_picker_internal_storage">内部存储空间</string>
+    <string name="file_picker_sd_card">SD卡</string>
+    <string name="file_picker_root">根目录 (/)</string>
+    <string name="file_picker_sort_name_asc">名称 (A–Z)</string>
+    <string name="file_picker_sort_name_desc">名称 (Z–A)</string>
+    <string name="file_picker_sort_size_desc">大小 (从大到小)</string>
+    <string name="file_picker_sort_size_asc">大小 (从小到大)</string>
+    <string name="file_picker_sort_date_desc">日期 (最新到旧)</string>
+    <string name="file_picker_sort_date_asc">日期 (从旧到新)</string>
+    <!-- Settings - System Tab - About Section -->
+    <string name="settings_system_about">关于</string>
+    <string name="settings_system_share_website">分享网站</string>
+    <string name="settings_system_share_website_description">分享官方 Morphe 网站</string>
+    <string name="settings_system_manager_description">一个开源项目，用于现代化的、流线型的流行 Android 应用补丁，由社区反馈和贡献驱动</string>
+    <string name="credits">积分</string>
+    <string name="credits_current_development">当前开发</string>
+    <string name="credits_prior_development">先前开发</string>
+    <string name="opensource_licenses">开源许可证</string>
+    <!-- Shared strings -->
+    <string name="select_file">选择文件</string>
+    <string name="select_folder">选择文件夹</string>
+    <string name="patches">补丁</string>
+    <string name="home">主页</string>
+    <string name="settings">设置</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="all">全部</string>
+    <string name="filter">筛选</string>
+    <string name="reset">重置</string>
+    <string name="reset_all">重置所有</string>
+    <string name="confirm">确认</string>
+    <string name="warning">警告</string>
+    <string name="error_">错误</string>
+    <string name="retry">重试</string>
+    <string name="refresh">刷新</string>
+    <string name="add">添加</string>
+    <string name="close">关闭</string>
+    <string name="back">返回</string>
+    <string name="next">下一步</string>
+    <string name="done">完成</string>
+    <string name="skip">跳过</string>
+    <string name="clear">清除</string>
+    <string name="delete">删除</string>
+    <string name="remove">移除</string>
+    <string name="disable">禁用</string>
+    <string name="enable">启用</string>
+    <string name="loading">正在加载…</string>
+    <string name="not_installed">未安装</string>
+    <string name="view">查看</string>
+    <string name="search">搜索</string>
+    <string name="search_no_results">找不到结果</string>
+    <string name="sort">排序</string>
+    <string name="any_version">任意</string>
+    <string name="enabled">已启用</string>
+    <string name="disabled">已禁用</string>
+    <string name="selected">已选择</string>
+    <string name="not_selected">未选择</string>
+    <string name="select_all">全选</string>
+    <string name="select_all_done">全部已选</string>
+    <string name="deselect_all">取消全选</string>
+    <string name="deselect_all_done">全部已取消</string>
+    <string name="reorder_list">重新排序列表</string>
+    <string name="reorder_list_hint">拖动以重新排序</string>
+    <string name="reorder_done">排序已保存</string>
+    <string name="reset_order">重置排序</string>
+    <string name="reset_order_done">订单已重置</string>
+    <string name="rename">重命名</string>
+    <string name="import_">导入</string>
+    <string name="export">导出</string>
+    <string name="download">下载</string>
+    <string name="less">更少</string>
+    <string name="expand">展开</string>
+    <string name="expanded">已展开</string>
+    <string name="collapse">折叠</string>
+    <string name="collapsed">已折叠</string>
+    <string name="available">可用</string>
+    <string name="continue_">继续</string>
+    <string name="version">版本</string>
+    <string name="patch">修补</string>
+    <string name="repatch">重新修补</string>
+    <string name="open">打开</string>
+    <string name="mount">挂载</string>
+    <string name="mounted">已挂载</string>
+    <string name="unmount">取消挂载</string>
+    <string name="unmounted">已取消挂载</string>
+    <string name="remount">重新挂载</string>
+    <string name="share">分享</string>
+    <string name="install">安装</string>
+    <string name="installed">已安装</string>
+    <string name="reinstall">重新安装</string>
+    <string name="uninstall">卸载</string>
+    <string name="uninstalled">已卸载</string>
+    <string name="save">保存</string>
+    <string name="saved">已保存</string>
+    <string name="update">更新</string>
+    <string name="allow">允许</string>
+    <string name="details">详细信息</string>
+    <string name="hide">隐藏</string>
+    <string name="hidden">隐藏</string>
+    <string name="unhide">显示</string>
+    <string name="unhide_done">已显示</string>
+    <string name="logs">日志</string>
+    <string name="sources">来源</string>
+    <string name="installing_ellipsis">正在安装…</string>
+    <string name="mounting_ellipsis">正在挂载…</string>
+    <string name="unmounting_ellipsis">正在卸载…</string>
+    <string name="importing_ellipsis">正在导入…</string>
+    <string name="imported_successfully">设置导入成功</string>
+    <string name="changelog">查看更新日志</string>
+    <string name="changelog_description">查看此更新中的最新更改</string>
+    <string name="changelog_download_fail">下载更新日志失败：%s</string>
+    <string name="changelog_retry">重试</string>
+    <string name="changelog_empty">无可用更新日志</string>
+    <string name="no_network_toast">无可用网络连接</string>
+    <string name="update_available">有可用更新</string>
+    <string name="ready_to_install_update">准备安装更新</string>
+    <string name="update_completed">更新已安装</string>
+    <string name="install_update_manager_failed">安装更新失败</string>
+    <string name="installing_manager_update">正在安装更新…</string>
+    <string name="downloading_manager_update">正在下载更新…</string>
+    <string name="download_manager_failed">下载更新失败：%s</string>
+    <string name="failed_to_check_updates">检查更新失败：%s</string>
+    <string name="failed_to_download_update">下载更新失败：%s</string>
+    <string name="resume_download">继续下载</string>
+    <string name="download_confirmation_metered">"您当前使用的是计量连接，可能会产生服务提供商的数据费用。\n\n您仍然要继续吗？"</string>
+    <string name="download_update_confirmation">下载更新？</string>
+    <!-- Onboarding coach marks -->
+    <!-- %1$d = current step number, %2$d = total number of steps (e.g. "3 of 13") -->
+    <string name="onboarding_step_of">%1$d/%2$d</string>
+    <string name="onboarding_sources_desc">管理您的补丁源。每个源提供可应用于您的应用程序的补丁</string>
+    <string name="onboarding_swipe_title">滑动势</string>
+    <string name="onboarding_swipe_desc">向右滑动应用程序卡片以查看其可用补丁。向左滑动可从主屏幕隐藏该卡片</string>
+    <string name="onboarding_settings_desc">自定义 Morphe：外观、高级选项和系统工具</string>
+    <string name="onboarding_sources_patches_desc">点击以查看此源可用的所有补丁</string>
+    <string name="onboarding_sources_version_desc">点击版本以查看此源的完整更改日志</string>
+    <string name="onboarding_sources_prerelease_desc">启用此选项以从此源接收预发布补丁版本</string>
+    <string name="onboarding_appearance_tab_desc">自定义应用程序的外观：主题、强调色和背景</string>
+    <string name="onboarding_appearance_theme_desc">在浅色、深色或系统主题之间进行选择。您还可以选择自定义强调色或启用动态色彩</string>
+    <string name="onboarding_expert_mode_desc">启用专家模式以解锁补丁选择、自定义选项和其他高级功能</string>
+    <!-- Translate "System" the same way as the System settings tab -->
+    <string name="onboarding_system_tab_title">系统标签</string>
+    <string name="onboarding_system_tab_desc">密钥库管理、导入/导出工具和应用程序信息</string>
+    <string name="onboarding_system_installer_desc">选择如何安装已打补丁的应用程序：标准、root mount 或 Shizuku</string>
+    <string name="onboarding_system_process_runtime_desc">在单独的进程中运行补丁程序以提高稳定性和控制内存使用。推荐用于大型应用程序</string>
+    <string name="onboarding_system_file_picker_desc">启用此选项可在选择 APK 或密钥库时使用内置文件浏览器，而不是系统选择器</string>
+    <!-- Tour prompt dialog shown after first successful patch install -->
+    <string name="tour_prompt_title">快速功能导览</string>
+    <string name="tour_prompt_desc">您想快速了解 Morphe 的主要功能吗？</string>
+    <string name="tour_prompt_confirm">带我参观</string>
+    <string name="onboarding_restart_title">功能导览</string>
+    <string name="onboarding_restart_desc">获取 Morphe 主要功能的指导导览</string>
+</resources>

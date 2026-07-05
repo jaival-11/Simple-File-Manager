@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="patch_count">
+        <item quantity="one">%s پینە</item>
+        <item quantity="other">%s پینەکان</item>
+    </plurals>
+    <plurals name="option_count">
+        <item quantity="one">%s هەڵبژاردەی پینە</item>
+        <item quantity="other">%s هەڵبژاردەکانی پینە</item>
+    </plurals>
+    <plurals name="source_count">
+        <item quantity="one">%s سەرچاوە</item>
+        <item quantity="other">%s سەرچاوەکان</item>
+    </plurals>
+    <plurals name="package_count">
+        <item quantity="one">%s پاکەت</item>
+        <item quantity="other">%s پاکەتەکان</item>
+    </plurals>
+    <plurals name="patches_executed">
+        <item quantity="one">%s پینەی بنبڕکراو</item>
+        <item quantity="other">%s پینەکانی بنبڕکراو</item>
+    </plurals>
+    <plurals name="settings_system_apks_count">
+        <item quantity="one">%s فایلی ئەی پی کەی</item>
+        <item quantity="other">%s فایلەکانی ئەی پی کەی</item>
+    </plurals>
+    <plurals name="home_app_info_repatch_cleaned_invalid_data">
+        <item quantity="one">سڕینەوەی %s پینەی بەسەرچوو لە هەڵبژاردنی پاشەکەوتکراوەوە</item>
+        <item quantity="other">سڕینەوەی %s پینەکانی بەسەرچوو لە هەڵبژاردنی پاشەکەوتکراوەوە</item>
+    </plurals>
+    <plurals name="sources_management_subtitle">
+        <item quantity="one">%s سەرچاوە دابەزێندرا</item>
+        <item quantity="other">%s سەرچاوەکان دابەزێندران</item>
+    </plurals>
+    <plurals name="patch_selection_total_patches">
+        <item quantity="one">%s پینە دیاریکراوە</item>
+        <item quantity="other">%s پینەکان دیاریکراوە</item>
+    </plurals>
+    <plurals name="home_app_show_hidden_count">
+        <item quantity="one">%s ئەپ شاراوە</item>
+        <item quantity="other">%s ئەپە شاراوەکان</item>
+    </plurals>
+</resources>

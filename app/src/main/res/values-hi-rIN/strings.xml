@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Home Screen -->
+    <string name="home_other_apps">अन्य ऐप्स</string>
+    <string name="home_not_patched_yet">अभी तक पट्च नहीं किया गया है</string>
+    <string name="home_no_patches_available">कोई पैच उपलब्ध नहीं है</string>
+    <string name="home_app_hide_title">इस ऐप को छुपाएं?</string>
+    <string name="home_app_hide_message">यह ऐप होम स्क्रीन से छिपा दिया जाएगा। आप सूची के नीचे दिए गए बटन का उपयोग करके छिपे हुए ऐप्स से इसे बाद में पुनर्स्थापित कर सकते हैं</string>
+    <string name="home_app_will_be_hidden">इस ऐप को छुपाया जाएगा</string>
+    <string name="home_app_no_hidden">कोई छिपा ऐप नहीं</string>
+    <string name="home_app_hidden_apps_title">छिपे हुए ऐप्स</string>
+    <string name="home_app_hidden_apps_hint">छुपाने के लिए टैप करें</string>
+    <string name="android_11_bug_dialog_title">एंड्रॉइड 11 बग</string>
+    <string name="android_11_bug_dialog_description">एंड्रॉइड 11 सिस्टम में एक बग से बचने के लिए ऐप इंस्टॉलेशन की अनुमति समय से पहले दी जानी चाहिए जो उपयोगकर्ता अनुभव को नकारात्मक रूप से प्रभावित करेगी।</string>
+    <string name="deep_link_add_source_title">स्रोत जोड़ें</string>
+    <string name="deep_link_add_source_message">क्या आप इस पैच स्रोत को मोर्फे में जोड़ना चाहेंगे?</string>
+    <string name="deep_link_add_source_warning">सिर्फ़ उन स्रोतों को जोड़ें जिन पर आप भरोसा करते हैं</string>
+    <!-- Home Screen - Update Notifications -->
+    <string name="home_update_available">मोर्फे अपडेट उपलब्ध है</string>
+    <string name="home_update_available_subtitle">नई संस्करण तैयार है</string>
+    <string name="home_update_error">उपडेट विफल हुआ</string>
+    <string name="home_update_error_subtitle">अपना इंटरनेट कनेक्शन जांचें और फिर से कोशिश करें।</string>
+    <string name="home_update_skipped_metered">अपडेट छोड़ दिए गए</string>
+    <string name="home_update_skipped_metered_subtitle">मोबाइल डेटा सक्रिय है</string>
+    <string name="home_updating_sources">स्रोतों को अपडेट कर रहा हूँ…</string>
+    <string name="home_update_progress_format">%s संसाधित</string>
+    <string name="home_update_success">स्रोत अपडेट पूर्ण हुआ</string>
+    <string name="home_update_success_subtitle">आपके स्रोत अप टू डेट हैं</string>
+    <string name="home_sources_are_loading">स्रोत लोड हो रहे हैं, कृपया प्रतीक्षा करें…</string>
+    <string name="home_search_apps">ऐप्स खोजें</string>
+    <string name="home_no_apps_title">कोई ऐप्स उपलब्ध नहीं हैं</string>
+    <string name="home_no_apps_subtitle">पैच स्रोत जोड़ें या %s में मौजूदा स्रोत सक्षम करें</string>
+    <string name="home_no_apps_search_subtitle">\"%s\" से मेल खाने वाला कोई ऐप नहीं है</string>
+    <string name="home_all_apps_hidden_title">सभी ऐप्स छिपे हुए हैं</string>
+    <string name="home_all_apps_hidden_subtitle">आपने होम स्क्रीन से सभी ऐप्स छिपा दिए हैं</string>
+    <!-- Home Screen - Home Greetings -->
+    <string name="home_greeting_1">आप किस ऐप को पैच करना चाहते हैं?</string>
+    <!-- Humorous hype message with light nostalgia -->
+    <string name="home_greeting_2">लेजेंडरी बनाना फिर से तैयार हैं?</string>
+    <!-- "Buckle up" referring to fastening your vehicle seat belt. A light-hearted joke to build excitement -->
+    <string name="home_greeting_3">तैयार हो जाइए, यह पैचिंग का समय है</string>
+    <!-- Sarcastic joke about blocking ads, intentionally over-the-top -->
+    <string name="home_greeting_4">एक और दिन, एक और विज्ञापन-ब्लॉक किया गया मास्टरपीस</string>
+    <!-- "Watch ads" refers to watching video ads in unpatched apps -->
+    <string name="home_greeting_5">विज्ञापन देखना चाहते हैं? मैं भी नहीं।</string>
+    <!-- Friendly, slightly mischievous joke about controlling app behavior -->
+    <string name="home_greeting_6">आइए आपके ऐप्स को ठीक से काम करने लायक बनाते हैं</string>
+    <!-- Whimsical forecast-style joke, not meant literally -->
+    <string name="home_greeting_7" formatted="false">आज का पूर्वानुमान: पैचिंग की 100% संभावना</string>
+    <!-- From mediocrity to amazing -->
+    <string name="home_greeting_8">साधारण चीज़ों को शानदार में बदलने के लिए तैयार हैं?</string>
+    <!-- Playful exaggeration, making patching feel heroic -->
+    <string name="home_greeting_9">आज से ऐप्स को खुद से बचा रहे हैं</string>
+    <!-- Light sarcasm, casual and tech-savvy humor -->
+    <string name="home_greeting_10">कैफीन और अच्छे पैच द्वारा संचालित</string>
+    <!-- Morning greetings (5:00–11:59) -->
+    <string name="home_greeting_morning_1">उठो और पैच करो</string>
+    <string name="home_greeting_morning_2">शुभ प्रभात! ऐप्स खुद से पैच नहीं करेंगे</string>
+    <!-- Afternoon greetings (12:00–16:59) -->
+    <string name="home_greeting_afternoon_1">दोपहर में सुस्ती? कुछ पैच करो</string>
+    <string name="home_greeting_afternoon_2">दोपहर के भोजन के बाद पैचिंग अलग ही लगती है</string>
+    <string name="home_greeting_afternoon_3">दोपहर की शिफ्ट: पैच संस्करण</string>
+    <!-- Evening greetings (17:00–21:59) -->
+    <string name="home_greeting_evening_1">शुभ संध्या! शाम के पैच अलग ही लगते हैं</string>
+    <string name="home_greeting_evening_2">शांत हो रहे हैं? पहले किसी ऐप को पैच करें</string>
+    <string name="home_greeting_evening_3">काम खत्म हो गया? पहले कुछ पैच करें</string>
+    <!-- Late night greetings (22:00–23:59) -->
+    <string name="home_greeting_late_night_1">अभी भी जागे हैं? वे ऐप भी हैं जिन्हें पैच करने की आवश्यकता है</string>
+    <string name="home_greeting_late_night_2">देर रात पैच सत्र? सम्मान</string>
+    <string name="home_greeting_late_night_3">नाइट उल्लू मोड: सक्रिय</string>
+    <!-- Super late night greetings (0:00–4:59) -->
+    <string name="home_greeting_super_late_1">पैचिंग का चरम समय… कथित तौर पर</string>
+    <string name="home_greeting_super_late_2">सो नहीं पा रहे? कुछ पैच करें</string>
+    <string name="home_greeting_super_late_3">इस बिंदु पर, बस जागते रहें और पैच करते रहें</string>
+    <string name="home_greeting_super_late_4">आप और सर्वर, दोनों जाग रहे हैं</string>
+    <string name="home_greeting_super_late_5">रात के समय और उत्पादक</string>
+    <!-- Home Screen - Sources Management -->
+    <string name="sources_management_title">पैच स्रोत</string>
+    <string name="sources_management_open_in_browser">खोल में खोल करना</string>
+    <string name="sources_management_failed_to_open_url">URL खोलने में विफल रहा</string>
+    <string name="sources_management_prerelease_toggle">प्री-रिलीज़ पैच</string>
+    <string name="sources_management_prerelease_toggle_description">नए प्रायोगिक पैच संस्करणों तक जल्दी पहुँच प्राप्त करता है</string>
+    <string name="sources_management_experimental_versions_toggle">प्रायोगिक ऐप संस्करण</string>
+    <string name="sources_management_experimental_versions_toggle_description">यदि उपलब्ध हों तो प्रायोगिक ऐप लक्ष्यों को पैच करता है</string>
+    <string name="sources_management_already_exists">यह स्रोत पहले से ही जोड़ा गया है</string>
+    <string name="sources_management_invalid_url">अमान्य स्रोत URL। कृपया पता जांचें और फिर प्रयास करें</string>
+    <string name="sources_management_metadata_unavailable">मेटाडेटा उपलब्ध नहीं है</string>
+    <string name="sources_management_metadata_unavailable_hint">रिमोट मेटाडेटा फ़ाइल अनुपलब्ध है। स्थापित बंडल के साथ पैचिंग अभी भी काम करती है, लेकिन इस स्रोत के लिए ऑटो-अपडेट अक्षम कर दिया गया है</string>
+    <string name="sources_management_metadata_unavailable_hint_missing">पैच बंडल डाउनलोड नहीं किया जा सका। स्रोत URL गलत हो सकता है या फ़ाइल मौजूद नहीं है</string>
+    <string name="sources_management_source_enabled">स्रोत सक्षम किया गया</string>
+    <string name="sources_management_source_disabled">स्रोत अक्षम किया गया</string>
+    <string name="sources_management_source_updating">स्रोत अपडेट किया जा रहा है</string>
+    <!-- Home Screen - Sources Dialogs -->
+    <string name="sources_dialog_display_name">नाम दर्जा करें</string>
+    <string name="sources_dialog_rename">पैच स्रोत का नाम बदलें</string>
+    <string name="sources_dialog_duplicate_name_error">इस नाम के साथ पहले से एक पैच स्रोत मौजूद है</string>
+    <string name="sources_dialog_missing_error">यह पैच स्रोत अपडेट नहीं हो सका</string>
+    <string name="sources_dialog_view_any_version">कोई भी संस्करण</string>
+    <string name="sources_dialog_view_any_package">कोई भी पैकेज</string>
+    <string name="sources_dialog_add_source">पैच स्रोत जोड़ें</string>
+    <string name="sources_dialog_delete_confirm_message">डिलीट करें \"%s\"? यह वापस लाना संभव नहीं होगा।</string>
+    <string name="sources_dialog_remote">रिमोट</string>
+    <string name="sources_dialog_remote_url">स्रोत URL</string>
+    <string name="sources_dialog_remote_url_formats_title">उदाहरण:</string>
+    <string name="sources_dialog_local">स्थानीय</string>
+    <string name="sources_dialog_local_file">पैच स्रोत फ़ाइल का चयन करें</string>
+    <string name="sources_dialog_local_file_tap_hint">भंडारण ब्राउज़ करने के लिए टैप करें</string>
+    <string name="sources_dialog_local_file_description">स्टोरेज से .mpp पैच स्रोत फ़ाइल का चयन करें</string>
+    <string name="sources_dialog_local_invalid_extension">फ़ाइल में .mpp एक्सटेंशन होना चाहिए</string>
+    <string name="sources_dialog_url_valid">मान्य रिपॉजिटरी या JSON URL</string>
+    <string name="sources_dialog_url_invalid">URL GitHub/GitLab रिपो या .json फ़ाइल की ओर इंगित करना चाहिए</string>
+    <string name="sources_dialog_local_change_file">फ़ाइल बदलें</string>
+    <string name="sources_dialog_preinstalled">प्रिंस्टॉल किया गया</string>
+    <string name="sources_update_success">अपडेट सफल रहा</string>
+    <string name="sources_update_unavailable">अपडेट उपलब्ध नहीं है</string>
+    <string name="sources_download_fail">स्रोत डाउनलोड करने में विफल हो गया: %s</string>
+    <string name="sources_download_fail_named">\'%s\' को अपडेट नहीं किया जा सका। अपना इंटरनेट कनेक्शन जांचें और फिर से कोशिश करें।</string>
+    <string name="sources_download_endpoint_not_found">\'%s\': पैच मेटाडेटा नहीं मिला।</string>
+    <string name="sources_patch_expert_badge">विशेषज्ञ</string>
+    <string name="sources_patch_expert_badge_tooltip">इस पैच को मैन्युअल रूप से शामिल करने के लिए सेटिंग्स में विशेषज्ञ मोड सक्षम करें</string>
+    <!-- Home Screen - Dialog 1: APK Availability -->
+    <string name="home_apk_availability_dialog_title">अपनी सहायता के लिए मूल अप्रतिबंधित एपीएक्सी के लिए खोजें?</string>
+    <string name="home_apk_availability_dialog_simple">पैच करने के लिए &lt;b&gt;%s&lt;/b&gt;, अपैच्ड एपीएक्सी संस्करण की आवश्यकता है:</string>
+    <string name="home_apk_availability_dialog_expert">पैच करने के लिए &lt;b&gt;%s&lt;/b&gt;, अपatched एपीके की आवश्यकता है:</string>
+    <string name="home_apk_availability_recommended_label">सुझाया गया</string>
+    <string name="home_apk_availability_unpatched_label">अपडेट किए बिना</string>
+    <string name="home_apk_availability_incompatible_label">असंगत</string>
+    <string name="home_apk_availability_yes">हाँ, मुझे APK ढूंढने में मदद करें</string>
+    <string name="home_apk_availability_no">नहीं, मेरे पास पहले से ही एक एपीके है</string>
+    <string name="home_apk_use_saved">सहेजी गई APK का उपयोग करें</string>
+    <string name="home_apk_use_installed">स्थापित APK का उपयोग करें</string>
+    <string name="home_app_info_no_saved_apk">कोई प्रतिलिपि APK नहीं है। पट्च करना पुनः APK फ़ाइल का चयन करना आवश्यक होगा</string>
+    <string name="home_version_requires_android">Android %s+ की आवश्यकता है</string>
+    <string name="home_apk_no_compatible_versions_title">इस डिवाइस पर समर्थित नहीं है</string>
+    <string name="home_apk_no_compatible_versions_message">&lt;b&gt;%1$s&lt;/b&gt; के पास Android %2$d (API %3$d) के लिए कोई समर्थित संस्करण नहीं है। सभी घोषित संस्करणों के लिए उच्च Android संस्करण की आवश्यकता है।</string>
+    <!-- Home Screen - Dialog 2: Download Instructions -->
+    <string name="home_download_instructions_title">ओरिजनल APK डाउनलोड करें</string>
+    <string name="home_download_instructions_steps_title">निर्देश:</string>
+    <string name="home_download_instructions_step1">नीचे दिया गया \'%s\' बटन दबाएं</string>
+    <string name="home_download_instructions_step2_part1">वेबपेज पर नीचे की ओर स्क्रोल करें और दबाएं</string>
+    <string name="home_download_instructions_download_button_toast">वेबसाइट पर डाउनलोड बटन पर क्लिक करें, यहां नहीं 😊</string>
+    <string name="home_download_instructions_download_button_toast_2">बहुत बढ़िया! अब जारी रखें पर क्लिक करें और वेबसाइट पर जाएं 👆</string>
+    <string name="home_download_instructions_download_button_toast_3">अभ्यास परिपूर्ण बनाता है और आप वहां पहुंच रहे हैं 💪</string>
+    <string name="home_download_instructions_download_button_toast_4">अभी भी यहां नहीं… अभी भी यहां नहीं… 🙈</string>
+    <string name="home_download_instructions_download_button_toast_5">ठीक है, मैं समर्पण का सम्मान करता हूँ 🫡</string>
+    <string name="home_download_instructions_download_button_toast_6">आप अब एक आधिकारिक मोर्फ़ बटन परीक्षक हैं 🏅</string>
+    <string name="home_download_instructions_step3">डाउनलोड पूरा होने का इंतज़ार करें और APK को &lt;b&gt;इंस्टाल न करें&lt;/b&gt;</string>
+    <string name="home_download_instructions_step3_mount">डाउनलोड पूरा होने का इंतज़ार करें. इसके बाद,  &lt;b&gt;APK को इंस्टाल करें&lt;/b&gt;</string>
+    <string name="home_download_instructions_step4">डाउनलोड पूरा हो जाने के बाद, इस ऐप्लिकेशन को दोबारा खोलें</string>
+    <string name="home_download_instructions_step4_mount">अपने APK को इंस्टॉल करने के बाद, वापस मॉर्फ पर जाएं</string>
+    <string name="home_download_instructions_continue">APKMirror.com पर जाएं</string>
+    <!-- Home Screen - Dialog 3: File Picker Prompt -->
+    <string name="home_file_picker_prompt_title">चयनित डाउनलोड एपीके</string>
+    <string name="home_file_picker_prompt_description">अपना डाउनलोड की गई &lt;b&gt;b>%s&lt;b&gt;/b> APK फ़ाइल चुनें</string>
+    <string name="home_file_picker_prompt_open_apk">APK फ़ाइल खोलें</string>
+    <string name="home_recommended_version">सुझाई गई संस्करण</string>
+    <string name="home_selected_version">चयन किया गया संस्करण</string>
+    <string name="home_select_apk_title">APK चुनें</string>
+    <string name="home_select_any_apk_description">किसी भी ऐप की APK फ़ाइल चुनें, या इस डिवाइस पर पहले से इंस्टॉल किए गए ऐप को चुनें</string>
+    <string name="home_use_installed_app">इंस्टॉल किए गए ऐप का उपयोग करें</string>
+    <string name="home_installed_app_picker_title">इंस्टॉल किया गया ऐप चुनें</string>
+    <string name="home_installed_app_picker_empty">कोई ऐप नहीं मिला</string>
+    <string name="home_installed_app_picker_filter_all">सभी ऐप</string>
+    <string name="home_installed_app_picker_filter_user">केवल उपयोगकर्ता ऐप</string>
+    <string name="home_installed_app_picker_filter_system">केवल सिस्टम ऐप</string>
+    <string name="home_invalid_apk_unreadable">फ़ाइल पढ़ने में असमर्थ। जाँच करें कि \'External Storage\' बैटरी द्वारा प्रतिबंधित तो नहीं है</string>
+    <string name="home_invalid_apk_not_an_apk">चयनित फ़ाइल एक वैध APK नहीं है</string>
+    <string name="home_invalid_apk_io_error">फ़ाइल खोलने में विफल। कृपया फिर से प्रयास करें</string>
+    <string name="home_external_apk_expert_mode_required">यह सुविधा केवल विशेषज्ञ मोड में उपलब्ध है</string>
+    <!-- Home Screen - Dialog 4: Expert Mode Dialog -->
+    <string name="expert_mode_title">एक्सपर्ट मोड</string>
+    <string name="expert_mode_search">पैच खोजें</string>
+    <string name="expert_mode_proceed">पैचिंग के लिए आगे बढ़ें</string>
+    <string name="expert_mode_disable_all">सभी को असक्षम करें</string>
+    <string name="expert_mode_disable_all_done">सभी पैच अक्षम किए गए</string>
+    <string name="expert_mode_enable_all">सभी को सक्षम करें</string>
+    <string name="expert_mode_enable_all_done">सभी पैच सक्षम किए गए</string>
+    <string name="expert_mode_reset_to_default">अनुशंसित पैच सक्षम करें</string>
+    <string name="expert_mode_reset_to_default_done">अनुशंसित पैच लागू किए गए</string>
+    <string name="expert_mode_restore_saved">चयन पुनर्स्थापित करें</string>
+    <string name="expert_mode_restore_saved_done">सहेजे गए चयन को पुनर्स्थापित किया गया</string>
+    <string name="expert_mode_no_results">कोई पैच नहीं मिला</string>
+    <string name="expert_mode_universal_patches">सार्वभौमिक पैच</string>
+    <string name="expert_mode_new_patches">नया</string>
+    <string name="expert_mode_multiple_sources_warning_title">अनुमतियों के कई स्रोत चुने गए हैं</string>
+    <string name="expert_mode_multiple_sources_warning_message">"आपने विभिन्न पचड़ियों के स्रोतों से पचड़ियाँ चुनी हैं। यह संगतता की समस्याएं या अपेक्षित व्यवहार का कारण हो सकता है।
+
+क्या आप वास्तव में आगे बढ़ना चाहते हैं?"</string>
+    <!-- Home Screen - Home Sub-Dialogs -->
+    <string name="home_invalid_signature_title">अपरिचित APK</string>
+    <string name="home_invalid_signature_message">आपके द्वारा चयनित APK &lt;b&gt;%s&lt;/b&gt; प्रमाण पत्र से मेल नहीं खाता। यह संशोधित किया गया हो सकता है या किसी अविश्वसनीय स्रोत से हो सकता है</string>
+    <string name="home_invalid_signature_badge">यह APK मूल नहीं हो सकता है</string>
+    <string name="home_split_apk_warning_title">APK का विभाजन पता चला</string>
+    <string name="home_split_apk_warning_message">"यह फ़ाइल एक APK बंडल है
+(&lt;b&gt;APKM / APKS / XAPK&lt;/b&gt;).
+
+सर्वोत्तम परिणामों के लिए, यह ऐप एक &lt;b&gt;पूर्ण APK&lt;/b&gt; को पैच करने की अनुशंसा करता है"</string>
+    <string name="home_split_apk_warning_pick_another">कोई दूसरा APK चुनें</string>
+    <string name="home_dialog_unsupported_version_experimental_label">प्रायोगिक</string>
+    <string name="home_dialog_unsupported_version_experimental_description">इस संस्करण का प्रायोगिक समर्थन है और अस्थिर या अधूरा हो सकता है</string>
+    <string name="morphe_experimental_app_version_dialog_title">क्या आप प्रयोग करना चाहेंगे? 🧪</string>
+    <string name="morphe_experimental_app_version_dialog_message">&lt;b&gt;%s&lt;/b&gt; के इस संस्करण का शुरुआती प्रायोगिक समर्थन है&lt;br/&gt;&lt;br/&gt;🔧 इस ऐप संस्करण के लिए पैच को परिष्कृत किए जाने के कारण ऐप व्यवहार या अज्ञात बग असामान्य हो सकते हैं</string>
+    <string name="home_dialog_unsupported_version_dialog_title">यह एपीएम अनुशासित संस्करण नहीं है। आगे बढ़ने से अनुशासित एप्प्लिकेशन संस्करण हो सकता है।</string>
+    <string name="home_dialog_unsupported_version_dialog_description">यह APK अनुशंसित एप्लिकेशन संस्करण नहीं है। जारी रखना परिणामस्वरूप एक कार्यक्षम एप्लिकेशन नहीं हो सकता है।</string>
+    <string name="home_dialog_unsupported_version_dialog_proceed">अब भी आगे बढ़ें</string>
+    <string name="home_dialog_unsupported_version_compatible_versions">संगत संस्करण:</string>
+    <string name="home_dialog_unsupported_version_unsupported_label">असंगत</string>
+    <!-- "Build" here refers to a specific compiled version of the app (versionCode) -->
+    <string name="home_dialog_unsupported_version_build">निर्माण %d</string>
+    <string name="home_dialog_unsupported_version_build_mismatch_description">यह उसी संस्करण का एक अलग निर्माण है। पैच को एक विशिष्ट निर्माण की आवश्यकता होती है</string>
+    <string name="home_dialog_wrong_package_title">गलत पैकेज चुना गया</string>
+    <string name="home_dialog_wrong_package_description">चुनी गई APK, आपने पथच करने के लिए इरादत किया गया एप्लिकेशन के लिए नहीं है।</string>
+    <string name="home_dialog_expected_package">अनुकूलित पैकेज:</string>
+    <string name="home_dialog_selected_package">चयनित पैकेज:</string>
+    <string name="home_outdated_patches_dialog_title">पैच पुराने हो सकते हैं</string>
+    <string name="home_outdated_patches_dialog_message">मोबाइल डेटा सक्रिय है और पैच अपडेट बंद हैं</string>
+    <string name="home_outdated_patches_dialog_warning">पुराने पैच से पैच करना हो सकता है कि एप्लिकेशन को तोड़ सकता है</string>
+    <string name="home_outdated_patches_dialog_update_and_patch">अपडेट करें &amp; पैच करें</string>
+    <string name="home_low_disk_space_dialog_title">कम डिस्क स्थान</string>
+    <string name="home_low_disk_space_dialog_message">केवल %1$.2f GB खाली भंडारण उपलब्ध है। पैचिंग के लिए ठीक से काम करने के लिए कम से कम %2$.2f GB खाली जगह की आवश्यकता होती है</string>
+    <string name="home_low_disk_space_dialog_warning">आगे बढ़ने पर \"फ़ाइल नहीं मिली\" त्रुटि या करप्ट आउटपुट APK हो सकता है</string>
+    <string name="home_simple_bundle_select_title">पैच स्रोत चुनें</string>
+    <!-- Patch Options -->
+    <string name="custom_color">कस्टम रंग</string>
+    <string name="hex_color">हेक्स रंग</string>
+    <string name="patch_option_instructions">निर्देश</string>
+    <string name="patch_option_enter_value">मूल्य दर्ज करें</string>
+    <string name="patch_option_enter_number">नंबर दर्ज करें</string>
+    <string name="patch_option_enter_decimal">दशमलव दर्ज करें</string>
+    <string name="patch_option_list_duplicate">यह मान पहले से मौजूद है</string>
+    <string name="patch_option_list_empty">मान खाली नहीं हो सकता</string>
+    <string name="patch_option_list_empty_state">अभी तक कोई मान नहीं जोड़ा गया है</string>
+    <string name="patch_option_required_missing">%s: सभी आवश्यक विकल्प भरें</string>
+    <!-- Adaptive Icon Creator -->
+    <string name="adaptive_icon_create">अनुकूलित आइकॉन बनाएं</string>
+    <string name="adaptive_icon_select_image">छवि चयन करें</string>
+    <string name="adaptive_icon_change_image">छवि बदलें</string>
+    <string name="adaptive_icon_background_color">बैकग्राउंड रंग</string>
+    <string name="adaptive_icon_reset_transform">पोजीशन और स्केल को रीसेट करें</string>
+    <string name="adaptive_icon_safe_zone_inner">सेफ ज़ोन (हमेशा दृश्य)</string>
+    <string name="adaptive_icon_safe_zone_outer">मास्क ज़ोन (क्लिप हो सकता है)</string>
+    <string name="adaptive_icon_no_transparency_warning">छवि में कोई पारदर्शी पिक्सेल नहीं है। परिणाम गलत दिख सकता है</string>
+    <string name="adaptive_icon_created_success">एडैप्टिव आइकॉन सफलतापूर्वक बनाया गया</string>
+    <string name="adaptive_icon_creation_failed">एडैप्टिव आइकॉन को बनाना विफल रहा</string>
+    <string name="adaptive_icon_label">अनुकूली</string>
+    <string name="adaptive_icon_monochrome_label">मोनोक्रोम</string>
+    <string name="adaptive_icon_guide">आइकन निर्माण गाइड</string>
+    <string name="adaptive_icon_guide_png_title">पारदर्शी पृष्ठभूमि वाली PNG का उपयोग करें</string>
+    <string name="adaptive_icon_guide_png_body">पृष्ठभूमि को ठोस रंग का नहीं होना चाहिए - पृष्ठभूमि का रंग नीचे दिए गए पृष्ठभूमि पिकर से आना चाहिए। अग्रभूमि को एक PNG फ़ाइल के साथ पारदर्शी पृष्ठभूमि होनी चाहिए।</string>
+    <string name="adaptive_icon_guide_safe_zones_title">सुरक्षित क्षेत्र</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"आंतरिक क्षेत्र (ठोस): सामग्री हमेशा सभी लॉन्चर आकृतियों पर पूरी तरह से दिखाई देती है।
+बाहरी क्षेत्र (डैश): लॉन्चर मास्क द्वारा क्लिप किया जा सकता है - महत्वपूर्ण विवरण को आंतरिक क्षेत्र के अंदर रखें।"</string>
+    <string name="adaptive_icon_guide_notification_title">अधिसूचना आइकन</string>
+    <string name="adaptive_icon_guide_notification_body">अग्रभूमि छवि से स्वचालित रूप से उत्पन्न। अधिसूचना स्लाइडर का उपयोग करके इसके आकार को समायोजित करें। स्टेटस बार में सभी दृश्यमान सामग्री सफेद दिखाई देती है।</string>
+    <string name="adaptive_icon_guide_monochrome_title">मोनोक्रोम आइकन</string>
+    <string name="adaptive_icon_guide_monochrome_body">एकाधिक अनुकूली आइकन परिवर्तनों का उपयोग करके अग्रभूमि छवि से स्वचालित रूप से उत्पन्न। यह Android 13 और उसके बाद के संस्करणों पर वॉलपेपर एक्सेंट रंग के साथ रंगीन दिखाई देगा।</string>
+    <string name="notification_icon_preview">अधिसूचना</string>
+    <!-- Header Creator -->
+    <string name="header_creator_create">कस्टम हेडर बनाएं</string>
+    <string name="header_creator_light_theme">लाइट थीम हेडर</string>
+    <string name="header_creator_dark_theme">डार्क थीम हेडर</string>
+    <string name="header_creator_no_image">कोई छवि चुनी गई नहीं</string>
+    <string name="header_creator_success">हेडर सफलतापूर्वक बनाया गया</string>
+    <string name="header_creator_failed">हेडर को बनाना विफल रहा</string>
+    <string name="header_creator_guide">हेडर निर्माण गाइड</string>
+    <string name="header_creator_guide_image_title">छवि आवश्यकताएँ</string>
+    <string name="header_creator_guide_image_body">सर्वोत्तम परिणामों के लिए, लगभग 2.7:1 के पहलू अनुपात वाली एक विस्तृत-प्रारूप छवि का उपयोग करें। PNG फ़ाइलें जो पारदर्शी पृष्ठभूमि के साथ हैं, वे ऐप थीम के साथ स्वाभाविक रूप से मिश्रित होंगी। कोई भी छवि फ़ाइल (PNG या JPEG) का उपयोग करें।</string>
+    <string name="header_creator_guide_themes_title">लाइट और डार्क थीम</string>
+    <string name="header_creator_guide_themes_body">अधिकांश ऐप्स को लाइट और डार्क थीम के लिए अलग-अलग छवियों की आवश्यकता होती है। कुछ ऐप्स (जैसे YouTube Music) केवल डार्क थीम का उपयोग करते हैं, इसलिए केवल वह खंड दिखाया गया है।</string>
+    <string name="header_creator_guide_positioning_title">स्थिति निर्धारण और स्केलिंग</string>
+    <string name="header_creator_guide_positioning_body">अपनी छवि को स्थिति और स्केल करने के लिए पूर्वावलोकन में सीधे पिंच-टू-ज़ूम और ड्रैग जेस्चर का उपयोग करें। जब छवि केंद्र के पास होती है तो स्नैप गाइड दिखाई देती हैं। आप पूर्वावलोकन के नीचे स्लाइडर का भी उपयोग कर सकते हैं।</string>
+    <!-- Home Screen - App Info Screen -->
+    <string name="home_app_info_uninstall_app_confirmation">क्या आप वाकई तौर पर इस ऐप को अनइंस्टॉल करना चाहते हैं?</string>
+    <string name="home_app_info_remove_app_warning">यह स्थायी रूप से मिटाएगा:</string>
+    <string name="home_app_info_delete_item_database">डेटाबेस एंट्री</string>
+    <string name="home_app_info_delete_item_patched_apk">पथचित APK फ़ाइल</string>
+    <string name="home_app_info_delete_item_original_apk">मूल APK फ़ाइल</string>
+    <string name="home_app_info_delete_preservation_note">आपका पथच चयन और विकल्प भविष्य के पथच के लिए सुरक्षित रहेंगे।</string>
+    <string name="home_app_info_patches_name_default">पैच</string>
+    <string name="home_app_info_patches_name_fallback">अनाम</string>
+    <string name="home_app_info_patches_replace_fail">पैच आयात करने में विफल हो गया: %s</string>
+    <string name="home_app_info_repatch_no_original_apk"> मूल APK नहीं मिला. इस ऐप को पुनः पैच करना संभव नहीं है।</string>
+    <string name="home_app_info_original_package_name">ओरिजिनल पैकेज नाम</string>
+    <string name="home_app_info_applied_patches">लागू पैच</string>
+    <string name="home_app_info_patch_source_used">पैच स्रोत का उपयोग किया गया</string>
+    <string name="home_app_info_install_type_custom_installer">कस्टम इंस्टॉलर</string>
+    <string name="home_app_info_install_type_system_installer">सिस्टम इंस्टॉलर</string>
+    <string name="home_app_info_patch_update_available">पैच अपडेट उपलब्ध है</string>
+    <string name="home_app_info_patch_update_available_description">पथचों की नई संस्करण उपलब्ध है। अपने एप्लिकेशन को पुनः पथच करें नई सुधार और त्रुटि प्राप्त करने के लिए।</string>
+    <string name="home_app_info_app_deleted_warning">एप्लिकेशन उन्मोदन किया गया</string>
+    <string name="home_app_info_app_deleted_description">इस ऐप को बाहर से उन्मोदन किया गया था। मॉर्फी में पुनः स्थापित करें कार्यक्षमता पुनः प्राप्त करने के लिए</string>
+    <string name="home_app_info_apk_size">APK आकार</string>
+    <!-- Home Screen - Root Mode -->
+    <string name="root_install_apk_required">रूट मोड के लिए, पैचिंग शुरू करने से पहले आपके डिवाइस पर APK को इंस्टॉल करना आवश्यक है।</string>
+    <string name="root_gmscore_excluded">श्ळ लेरे सेप्नि साधार्य लैि लुन्यिानि ला</string>
+    <string name="root_pre_patch_installer_title">स्थापना विधि का चयन करें</string>
+    <string name="root_pre_patch_installer_description">आपका डिवाइस रूट एक्सेस रखता है। पट्च्ड एप्लिकेशन इंस्टॉल करने का तरीका चुनें।</string>
+    <string name="root_pre_patch_installer_mount_title">रूट माउंट</string>
+    <string name="root_pre_patch_installer_mount_description">स्टॉक ऐप पर पैच किए गए APK को माउंट करता है। GmsCore की आवश्यकता नहीं है</string>
+    <string name="root_pre_patch_installer_standard_title">सामान्य इंस्टॉल</string>
+    <string name="root_pre_patch_installer_standard_description">GmsCore सपोर्ट के साथ एक अलग ऐप के रूप में इंस्टॉल करता है। पैचिंग के बाद एक इंस्टॉलर का चयन किया जा सकता है।</string>
+    <string name="root_pre_patch_installer_hint">इंस्टॉलेशन मेथड पट्चिंग के बाद बदल नहीं सकती जाती है।</string>
+    <!-- Patcher Screen -->
+    <string name="patcher_error_copied">Error copied to clipboard</string>
+    <string name="patcher_error_log">त्रुटि रिपोर्ट</string>
+    <string name="patcher_error_technical">तकनीकी विवरण</string>
+    <string name="patcher_error_dialog_app_info">ऐप जानकारी</string>
+    <string name="patcher_tab_logs">पैचर लॉग्स</string>
+    <string name="patcher_tab_game">खेल</string>
+    <string name="patcher_long_step_warning">This step may take a while. Please wait…</string>
+    <string name="patcher_installing_subtitle">Almost ready to rock! 🎸</string>
+    <string name="patcher_success_title">All Done! 🎉</string>
+    <string name="patcher_success_subtitle">Your app is patched and installed!</string>
+    <string name="patcher_complete_title">Patching Complete! ✨️</string>
+    <string name="patcher_failed_title">Oops! Something went wrong</string>
+    <string name="patcher_failed_subtitle">Check the error details below</string>
+    <string name="patcher_failed_dialog_title">Patching Failed</string>
+    <string name="patcher_unknown_error">Unknown error occurred</string>
+    <string name="patcher_conflict_title">Package conflict</string>
+    <string name="patcher_conflict_subtitle">You need to uninstall the existing version</string>
+    <string name="patcher_conflict_hint">पैच किया गया ऐप इंस्टॉल किए गए संस्करण से अलग प्रमाणपत्र का उपयोग करता है। अनइंस्टॉल करने से सभी ऐप डेटा मिट जाएगा।</string>
+    <string name="patcher_installed_conflict_title">अनइंस्टॉल आवश्यक है</string>
+    <string name="patcher_installed_conflict_body">"Morphe अपने स्वयं के प्रमाणपत्र के साथ पैच्ड ऐप्स पर हस्ताक्षर करता है, जो मूल से अलग है। Android को पैच्ड ऐप को इंस्टॉल करने से पहले मौजूदा संस्करण को हटाने की आवश्यकता होती है।
+
+अनइंस्टॉल करने से सभी ऐप डेटा स्थायी रूप से मिट जाएगा।"</string>
+    <string name="patcher_install_error_title">Installation error</string>
+    <string name="patcher_install_error_subtitle">Try uninstalling and installing again</string>
+    <string name="patcher_ready_to_install_subtitle">Press the button below to install</string>
+    <string name="patcher_ready_to_mount_subtitle">Press the button below to mount</string>
+    <string name="patcher_storage_permission_dialog_title">स्तोरेज पथ तक पहुंच नहीं हो सकती है</string>
+    <string name="patcher_incompatible_patcher_title">अपडेट आवश्यक है</string>
+    <string name="patcher_incompatible_patcher_description">बंडल &lt;b&gt;%1$s&lt;/b&gt; को पैचर संस्करण &lt;b&gt;%2$s&lt;/b&gt; या नया संस्करण की आवश्यकता है। कृपया इस ऐप को पैच करने के लिए Morphe को अपडेट करें।</string>
+    <string name="patcher_incompatible_patcher_update_button">डाउनलोड करें और मोर्फ़ अपडेट करें</string>
+    <string name="patcher_storage_permission_description_api30">एक या अधिक पैच विकल्प ऐसे पथों की ओर इशारा करते हैं जिन्हें मोर्फे नहीं पढ़ सकता है। स्टोरेज एक्सेस प्रदान करें और बटन पर टैप करें, फिर पैचिंग स्वचालित रूप से शुरू हो जाएगी</string>
+    <string name="patcher_storage_permission_description_legacy">एक या अधिक पैच ऑप्शन को पथ्स को पॉइंट करता है जो पहुंच नहीं हो सकती है। पैच ऑप्शन में पथ्स को अद्यतन करें और पुन: प्रयास करें</string>
+    <string name="patcher_storage_permission_grant">स्टोरेज अनुमति प्रदान करें</string>
+    <string name="patcher_storage_permission_denied_warning">स्टोरेज पर्मिशन को नकारा गया। इस पथ का उपयोग करने के लिए पर्मिशन देने या फ़ाइलें ऐप की प्राइवेट डायरेक्टरी में स्थानांतरित करें।</string>
+    <string name="patcher_storage_permission_open_settings">स्टोरेज सेटिंग्स खोलें</string>
+    <string name="patcher_storage_badge_denied">पर्मिशन नकारा गया</string>
+    <string name="patcher_storage_badge_missing">नहीं मिला</string>
+    <string name="patcher_storage_permission_hint">टिप: फ़ाइलें /Android/data/app.morphe.manager/files/ में स्थानांतरित करें - अतिरिक्त पर्मिशन की आवश्यकता नहीं है</string>
+    <!-- Patcher Screen - Patcher Steps -->
+    <string name="patcher_step_group_preparing">तैयार कर रहे हैं...</string>
+    <string name="patcher_step_load_patches">पैच लोड हो रहे हैं</string>
+    <string name="patcher_step_prepare_split_apk">स्प्लिटेड APK को मर्ज कर रहा हूँ</string>
+    <string name="patcher_step_unpack">APK फाइल पढ़ें</string>
+    <string name="patcher_step_group_patching">पैचिंग</string>
+    <string name="patcher_step_group_saving">सेव हो रहा है</string>
+    <string name="patcher_step_write_patched">पैच्ड एपीके फाइल लिखना</string>
+    <string name="patcher_step_sign_apk">Signing patched APK file</string>
+    <!-- Battery optimization pre-flight dialog -->
+    <string name="battery_optimization_dialog_title">पृष्ठभूमि पैचिंग सुरक्षा</string>
+    <string name="battery_optimization_dialog_description">कुछ डिवाइस ऐप को मिनिमाइज किए जाने पर पैचर को रोक सकते हैं। पैचिंग को विश्वसनीय रूप से पूरा करने के लिए मोर्फ़ को बैटरी प्रतिबंधों के बिना चलाने की अनुमति दें।</string>
+    <string name="battery_optimization_not_now">अभी नहीं</string>
+    <!-- Patcher Screen - Patcher Worker -->
+    <string name="patcher_notification_title">Patching in progress…</string>
+    <string name="patcher_notification_text">Tap to return to the patcher</string>
+    <string name="patcher_stop_confirm_title">Stop patcher</string>
+    <string name="patcher_stop_confirm_description">Are you sure you want to stop the patching process?</string>
+    <!-- Patcher Screen - Patcher Messages -->
+    <string name="patcher_message_1">Yes, I have it</string>
+    <string name="patcher_message_2">No, help me find it</string>
+    <string name="patcher_message_3">Teaching old apps new tricks… 🎩</string>
+    <string name="patcher_message_4">Giving your app a digital tune-up… 🔧</string>
+    <string name="patcher_message_5">Brewing digital magic… ☕</string>
+    <string name="patcher_message_6">Coffee break recommended… ☕</string>
+    <string name="patcher_message_7">Look outside, it\'s nice out there… 🌤️</string>
+    <string name="patcher_message_8">Adjusting 1\'s and 0\'s… 🤖</string>
+    <!-- Morphe patches fix YouTube bugs that Google still has not fixed. -->
+    <string name="patcher_message_9">अपैच किए गए ऐप में बग्स को ठीक कर रहा हूँ… 🪲</string>
+    <string name="patcher_message_10">Fixing bugs in the unpatched app… 🐞</string>
+    <string name="patcher_message_11">Great patches are worth the wait… ⏳</string>
+    <string name="patcher_message_12">Polishing pixels until they shine… 💎</string>
+    <string name="patcher_message_13">Please remain seated until the captain turns off the \"Patching in progress\" sign… 💺✈️</string>
+    <!-- "bytecode" can be translated from "the app code" -->
+    <string name="patcher_message_14">Cooking up your patched app, hot and fresh… 🍳</string>
+    <!-- Space flight communications callout. -->
+    <string name="patcher_message_15">Negotiating politely with bytecode… 🤝</string>
+    <string name="patcher_message_16">All systems nominal… patching trajectory is stable… 🚀</string>
+    <string name="patcher_message_17">Squeezing out extra power, like juice from a digital lemon… 🍋</string>
+    <!-- Quantum physics (box emoji is a reference to Schrodinger's cat). -->
+    <string name="patcher_message_18">Encouraging the app to accept its new, better self… 🌱</string>
+    <!-- Throw away reference to a Saturday Night Live sketch. "fever" means sickness or the flu. "prescription" means medical treatment or can be translated from "cure" -->
+    <string name="patcher_message_19">आपकी ऐप को एक बुखार है, और इसके लिए केवल एक मेडिकल रेफरेंस है... 🩺🔔</string>
+    <string name="patcher_message_20">अनावश्यक को हटाया जा रहा है। कृपया प्रतीक्षा करें… 🗑️</string>
+    <!-- Expert patcher Screen -->
+    <string name="patching_app">एप्लिकेशन को पैच करना</string>
+    <string name="memory_usage">मेमोरी का उपयोग</string>
+    <!-- Patcher Screen - Other hidden strings -->
+    <string name="applying_patches">Applying patches</string>
+    <string name="failed_to_execute_patch">Failed to execute %s</string>
+    <string name="patched_app_saved_toast">Patched app saved for later</string>
+    <string name="patched_app_save_failed_toast">Failed to save patched app</string>
+    <string name="plugin_activity_dialog_body">इस प्लगइन के लिए आगे बढ़ने के लिए उपयोगकर्ता इंटरैक्शन आवश्यक है।</string>
+    <string name="patcher_process_exit_message">पैचर प्रक्रिया कोड %s के साथ समाप्त हो गई।</string>
+    <string name="install_app_success">सफलतापूर्वक इंस्टॉल हो गया</string>
+    <string name="install_app_fail">अप्लिकेशन को तैयार करना असफल रहा: %s</string>
+    <string name="save_apk_success">एपीके सहेजा गया</string>
+    <string name="saved_app_export_failed">\"पैच किया गया ऐप एक्सपोर्ट करने में विफल।\"</string>
+    <string name="saved_app_removed_toast">हटाया गया सहेजा गया पैच किया हुआ ऐप</string>
+    <string name="saved_app_launch_unavailable">ऐप को खोलने से पहले इंस्टॉल करें।</string>
+    <string name="package_name">Package name</string>
+    <string name="failed_to_mount">%s को माउंट करने में विफल</string>
+    <string name="failed_to_unmount">%s को अनमाउंट करने में विफल।</string>
+    <!-- Patcher Screen - Mini-games -->
+    <string name="mini_game_score">अंक %d</string>
+    <string name="mini_game_best">सर्वश्रेष्ठ %d</string>
+    <string name="mini_game_new_record">नया रिकॉर्ड!</string>
+    <string name="mini_game_game_over">खेल खत्म</string>
+    <string name="mini_game_try_again">फिर से प्रयास करें</string>
+    <string name="mini_game_paused">विराम</string>
+    <string name="mini_game_resume">जारी रखें</string>
+    <string name="mini_game_2048_picker_subtitle">टाइल्स को मर्ज करने के लिए स्लाइड करें</string>
+    <string name="mini_game_flappy_picker_subtitle">पाइपों के बीच से उड़ने के लिए टैप करें</string>
+    <string name="mini_game_flappy_tap_to_start">उड़ने के लिए टैप करें</string>
+    <string name="mini_game_snake_picker_subtitle">भोजन खाएं, खुद को मत मारें</string>
+    <string name="mini_game_snake_swipe_to_start">शुरू करने के लिए स्वाइप करें</string>
+    <string name="mini_game_dino_picker_subtitle">कैक्टस के ऊपर कूदने के लिए टैप करें</string>
+    <string name="mini_game_dino_tap_to_start">दौड़ने के लिए टैप करें</string>
+    <!-- Settings -->
+    <string name="appearance">स्वरूप</string>
+    <string name="advanced">उन्नत</string>
+    <string name="system">सिस्टम</string>
+    <!-- Settings - Appearance Tab - Background animation -->
+    <string name="settings_appearance_background">बैकग्राउंड एनीमेशन</string>
+    <string name="settings_appearance_background_circles">सर्के</string>
+    <string name="settings_appearance_background_rings">घेरों</string>
+    <string name="settings_appearance_background_mesh">मेश</string>
+    <string name="settings_appearance_background_space">खगोल</string>
+    <string name="settings_appearance_background_shapes">आकार</string>
+    <string name="settings_appearance_background_snow">बारिशक</string>
+    <string name="settings_appearance_background_grid">ग्रिड</string>
+    <string name="settings_appearance_background_particles">कण</string>
+    <string name="settings_appearance_background_none">कुछ</string>
+    <string name="settings_appearance_background_random">यादृच्छिक</string>
+    <string name="settings_appearance_background_random_interval_launch">लॉन्च पर</string>
+    <string name="settings_appearance_background_random_interval_daily">दैनिक</string>
+    <string name="settings_appearance_background_random_interval_3days">हर 3 दिन में</string>
+    <string name="settings_appearance_parallax_effect">परालैक्स प्रभाव</string>
+    <string name="settings_appearance_parallax_effect_description">डिवाइस को झुकाने पर पृष्ठभूमि को मधयम गति से बदलना</string>
+    <!-- Settings - Appearance Tab - Theme -->
+    <string name="settings_appearance_theme">थीम</string>
+    <string name="settings_appearance_system">सिस्टम</string>
+    <string name="settings_appearance_light">लाइट</string>
+    <string name="settings_appearance_dark">डार्क</string>
+    <string name="settings_appearance_dynamic">मैटेरियल यू</string>
+    <string name="settings_appearance_accent_color">अक्सेंट रंग</string>
+    <string name="settings_appearance_pure_black">शुद्ध काला</string>
+    <string name="settings_appearance_pure_black_description">सही काले रंग की पृष्ठभूमि का उपयोग करता है।</string>
+    <!-- Settings - Appearance Tab - Language Selector -->
+    <string name="settings_appearance_app_language">एप्लिकेशन भाषा</string>
+    <string name="settings_appearance_app_language_current">वर्तमान भाषा</string>
+    <string name="settings_appearance_translations_info_title">कुछ भाषाओं के लिए अनुवाद या अपूर्ण अनुवाद उपलब्ध हो सकते हैं</string>
+    <string name="settings_appearance_translations_info_text">नई भाषाओं को अनुवाद करने के लिए या मौजूदा अनुवाद को सुधारने के लिए, %s पर जाएं</string>
+    <!-- Settings - Appearance Tab - Home Screen Section -->
+    <string name="settings_appearance_home_screen">मुखपृष्ठ</string>
+    <string name="settings_appearance_greeting_phrases">अभिवादन वाक्यांश</string>
+    <string name="settings_appearance_greeting_phrases_subtitle">मुखपृष्ठ पर अभिवादन संदेश दिखाएँ</string>
+    <!-- Settings - Appearance Tab - App Icon Selector -->
+    <string name="settings_appearance_app_icon_selector_title">एप्लिकेशन आइकॉन</string>
+    <string name="settings_appearance_app_icon_default">डिफॉल्ट</string>
+    <string name="settings_appearance_app_icon_light_2">खगोल</string>
+    <string name="settings_appearance_app_icon_light_3">सेटमब्रेक</string>
+    <string name="settings_appearance_app_icon_dark_1">ओशन</string>
+    <string name="settings_appearance_app_icon_dark_2">वॉयड</string>
+    <string name="settings_appearance_app_icon_dark_3">इंडिगो</string>
+    <string name="settings_appearance_app_icon_change_dialog_title">एप्लिकेशन आइकॉन बदलें? फिर से स्टार्ट करना होगा।</string>
+    <string name="settings_appearance_app_icon_change_dialog_message">&lt;b&gt;%s&lt;/b&gt; में बदलें और पुनरारंभ करें?</string>
+    <string name="settings_appearance_app_icon_change_dialog_confirm">आइकॉन बदलें</string>
+    <!-- Settings - Advanced Tab - Updates Section -->
+    <string name="settings_advanced_updates">अपडेट</string>
+    <string name="settings_advanced_updates_use_prereleases">प्री-रिलीज़ अपडेट</string>
+    <string name="settings_advanced_updates_use_prereleases_description">नए Morphe ऐप संस्करणों तक प्रारंभिक पहुंच। पैच स्रोतों में प्रति स्रोत प्री-रिलीज़ सक्षम करें।</string>
+    <string name="settings_advanced_updates_allow_metered">मोबाइल डेटा अपडेट</string>
+    <string name="settings_advanced_updates_allow_metered_description">Morphe और पैच अपडेट को मोबाइल डेटा पर डाउनलोड करने की अनुमति देता है।</string>
+    <string name="settings_advanced_updates_background_notifications">रीलेटेड अपडेट नोटिफिकेशन्स</string>
+    <string name="settings_advanced_updates_background_notifications_description">बैकग्राउंड में अद्यतन उपलब्ध होने पर सूचित करें।</string>
+    <string name="settings_advanced_updates_background_notifications_description_fcm">नया रिलीज़ होने पर, ऐप बंद होने पर भी पुश नोटिफिकेशन।</string>
+    <string name="settings_advanced_update_interval">अपडेट दर देखें</string>
+    <string name="settings_advanced_update_interval_dialog_title">अपडेटों के लिए देखें</string>
+    <string name="settings_advanced_update_interval_hourly">एक घंटे में एक बार</string>
+    <string name="settings_advanced_update_interval_daily">एक दिन में एक बार</string>
+    <string name="settings_advanced_update_interval_weekly">एक सप्ताह में एक बार</string>
+    <string name="settings_advanced_update_interval_monthly">एक महीने में एक बार</string>
+    <string name="settings_advanced_update_interval_chip_subtitle">बैकग्राउंड अपडेट दर</string>
+    <string name="settings_advanced_update_interval_battery_warning">कुछ डिवाइसों पर बैकग्राउंड चेकز कोष्ठक में काम नहीं करना चाहिए। बटरी बचाने के लिए मैन्युफैक्चरर जैसे कि एक्सियाومی, ह्वाईवे, सैमसंग, और वनप्लस बैकग्राउंड प्रोसेसेज को अग्रेषित रूप से प्रतिबंधित करते हैं</string>
+    <!-- Notification content -->
+    <string name="notification_manager_update_title">मोर्फ़ अपडेट उपलब्ध है</string>
+    <string name="notification_bundle_update_title">नई पैच उपलब्ध हैं</string>
+    <string name="notification_update_text">संस्करण %s डाउनलोड करने के लिए तैयार है।</string>
+    <string name="notification_bundle_update_text_unversioned">मोर्फ़ और अपडेट करने के लिए टैप करें</string>
+    <string name="notification_permission_dialog_title">नोटिफिकेशन अनुमति दें</string>
+    <string name="notification_permission_dialog_description">जब पृष्ठभूमि में अपडेट उपलब्ध हों तो आपको अलर्ट करने के लिए मोर्फ़ को अधिसूचना अनुमति की आवश्यकता है</string>
+    <string name="notification_post_patch_dialog_title">अपडेट उपलब्ध होने पर सूचित किया जाना चाहेगा?</string>
+    <string name="notification_channel_fcm_updates">अपडेट सूचनाएं</string>
+    <string name="notification_channel_fcm_updates_description">नए मोर्फ़ और पैच रिलीज़ के बारे में सूचनाएं</string>
+    <string name="notification_channel_patcher">पैचिंग</string>
+    <string name="notification_channel_patcher_description">जब मोर्फ़ पृष्ठभूमि में किसी ऐप को पैच कर रहा हो तो दिखाया गया</string>
+    <!-- Settings - Advanced Tab - Expert settings Section -->
+    <string name="settings_advanced_expert">एक्सपर्ट सेटिंग्स</string>
+    <string name="settings_advanced_expert_mode">एक्सपर्ट मोड</string>
+    <string name="settings_advanced_expert_mode_description">जटिल Morphe पैचिंग सेटिंग्स और अनुकूलन विकल्पों को सक्षम करता है।</string>
+    <string name="settings_advanced_expert_mode_dialog_title">एक्सपर्ट मोड को अनुमोदित करना?</string>
+    <string name="settings_advanced_expert_mode_dialog_message">एक्सपर्ट मोड पट्चों को लागू करने के तरीके पर अधिक नियंत्रण देता है, लेकिन एक्सपर्ट मोड में सेटिंग्स गलत करने से अप्लिकेशन में काम नहीं करने का खतरा हो सकता है</string>
+    <string name="settings_advanced_strip_unused_libs">डिवाइस आर्किटेक्चर के लिए अनुकूलित करें</string>
+    <string name="settings_advanced_strip_unused_libs_description">अप्रयुक्त CPU आर्किटेक्चर लाइब्रेरियों और स्प्लिट APK मॉड्यूल को हटा देता है।</string>
+    <!-- Bytecode mode -->
+    <string name="settings_advanced_bytecode_mode">बाइटकोड प्रोसेसिंग मोड</string>
+    <string name="settings_advanced_bytecode_mode_dialog_description">पैचिंग के दौरान बाइटकोड कैसे प्रोसेस किया जाता है, यह नियंत्रित करता है। पैचिंग की गति, मेमोरी उपयोग और आउटपुट APK आकार को प्रभावित करता है</string>
+    <string name="settings_advanced_bytecode_mode_strip_fast_label">तेज़ (अनुशंसित)</string>
+    <string name="settings_advanced_bytecode_mode_strip_fast">तेज़</string>
+    <string name="settings_advanced_bytecode_mode_strip_fast_description">तेज़ पैचिंग और कम मेमोरी का उपयोग, लेकिन APK का आकार बड़ा होगा। कम RAM या पुराने उपकरणों के लिए अनुशंसित</string>
+    <string name="settings_advanced_bytecode_mode_full">पूर्ण</string>
+    <string name="settings_advanced_bytecode_mode_full_description">धीमी पैचिंग, विरासत व्यवहार को दोहराता है। केवल तभी अनुशंसित है जब तेज़ मोड के कारण समस्याएं हों।</string>
+    <!-- Settings - Advanced Tab - GitHub PAT Settings -->
+    <string name="settings_advanced_github_pat">GitHub PAT</string>
+    <string name="settings_advanced_github_pat_description">प्रकाशन अनुरोध स्रोतों के लिए आवश्यक</string>
+    <string name="settings_advanced_github_pat_configured">टोकन विन्यासित</string>
+    <string name="settings_advanced_github_pat_how_to_get">GitHub पर्सनल एक्सेस टोकन कैसे प्राप्त करें</string>
+    <string name="settings_advanced_github_pat_dialog_title">GitHub पर्सनल एक्सेस टोकन सेट करें</string>
+    <string name="settings_advanced_github_pat_dialog_description">GitHub के लिए एक व्यक्तिगत 액ेस टोकन सेट करें ताकि आप बाहरी स्रोतों के रूप में पुल रिक्वेस्ट जोड़ सकें। github.com पर सार्वजनिक_रेपो स्कोप के साथ एक PAT बनाएं</string>
+    <string name="settings_advanced_github_pat_export_include_label">सेटिंगز एक्सपोर्ट में शामिल करें</string>
+    <string name="settings_advanced_github_pat_export_include_supporting">निर्यातित मोर्फ़ सेटिंग्स में यह PAT जोड़ता है</string>
+    <string name="settings_advanced_github_pat_export_warning">आपका PAT को न शेयर करें। अगर आप इसे सेटिंग्ज एक्सपोर्ट में शामिल करते हैं, तो उस फाइल को निजी रखें क्योंकि इसमें टोकन है</string>
+    <!-- Settings - Advanced Tab - Patch Options Section -->
+    <string name="settings_advanced_patch_options">पैच ऑप्शंस</string>
+    <string name="settings_advanced_patch_options_youtube_description">विषय, ब्रांडिंग और हेडर विकल्प</string>
+    <string name="settings_advanced_patch_options_restart_message">पैच ऑप्शंस को बदलने के लिए फिर से पैच करना आवश्यक होगा</string>
+    <string name="settings_advanced_patch_options_expert_mode_notice">एक्सपर्ट मोड में पैच ऑप्शंस एडिटिंग के दौरान उपलब्ध होंगेगा</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Theme Colors -->
+    <string name="settings_advanced_patch_options_theme_colors">एप्लिकेशन थीम रंग</string>
+    <string name="settings_advanced_patch_options_theme_colors_description">पृष्ठभूमि रंग बदलता है।</string>
+    <string name="settings_advanced_patch_options_dark_theme_color">डार्क थीम बैकग्राउंड रंग</string>
+    <string name="settings_advanced_patch_options_light_theme_color">लाइट थीम बैकग्राउंड रंग</string>
+    <string name="settings_advanced_patch_options_theme_color_description">बन सकता है एक हेक्स रंग (#RRGGBB) या एक रंग संसाधन संदर्भ</string>
+    <string name="settings_advanced_patch_options_loading">पैच ऑप्शंस लोडिंग…</string>
+    <string name="settings_advanced_patch_options_waiting_for_source">पैच स्रोत को अपडेट होने तक प्रतीक्षा करें</string>
+    <string name="settings_advanced_patch_options_load_error">पैच ऑप्शंस लोड करने में विफल हो गया</string>
+    <string name="settings_advanced_patch_options_no_available">इस पैच के लिए कोई ऑप्शंस उपलब्ध नहीं है</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Custom Branding -->
+    <string name="settings_advanced_patch_options_custom_branding">कस्टम ब्रांडिंग</string>
+    <string name="settings_advanced_patch_options_custom_branding_description">ऐप का प्रदर्शन नाम बदलता है।</string>
+    <string name="settings_advanced_patch_options_custom_branding_app_name">एप्लिकेशन आइकॉन फ़ोल्डर</string>
+    <string name="settings_advanced_patch_options_custom_branding_app_name_hint">कस्टम नाम दर्ज करें</string>
+    <string name="settings_advanced_patch_options_custom_branding_custom_icon">कस्टम आइकॉन</string>
+    <string name="settings_advanced_patch_options_custom_branding_custom_icon_instruction">"कस्टम आइकन के रूप में उपयोग करने के लिए छवियों के साथ फ़ोल्डर।
+
+फ़ोल्डर में डिवाइस के DPI के आधार पर, एक या अधिक निम्न फ़ोल्डर होने चाहिए:
+- mipmap-mdpi
+- mipmap-hdpi
+- mipmap-xhdpi
+- mipmap-xxhdpi
+- mipmap-xxxhdpi
+
+इनमें से प्रत्येक फ़ोल्डर में निम्न फ़ाइलें होनी चाहिए:
+morphe_adaptive_background_custom.png
+morphe_adaptive_foreground_custom.png
+
+छवि आयाम इस प्रकार होने चाहिए:
+- mipmap-mdpi: 108x108 px
+- mipmap-hdpi: 162x162 px
+- mipmap-xhdpi: 216x216 px
+- mipmap-xxhdpi: 324x324 px
+- mipmap-xxxhdpi: 432x432 px
+
+वैकल्पिक रूप से, पथ में एक 'drawable' फ़ोल्डर होता है जिसमें एक मोनोक्रोम आइकन फ़ाइल होती है:
+morphe_adaptive_monochrome_custom.xml
+
+वैकल्पिक रूप से, पथ में सूचना आइकन निम्नलिखित स्वरूपों में से एक में होता है:
+- 'drawable' में XML वेक्टरdrawable:
+  morphe_notification_icon_custom.xml
+- 'drawable-dpi' फ़ोल्डर में PNG raster छवियां:
+  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
+    <string name="settings_advanced_patch_options_custom_header">कस्टम हेडर लोगो</string>
+    <string name="settings_advanced_patch_options_custom_header_description">हेडर लोगो बदलता है।</string>
+    <string name="settings_advanced_patch_options_custom_header_instruction">"कस्टम हेडर लोगो के लिए उपयोग किए जाने वाले चित्रों के फोल्डर का पथ
+
+डिवाइस के DPI पर निर्भर करता है, फोल्डर में निम्नलिखित किसी एक या अधिक फ़ोल्डर होनी चाहिए:
+- drawable-hdpi
+- drawable-xhdpi
+- drawable-xxhdpi
+- drawable-xxxhdpi
+
+हर फोल्डर में निम्नलिखित सभी फ़ाइलें होनी चाहिए:
+morphe_header_custom_light.png
+morphe_header_custom_dark.png
+
+फ़ाइलें निम्नलिखित आयामों में होनी चाहिए:
+- drawable-hdpi: 194x72 px
+- drawable-xhdpi: 258x96 px
+- drawable-xxhdpi: 387x144 px
+- drawable-xxxhdpi: 512x192 px"</string>
+    <!-- Settings - Advanced Tab - Patch Options Section: Hide Shorts -->
+    <string name="settings_advanced_patch_options_hide_shorts_features">शॉर्ट्स फीचर्स छिपाएं</string>
+    <string name="settings_advanced_patch_options_hide_shorts_app_shortcut">शॉर्ट्स एप्लिकेशन शॉर्टकट छिपाएं</string>
+    <string name="settings_advanced_patch_options_hide_shorts_app_shortcut_description">लॉन्चर के लंबे प्रेस मेनू से शॉर्ट्स को हटाता है।</string>
+    <string name="settings_advanced_patch_options_hide_shorts_widget">शॉर्ट्स विजेट छिपाएं</string>
+    <string name="settings_advanced_patch_options_hide_shorts_widget_description">लॉन्चर विजेट से शॉर्ट्स बटन को हटाता है।</string>
+    <!-- Settings - System Tab - Installer Section -->
+    <string name="installer">इंस्टॉलर</string>
+    <string name="installer_title">इंस्टॉलर चुनें</string>
+    <string name="installer_internal_name">सिस्टम इन्स्टॉलर</string>
+    <string name="installer_internal_description">एंड्रॉइड पैकेज इंस्टॉलर का उपयोग करें।</string>
+    <string name="installer_auto_saved_name">रूट्ड माउंट इंस्टॉलर</string>
+    <string name="installer_auto_saved_description">संस्थापित एप्लिकेशन पर पथचिह्नित एपीके को माउंट करता है</string>
+    <string name="installer_shizuku_description">Shizuku या Sui का उपयोग करके चुपचाप इंस्टॉल करता है।</string>
+    <string name="installer_option_none">कोई बैकफ़ॉल नहीं</string>
+    <string name="installer_none_description">कोई बैकअप इंस्टॉलर कॉन्फ़िगर नहीं किया गया है</string>
+    <string name="installer_status_requires_root">Requires root access</string>
+    <string name="installer_status_not_supported">इस क्रिया के लिए समर्थित नहीं है</string>
+    <string name="installer_status_shizuku_not_installed">इस विकल्प का उपयोग करने के लिए शिज़ुकू या साई इंस्टॉल करें</string>
+    <string name="installer_status_shizuku_not_running">शिज़ुकू या साई को शुरू करें और पुन: प्रयास करें</string>
+    <string name="installer_status_shizuku_permission">मोरफे से शिज़ुकू में अनुमति प्राप्त करें</string>
+    <string name="installer_mount_warning_install">आपका प्राथमिक इंस्टॉलर रूट माउंट इंस्टॉलर पर सेट है. यह सहेजा गया ऐप माउंट का उपयोग करके इंस्टॉल नहीं किया गया था।</string>
+    <string name="mount_version_mismatch_message">स्टॉक ऐप वर्जन (%2$s) पैच्ड ऐप वर्जन (%1$s) से मेल नहीं खाती. माउंट मैचिंग स्टॉक वर्जन, फिर पुन: प्रयास करें।</string>
+    <string name="installer_status_shizuku_unsupported">इंस्टॉल किया गया शिज़ुकू वर्जन समर्थित नहीं है</string>
+    <string name="installer_action_open_shizuku">Open Shizuku</string>
+    <string name="installer_hint_generic">इंस्टॉलेशन विफल रही. पुन: प्रयास करें या अलग इंस्टॉलर का उपयोग करें।</string>
+    <string name="installer_hint_conflict">इस पैकेज नाम के साथ अन्य ऐप पहले से ही इंस्टॉल किया गया है. आगे बढ़ने से पहले इसे अनइंस्टॉल करें।</string>
+    <string name="installer_external_launched">%s खोला जा रहा है</string>
+    <string name="installer_external_timeout">%s ने स्थापना की पुष्टि नहीं की। दूसरे ऐप की जांच करें और फिर से प्रयास करें।</string>
+    <string name="installer_external_success">%s ने सफल स्थापना की सूचना दी।</string>
+    <string name="installer_unavailable_title">%s उपलब्ध नहीं है</string>
+    <string name="installer_unavailable_message">आपका प्राथमिक इंस्टॉलर (%s) वर्तमान में उपलब्ध नहीं है. समस्या को ठीक करें और पुन: प्रयास करें, या मानक इंस्टॉलर का उपयोग करें।</string>
+    <string name="installer_unavailable_shizuku_hint">确保 शिज़ुकू चल रहा है और इस ऐप को अनुमति दी गई है।</string>
+    <string name="installer_use_standard">स्तاندर्ड का उपयोग करें</string>
+    <string name="settings_prompt_installer_on_install">इंस्टॉलर चयन संकेत</string>
+    <string name="settings_prompt_installer_on_install_description">जब भी पैच किए गए ऐप को इंस्टॉल किया जाता है, तो इंस्टॉलर चयन संवाद दिखाता है।</string>
+    <string name="settings_auto_install_with_shizuku">पैचिंग के बाद स्वतः इंस्टॉल करें</string>
+    <string name="settings_auto_install_with_shizuku_description">पैचिंग पूरा होने के तुरंत बाद पैच्ड APK चुपचाप इंस्टॉल करता है</string>
+    <string name="settings_auto_install_prompt_conflict">\"%s\" सक्षम है - स्वतः इंस्टॉल छोड़ दिया जाएगा</string>
+    <!-- Settings - System Tab - Performance Section -->
+    <string name="settings_system_battery_optimization">बैटरी अनुकूलन</string>
+    <string name="settings_system_battery_optimization_description">जब ऐप छोटा किया जाता है, तो पैचर को चालू रखता है।</string>
+    <string name="settings_system_performance">प्रदर्शन</string>
+    <string name="settings_system_process_runtime">प्रोसेस रनटाइम</string>
+    <string name="settings_system_process_runtime_description">बेहतर स्थिरता के लिए एक अलग प्रक्रिया में पैचिंग करता है।</string>
+    <string name="settings_system_process_runtime_memory_limit">मेमोरी लिमिट</string>
+    <string name="settings_system_process_runtime_memory_limit_description">उच्च सीमाएं सक्षम उपकरणों पर पैचिंग को गति देती हैं।</string>
+    <string name="settings_system_process_runtime_enable">प्रोसेस रनटाइम सक्षम करें</string>
+    <string name="settings_system_memory_limit_subtitle">पैचिंग के लिए उपलब्ध मेमोरी</string>
+    <string name="settings_system_memory_limit_warning">बड़े एप्लिकेशन के पैचिंग के लिए निम्न मेमोरी लिमिट फेल हो सकती है</string>
+    <string name="settings_system_process_runtime_enabled_description">%s एमबी सीमा</string>
+    <string name="settings_system_process_runtime_disabled_description">कन्फ़िगरेशन के लिए क्लिक करें</string>
+    <string name="settings_system_process_runtime_description_not_available">यह सुविधा Android 11 या उसके बाद के संस्करण की आवश्यकता है</string>
+    <!-- Settings - System Tab - Import and Export Section -->
+    <string name="settings_system_import_export">आइमपोर्ट और एक्सपोर्ट</string>
+    <string name="settings_system_keystore">कीस्टोर</string>
+    <string name="settings_system_import_keystore_description">आपके साइनिंग कीस्टोर को आयात या निर्यात करता है।</string>
+    <string name="settings_system_import_keystore_dialog_title">कीस्टोर के क्रेडेंशियल दर्ज करें</string>
+    <string name="settings_system_import_keystore_dialog_description">केस्टोर के क्रेडेंशियल्स के लिए प्रवेश करना होगा इसे आयात करने के लिए।</string>
+    <string name="settings_system_import_keystore_dialog_alias_field">यूज़रनेम (एलियास)</string>
+    <string name="settings_system_import_keystore_dialog_password_field">पासवर्ड</string>
+    <string name="settings_system_import_keystore_dialog_format_field">कीस्टोर प्रारूप</string>
+    <string name="settings_system_import_keystore_wrong_credentials">गलत कीस्टोर क्रेडेंशियल</string>
+    <string name="settings_system_import_keystore_success">कीस्टोर आयम किया गया</string>
+    <string name="settings_system_import_keystore_failed">कीस्टोर आयम करने में विफल</string>
+    <string name="settings_system_export_keystore_unavailable">एक्सपोर्ट करने के लिए कीस्टोर उपलब्ध नहीं है</string>
+    <string name="settings_system_export_keystore_success">कीस्टोर एक्सपोर्ट किया गया</string>
+    <string name="settings_system_export_keystore_failed">कीस्टोर एक्सपोर्ट करने में विफल।</string>
+    <string name="settings_system_show_password_field">पासवर्ड दिखाएं</string>
+    <string name="settings_system_hide_password_field">पासवर्ड छिपाएं</string>
+    <string name="settings_system_morphe_settings">मॉर्फ सेटिंग्स</string>
+    <string name="settings_system_import_manager_settings_description">आपकी Morphe सेटिंग्स का बैकअप और पुनर्स्थापित करता है।</string>
+    <string name="settings_system_import_manager_settings_fail">मोर्फ़ सेटिंग्स आयात करने में विफल: %s</string>
+    <string name="settings_system_import_manager_settings_success">मोर्फ़ सेटिंग्स आयात की गईं</string>
+    <string name="settings_system_export_manager_settings_fail">मोर्फ़ सेटिंग्स निर्यात करने में विफल: %s</string>
+    <string name="settings_system_export_manager_settings_success">मोर्फ़ सेटिंग्स निर्यात की गईं</string>
+    <string name="settings_system_debug">डिबग</string>
+    <string name="settings_system_export_debug_logs_description">समस्या निवारण के लिए सिस्टम लॉग सहेजता है।</string>
+    <string name="settings_system_export_debug_logs_export_read_failed">लॉग पढ़ने में विफल रहा (अनुक्रमणिका %s)</string>
+    <string name="settings_system_export_debug_logs_export_failed">लॉग्स एक्सपोर्ट करने में विफल</string>
+    <string name="settings_system_export_debug_logs_export_success">लॉग्स एक्सपोर्ट किए गए</string>
+    <!-- Settings - System Tab - Files & Storage Section -->
+    <string name="settings_system_files">फ़ाइलें और संग्रहण</string>
+    <string name="settings_system_apks_size">कुल आकार: %s</string>
+    <!-- Settings - System Tab - Storage Management - Patched APKs Management -->
+    <string name="settings_system_patched_apks_title">पैच किए गए एपीके</string>
+    <string name="settings_system_patched_apks_description">संरक्षित पैच किए गए एप्लिकेशन फ़ाइलों का प्रबंधन करता है।</string>
+    <string name="settings_system_patched_apks_empty">अभी तक कोई सहेजा गया पैच किया गया एपीके नहीं है</string>
+    <string name="settings_system_patched_apks_delete_title">सहेजे गए पैच किए गए एपीके को हटाएं?</string>
+    <string name="settings_system_patched_apks_delete_confirm">%s के लिए सहेजे गए पैच किए गए एपीके को हटाना चाहते हैं?</string>
+    <string name="settings_system_patched_apks_deleted">%s के लिए सहेजे गए पैच किए गए एपीके सफलतापूर्वक हटाए गए</string>
+    <!-- Settings - System Tab - Storage Management - Original APKs Management -->
+    <string name="settings_system_original_apks_title">अरिजनल एपीके</string>
+    <string name="settings_system_original_apks_description">फिर से पैच करने के लिए सहेजा गया। प्रति ऐप एक संस्करण रखा जाता है।</string>
+    <string name="settings_system_original_apks_empty">कोई सहेजा गया अरिजनल एपीके नहीं है</string>
+    <string name="settings_system_original_apks_deleted">%s के लिए अरिजनल एपीके सफलतापूर्वक हटाए गए</string>
+    <string name="settings_system_original_apks_delete_title">अरिजनल एपीके को हटाएं?</string>
+    <string name="settings_system_original_apks_delete_confirm">%s के लिए मूल APK मिटाएं? बिना नई APK प्रदान किए पुनः पथच करना संभव नहीं होगा।</string>
+    <!-- Settings - System Tab - Storage Management - Patch Selection Management -->
+    <string name="settings_system_patch_selections_title">पथच चयन</string>
+    <string name="settings_system_patch_selections_description">सहेजे गए पैच चयन, अनइंस्टॉल करने के बाद भी बरकरार रहते हैं।</string>
+    <string name="settings_system_patch_selection_reset_all_confirm_title">सभी चयन रीसेट करें?</string>
+    <string name="settings_system_patch_selection_reset_package_confirm_title">पैकेज चयन रीसेट करें?</string>
+    <string name="settings_system_patch_selection_reset_source_confirm_title">स्रोत चयन रीसेट करें?</string>
+    <string name="settings_system_patch_selection_no_saved">कोई सहेजा गया पटच चयन नहीं</string>
+    <string name="settings_system_patch_selection_total_summary_format">%1$s Across %2$s</string>
+    <string name="settings_system_patch_selection_patches_in_sources_format">%1$s in %2$s</string>
+    <string name="settings_system_patch_selection_source_format">स्रोत #%s</string>
+    <string name="settings_system_patch_selection_will_delete">यह हटाएगा:</string>
+    <string name="settings_system_patch_selection_reset_all_warning">यह सभी पैकेजों और स्रोतों के लिए सहेजे गए सभी पटच चयन को स्थायी रूप से हटाएगा</string>
+    <string name="settings_system_patch_selection_reset_package_warning">%s के लिए सहेजे गए सभी पटच चयन को स्थायी रूप से हटाएगा</string>
+    <string name="settings_system_patch_selection_reset_source_warning">%1$s के लिए संरक्षित पट्टी चयन को स्थायी रूप से मिटा दिया जाएगा, स्रोत #%2$s में</string>
+    <string name="settings_system_export_source_data_fail">स्रोत डेटा निर्यात करने में विफल</string>
+    <string name="settings_system_export_source_data_success">स्रोत डेटा सफलतापूर्वक निर्यात किया गया</string>
+    <string name="settings_system_import_source_data_fail">स्रोत डेटा आयात करने में विफल</string>
+    <string name="settings_system_import_source_data_success">स्रोत डेटा सफलतापूर्वक आयात किया गया</string>
+    <string name="settings_system_patch_details_title">पटच विवरण</string>
+    <string name="settings_system_selected_patches_title">चयनित पट्टियाँ (%s)</string>
+    <string name="settings_system_patch_options_title">पट्टी विकल्प (%s)</string>
+    <string name="settings_system_no_patches_or_options">कोई पटच या विकल्प सहेजे गए नहीं</string>
+    <!-- Settings - System Tab - Custom file picker -->
+    <string name="settings_system_custom_file_picker">कस्टम फ़ाइल पिकर</string>
+    <string name="settings_system_custom_file_picker_description">सिस्टम डिफ़ॉल्ट के बजाय मोरफे के बिल्ट-इन फ़ाइल पिकर के साथ संग्रहण ब्राउज़ करें</string>
+    <!-- File Picker -->
+    <string name="file_picker_previous_directory">पिछली निर्देशिका</string>
+    <string name="file_picker_no_files">यहां कोई फ़ाइलें नहीं हैं</string>
+    <string name="file_picker_read_error">इस डाइरेक्टरी को पढ़ने में असमर्थ</string>
+    <string name="file_picker_internal_storage">आंतरिक संग्रहण</string>
+    <string name="file_picker_sd_card">एसडी कार्ड</string>
+    <string name="file_picker_root">रूट (/)</string>
+    <string name="file_picker_sort_name_asc">नाम (अ–ज़)</string>
+    <string name="file_picker_sort_name_desc">नाम (ज़–अ)</string>
+    <string name="file_picker_sort_size_desc">आकार (सबसे बड़ा पहले)</string>
+    <string name="file_picker_sort_size_asc">आकार (सबसे छोटा पहले)</string>
+    <string name="file_picker_sort_date_desc">तिथि (नवीनतम पहले)</string>
+    <string name="file_picker_sort_date_asc">तिथि (सबसे पुरानी पहले)</string>
+    <!-- Settings - System Tab - About Section -->
+    <string name="settings_system_about">मorphe के बारे में</string>
+    <string name="settings_system_share_website">वेबसाइट शेयर करें</string>
+    <string name="settings_system_share_website_description">आधिकारिक Morphe वेबसाइट साझा करता है।</string>
+    <string name="settings_system_manager_description">यह एक ओपन-सोर्स परियोजना है जो लोकप्रिय एंड्रॉइड ऐप्स के आधुनिक, सुव्यवस्थित पैचिंग के लिए है, जो सामुदायिक प्रतिक्रिया और योगदान से प्रेरित है</string>
+    <string name="credits">क्रेडिट</string>
+    <string name="credits_current_development">वर्तमान विकास</string>
+    <string name="credits_prior_development">पिछला विकास</string>
+    <string name="opensource_licenses">ओपन-सोर्स लाइसेंस</string>
+    <!-- Shared strings -->
+    <string name="select_file">फ़ाइल चुनें</string>
+    <string name="select_folder">फ़ोल्डर चुनें</string>
+    <string name="patches">पैच</string>
+    <string name="home">घर</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="yes">हां</string>
+    <string name="no">नहीं</string>
+    <string name="all">सभी</string>
+    <string name="filter">फ़िल्टर</string>
+    <string name="reset">रीसेट करें</string>
+    <string name="reset_all">सभी रीसेट करें</string>
+    <string name="confirm">पुष्टि करें</string>
+    <string name="warning">चेतावनी</string>
+    <string name="error_">त्रुटि</string>
+    <string name="retry">पुनरावलोकन करें</string>
+    <string name="refresh">ताज़ा करें</string>
+    <string name="add">जोड़ें</string>
+    <string name="close">बंद करे</string>
+    <string name="back">वापस</string>
+    <string name="next">अगला</string>
+    <string name="done">हो गया</string>
+    <string name="skip">छोड़ें</string>
+    <string name="clear">खाली करें</string>
+    <string name="delete">हटाएं</string>
+    <string name="remove">निकालें</string>
+    <string name="disable">Disable</string>
+    <string name="enable">Enable</string>
+    <string name="loading">Loading…</string>
+    <string name="not_installed">Not installed</string>
+    <string name="view">दृश्य</string>
+    <string name="search">खोज</string>
+    <string name="search_no_results">कोई परिणाम नहीं मिला</string>
+    <string name="sort">क्रमबद्ध करें</string>
+    <string name="any_version">Failed to import keystore</string>
+    <string name="enabled">सक्षम</string>
+    <string name="disabled">असक्षम</string>
+    <string name="selected">चयनित</string>
+    <string name="not_selected">चयनित नहीं</string>
+    <string name="select_all">सब चुनें</string>
+    <string name="select_all_done">सभी चयनित</string>
+    <string name="deselect_all">सभी का चयन रद्द करें</string>
+    <string name="deselect_all_done">सभी अचयनित</string>
+    <string name="reorder_list">सूची को पुन: व्यवस्थित करें</string>
+    <string name="reorder_list_hint">पुन: व्यवस्थित करने के लिए खींचें</string>
+    <string name="reorder_done">क्रम सहेजा गया</string>
+    <string name="reset_order">क्रम रीसेट करें</string>
+    <string name="reset_order_done">ऑर्डर रीसेट हो गया</string>
+    <string name="rename">रename</string>
+    <string name="import_">आयात करें</string>
+    <string name="export">निर्यात करें</string>
+    <string name="download">डाउनलोड करें</string>
+    <string name="less">Less</string>
+    <string name="expand">विस्तार करें</string>
+    <string name="expanded">विस्तृत किया गया</string>
+    <string name="collapse">सिकुड़ाएं</string>
+    <string name="collapsed">संक्षिप्त किया गया</string>
+    <string name="available">उपलब्ध</string>
+    <string name="continue_">Continue</string>
+    <string name="version">Version</string>
+    <string name="patch">पैच</string>
+    <string name="repatch">Repatch</string>
+    <string name="open">खुला</string>
+    <string name="mount">माउंट करें</string>
+    <string name="mounted">माउंटेड</string>
+    <string name="unmount">अनमाउंट</string>
+    <string name="unmounted">अनमाउंटेड</string>
+    <string name="remount">पुनःसंयोजित करें</string>
+    <string name="share">शेयर करें</string>
+    <string name="install">स्थापित करें</string>
+    <string name="installed">Installed</string>
+    <string name="reinstall">Debugging</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="uninstalled">अन्स्टॉल किया गया हे</string>
+    <string name="save">सेव करें</string>
+    <string name="saved">सहेजा गया</string>
+    <string name="update">अपडेट</string>
+    <string name="allow">अनुमति दें</string>
+    <string name="details">विवरण</string>
+    <string name="hide">छुपायें</string>
+    <string name="hidden">छिपा हुआ</string>
+    <string name="unhide">अनहाइड करें</string>
+    <string name="unhide_done">दिखाया गया</string>
+    <string name="logs">लॉग्स</string>
+    <string name="sources">स्रोत</string>
+    <string name="installing_ellipsis">इंस्टॉल हो रहा है…</string>
+    <string name="mounting_ellipsis">माउंटिंग…</string>
+    <string name="unmounting_ellipsis">अनसंयोजन…</string>
+    <string name="importing_ellipsis">आयम…</string>
+    <string name="imported_successfully">सफलतापूर्वक आयात किया गया</string>
+    <string name="changelog">चंगेलॉग्स देखें</string>
+    <string name="changelog_description">इस अपडेट में नवीनतम बदलाव देखें</string>
+    <string name="changelog_download_fail">परिवर्तन लॉग डाउनलोड करने में विफल: %s</string>
+    <string name="changelog_retry">पुनः प्रयास करें</string>
+    <string name="changelog_empty">कोई चेंजलॉग उपलब्ध नहीं है</string>
+    <string name="no_network_toast">इंटरनेट कनेक्शन उपलब्ध नहीं है</string>
+    <string name="update_available">An update is available</string>
+    <string name="ready_to_install_update">Ready to install update</string>
+    <string name="update_completed">अपडेट इंस्टॉल हो गया</string>
+    <string name="install_update_manager_failed">अपडेट स्थापित करने में विफल</string>
+    <string name="installing_manager_update">अपडेट इंस्टॉल हो रहा है…</string>
+    <string name="downloading_manager_update">अपडेट डाउनलोड हो रहा है…</string>
+    <string name="download_manager_failed">अपडेट डाउनलोड करने में विफल: %s</string>
+    <string name="failed_to_check_updates">अपडेट के लिए जाँच करने में विफल: %s</string>
+    <string name="failed_to_download_update">अपडेट डाउनलोड करने में विफल: %s</string>
+    <string name="resume_download">डाउनलोड फिर से शुरू करें</string>
+    <string name="download_confirmation_metered">"आप मापित कनेक्शन पर हैं, और आपके सेवा प्रदाता से डेटा चार्ज लागू हो सकते हैं.
+
+क्या आप अभी भी आगे बढ़ना चाहते हैं?"</string>
+    <string name="download_update_confirmation">अपडेट डाउनलोड करें?</string>
+    <!-- Onboarding coach marks -->
+    <!-- %1$d = current step number, %2$d = total number of steps (e.g. "3 of 13") -->
+    <string name="onboarding_step_of">%1$d में से %2$d</string>
+    <string name="onboarding_sources_desc">अपने पैच स्रोतों का प्रबंधन करें। प्रत्येक स्रोत पैच प्रदान करता है जिन्हें आपके ऐप्स पर लागू किया जा सकता है।</string>
+    <string name="onboarding_swipe_title">स्वाइप इशारे</string>
+    <string name="onboarding_swipe_desc">अपने उपलब्ध पैच देखने के लिए किसी ऐप कार्ड पर दाईं ओर स्वाइप करें। होम स्क्रीन से कार्ड को छिपाने के लिए बाईं ओर स्वाइप करें।</string>
+    <string name="onboarding_settings_desc">Morphe को अनुकूलित करें: दिखावट, उन्नत विकल्प और सिस्टम उपकरण।</string>
+    <string name="onboarding_sources_patches_desc">इस स्रोत से उपलब्ध सभी पैच देखने के लिए टैप करें।</string>
+    <string name="onboarding_sources_version_desc">इस स्रोत के लिए पूर्ण चेंजलॉग देखने के लिए संस्करण पर टैप करें।</string>
+    <string name="onboarding_sources_prerelease_desc">इस स्रोत से प्री-रिलीज़ पैच संस्करण प्राप्त करने के लिए इसे सक्षम करें।</string>
+    <string name="onboarding_appearance_tab_desc">ऐप के लुक को अनुकूलित करें: थीम, एक्सेंट रंग और पृष्ठभूमि।</string>
+    <string name="onboarding_appearance_theme_desc">हल्के, गहरे या सिस्टम थीम के बीच चुनें। आप एक कस्टम एक्सेंट रंग भी चुन सकते हैं या डायनामिक कलर सक्षम कर सकते हैं।</string>
+    <string name="onboarding_expert_mode_desc">पैच चयन, कस्टम विकल्पों और अन्य उन्नत सुविधाओं को अनलॉक करने के लिए विशेषज्ञ मोड सक्षम करें।</string>
+    <!-- Translate "System" the same way as the System settings tab -->
+    <string name="onboarding_system_tab_title">सिस्टम टैब</string>
+    <string name="onboarding_system_tab_desc">कीस्टोर प्रबंधन, आयात/निर्यात उपकरण और ऐप जानकारी।</string>
+    <string name="onboarding_system_installer_desc">चुनें कि पैच किए गए ऐप्स को कैसे स्थापित किया जाए: मानक, रूट माउंट, या शिजुकु।</string>
+    <string name="onboarding_system_process_runtime_desc">स्थिरता में सुधार और मेमोरी उपयोग को नियंत्रित करने के लिए एक अलग प्रक्रिया में पैचिंग चलाएं। बड़े ऐप्स के लिए अनुशंसित।</string>
+    <string name="onboarding_system_file_picker_desc">जब APK या कीस्टोर का चयन करते हैं तो सिस्टम पिकर के बजाय अंतर्निहित फ़ाइल ब्राउज़र का उपयोग करने के लिए सक्षम करें।</string>
+    <!-- Tour prompt dialog shown after first successful patch install -->
+    <string name="tour_prompt_title">त्वरित सुविधा दौरा</string>
+    <string name="tour_prompt_desc">क्या आप Morphe की मुख्य विशेषताओं का त्वरित दौरा करना चाहेंगे?</string>
+    <string name="tour_prompt_confirm">मुझे दिखाओ</string>
+    <string name="onboarding_restart_title">सुविधा दौरा</string>
+    <string name="onboarding_restart_desc">Morphe की प्रमुख विशेषताओं का निर्देशित दौरा करें।</string>
+</resources>

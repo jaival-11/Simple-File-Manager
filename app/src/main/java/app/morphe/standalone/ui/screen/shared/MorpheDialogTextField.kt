@@ -1,0 +1,340 @@
+/*
+ * Copyright 2026 Morphe.
+ * https://github.com/MorpheApp/morphe-manager
+ */
+
+package app.morphe.standalone.ui.screen.shared
+
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.outlined.InsertDriveFile
+import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.outlined.*
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.focus.FocusRequester
+import androidx.compose.ui.focus.focusRequester
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.text.input.VisualTransformation
+import androidx.compose.ui.unit.dp
+import app.morphe.standalone.R
+
+@Composable
+private fun morpheDialogTextFieldColors(textColor: Color) = OutlinedTextFieldDefaults.colors(
+    focusedTextColor = textColor,
+    unfocusedTextColor = textColor,
+    disabledTextColor = textColor.copy(alpha = 0.6f),
+    focusedBorderColor = textColor.copy(alpha = 0.5f),
+    unfocusedBorderColor = textColor.copy(alpha = 0.2f),
+    disabledBorderColor = textColor.copy(alpha = 0.1f),
+    cursorColor = textColor,
+    errorBorderColor = MaterialTheme.colorScheme.error,
+    focusedLeadingIconColor = textColor.copy(alpha = 0.7f),
+    unfocusedLeadingIconColor = textColor.copy(alpha = 0.5f),
+    focusedTrailingIconColor = textColor.copy(alpha = 0.7f),
+    unfocusedTrailingIconColor = textColor.copy(alpha = 0.5f),
+    focusedLabelColor = textColor.copy(alpha = 0.7f),
+    unfocusedLabelColor = textColor.copy(alpha = 0.5f),
+    focusedPlaceholderColor = textColor.copy(alpha = 0.4f),
+    unfocusedPlaceholderColor = textColor.copy(alpha = 0.4f)
+)
+
+/**
+ * Styled [OutlinedTextField] for dialogs with proper theming.
+ * Supports password visibility toggle and clear button.
+ */
+@Composable
+fun MorpheDialogTextField(
+    modifier: Modifier = Modifier,
+    value: String,
+    onValueChange: (String) -> Unit,
+    label: @Composable (() -> Unit)? = null,
+    placeholder: @Composable (() -> Unit)? = null,
+    leadingIcon: @Composable (() -> Unit)? = null,
+    trailingIcon: @Composable (() -> Unit)? = null,
+    isError: Boolean = false,
+    singleLine: Boolean = true,
+    enabled: Boolean = true,
+    isPassword: Boolean = false,
+    showClearButton: Boolean = false,
+    onFolderPickerClick: (() -> Unit)? = null,
+    onFilePickerClick: (() -> Unit)? = null,
+    keyboardOptions: KeyboardOptions = KeyboardOptions.Default,
+    keyboardActions: KeyboardActions = KeyboardActions.Default
+) {
+    var passwordVisible by rememberSaveable { mutableStateOf(false) }
+    val textColor = LocalDialogTextColor.current
+
+    OutlinedTextField(
+        value = value,
+        onValueChange = onValueChange,
+        label = label,
+        placeholder = placeholder,
+        leadingIcon = leadingIcon,
+        trailingIcon = {
+            if (isPassword || showClearButton || onFolderPickerClick != null || onFilePickerClick != null) {
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(4.dp),
+                    modifier = Modifier.padding(end = 4.dp)
+                ) {
+                    // Password visibility toggle
+                    if (isPassword) {
+                        IconButton(
+                            onClick = { passwordVisible = !passwordVisible },
+                            modifier = Modifier.size(40.dp)
+                        ) {
+                            Icon(
+                                imageVector = if (passwordVisible) {
+                                    Icons.Outlined.VisibilityOff
+                                } else {
+                                    Icons.Outlined.Visibility
+                                },
+                                contentDescription = if (passwordVisible) {
+                                    stringResource(R.string.settings_system_hide_password_field)
+                                } else {
+                                    stringResource(R.string.settings_system_show_password_field)
+                                },
+                                tint = textColor.copy(alpha = 0.7f)
+                            )
+                        }
+                    }
+
+                    // Clear button
+                    if (showClearButton && value.isNotBlank()) {
+                        IconButton(
+                            onClick = { onValueChange("") },
+                            modifier = Modifier.size(40.dp)
+                        ) {
+                            Icon(
+                                imageVector = Icons.Outlined.Clear,
+                                contentDescription = stringResource(R.string.clear),
+                                tint = textColor.copy(alpha = 0.7f)
+                            )
+                        }
+                    }
+
+                    // Folder picker button
+                    if (onFolderPickerClick != null) {
+                        IconButton(
+                            onClick = onFolderPickerClick,
+                            modifier = Modifier.size(40.dp)
+                        ) {
+                            Icon(
+                                imageVector = Icons.Outlined.FolderOpen,
+                                contentDescription = stringResource(R.string.select_folder),
+                                tint = textColor.copy(alpha = 0.7f)
+                            )
+                        }
+                    }
+
+                    // File picker button
+                    if (onFilePickerClick != null) {
+                        IconButton(
+                            onClick = onFilePickerClick,
+                            modifier = Modifier.size(40.dp)
+                        ) {
+                            Icon(
+                                imageVector = Icons.AutoMirrored.Outlined.InsertDriveFile,
+                                contentDescription = stringResource(R.string.select_file),
+                                tint = textColor.copy(alpha = 0.7f)
+                            )
+                        }
+                    }
+                }
+            } else {
+                trailingIcon?.invoke()
+            }
+        },
+        visualTransformation = if (isPassword && !passwordVisible) {
+            PasswordVisualTransformation()
+        } else {
+            VisualTransformation.None
+        },
+        isError = isError,
+        singleLine = singleLine,
+        enabled = enabled,
+        keyboardOptions = keyboardOptions,
+        keyboardActions = keyboardActions,
+        modifier = modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(12.dp),
+        colors = morpheDialogTextFieldColors(textColor)
+    )
+}
+
+/**
+ * Styled [OutlinedTextField] with dropdown menu support for dialogs.
+ * Combines text input, folder picker, clear button, and dropdown selection.
+ *
+ * Tap behavior:
+ *  - 1st tap: opens dropdown list (field stays read-only, no keyboard).
+ *  - 2nd tap (after closing dropdown without selecting): opens keyboard for manual input.
+ *  - Selecting an item or dismissing resets back to 1st-tap behavior.
+ *
+ * @param dropdownItems Map of display name to value shown in the dropdown menu.
+ */
+@Composable
+fun MorpheDialogDropdownTextField(
+    modifier: Modifier = Modifier,
+    value: String,
+    onValueChange: (String) -> Unit,
+    dropdownItems: Map<String, String>,
+    label: @Composable (() -> Unit)? = null,
+    placeholder: @Composable (() -> Unit)? = null,
+    leadingIcon: @Composable (() -> Unit)? = null,
+    showClearButton: Boolean = false,
+    onFolderPickerClick: (() -> Unit)? = null,
+    enabled: Boolean = true,
+    singleLine: Boolean = true,
+    keyboardOptions: KeyboardOptions = KeyboardOptions.Default,
+    keyboardActions: KeyboardActions = KeyboardActions.Default
+) {
+    var dropdownExpanded by remember { mutableStateOf(false) }
+    // true = first tap opens dropdown; false = second tap opens keyboard
+    var readOnly by remember { mutableStateOf(true) }
+    val focusRequester = remember { FocusRequester() }
+    val textColor = LocalDialogTextColor.current
+
+    // Show display name from map only if value exists in map, otherwise show raw value
+    val displayValue = dropdownItems.entries.find { it.value == value }?.key ?: value
+
+    // When readOnly becomes false the field is now editable - request focus so
+    // the system knows to show the keyboard on the next tap (or immediately)
+    LaunchedEffect(readOnly) {
+        if (!readOnly) {
+            focusRequester.requestFocus()
+        }
+    }
+
+    Box(modifier = modifier.fillMaxWidth()) {
+        OutlinedTextField(
+            value = displayValue,
+            onValueChange = { newDisplayValue ->
+                // If user is editing, pass the raw input value
+                val newValue = dropdownItems[newDisplayValue] ?: newDisplayValue
+                onValueChange(newValue)
+            },
+            readOnly = readOnly,
+            label = label,
+            placeholder = placeholder,
+            leadingIcon = leadingIcon,
+            singleLine = singleLine,
+            trailingIcon = {
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(4.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier.padding(end = 4.dp)
+                ) {
+                    // Folder picker button
+                    if (onFolderPickerClick != null) {
+                        IconButton(
+                            onClick = onFolderPickerClick,
+                            modifier = Modifier.size(40.dp)
+                        ) {
+                            Icon(
+                                imageVector = Icons.Outlined.FolderOpen,
+                                contentDescription = stringResource(R.string.select_folder),
+                                tint = textColor.copy(alpha = 0.7f)
+                            )
+                        }
+                    }
+
+                    // Clear button
+                    if (showClearButton && value.isNotBlank()) {
+                        IconButton(
+                            onClick = { onValueChange("") },
+                            modifier = Modifier.size(40.dp)
+                        ) {
+                            Icon(
+                                imageVector = Icons.Outlined.Clear,
+                                contentDescription = stringResource(R.string.clear),
+                                tint = textColor.copy(alpha = 0.7f)
+                            )
+                        }
+                    }
+
+                    // Dropdown arrow
+                    IconButton(
+                        onClick = {
+                            dropdownExpanded = !dropdownExpanded
+                            if (!dropdownExpanded) readOnly = true
+                        },
+                        modifier = Modifier.size(40.dp)
+                    ) {
+                        Icon(
+                            imageVector = if (dropdownExpanded)
+                                Icons.Outlined.ExpandLess
+                            else
+                                Icons.Outlined.ExpandMore,
+                            contentDescription = if (dropdownExpanded)
+                                stringResource(R.string.collapse)
+                            else
+                                stringResource(R.string.expand),
+                            tint = textColor.copy(alpha = 0.7f)
+                        )
+                    }
+                }
+            },
+            enabled = enabled,
+            keyboardOptions = keyboardOptions,
+            keyboardActions = keyboardActions,
+            modifier = Modifier
+                .fillMaxWidth()
+                .focusRequester(focusRequester),
+            shape = RoundedCornerShape(12.dp),
+            colors = morpheDialogTextFieldColors(textColor)
+        )
+
+        // Invisible overlay that captures the first tap to open dropdown,
+        // then removes itself so the second tap reaches the real TextField.
+        if (readOnly) {
+            Box(
+                modifier = Modifier
+                    .matchParentSize()
+                    .clickable(
+                        indication = null,
+                        interactionSource = remember { MutableInteractionSource() }
+                    ) {
+                        dropdownExpanded = true
+                    }
+            )
+        }
+
+        DropdownMenu(
+            expanded = dropdownExpanded,
+            onDismissRequest = {
+                dropdownExpanded = false
+                readOnly = false // dismissed without selecting -> unlock keyboard
+            }
+        ) {
+            dropdownItems.forEach { (displayName, itemValue) ->
+                DropdownMenuItem(
+                    text = { Text(displayName) },
+                    onClick = {
+                        onValueChange(itemValue)
+                        dropdownExpanded = false
+                        readOnly = true // selected -> reset to dropdown-first behavior
+                    },
+                    leadingIcon = if (itemValue == value) {
+                        {
+                            Icon(
+                                imageVector = Icons.Default.Check,
+                                contentDescription = null,
+                                tint = MaterialTheme.colorScheme.primary
+                            )
+                        }
+                    } else null
+                )
+            }
+        }
+    }
+}
