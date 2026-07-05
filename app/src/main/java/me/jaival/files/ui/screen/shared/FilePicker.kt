@@ -3,7 +3,7 @@
  * https://github.com/MorpheApp/morphe-manager
  */
 
-package me.jaival.files
+package me.jaival.files.ui.screen.shared
 
 import me.jaival.files.R
 
