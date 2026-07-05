@@ -31,7 +31,7 @@ android {
         applicationId = "me.jaival.files"
         minSdk = 26
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.0.0"
         vectorDrawables.useSupportLibrary = true
     }
 
