@@ -26,19 +26,30 @@ jobs:
     - name: Build Release APK
       run: ./gradlew assembleRelease
 
-    - name: Sign Release APK
-      uses: r0adkll/sign-android-release@v1
-      id: sign_app
-      with:
-        releaseDirectory: app/build/outputs/apk/release
-        signingKeyBase64: ${{ secrets.KEYSTORE_BASE64 }}
-        alias: ${{ secrets.KEY_ALIAS }}
-        keyStorePassword: ${{ secrets.KEYSTORE_PASSWORD }}
-        keyPassword: ${{ secrets.KEY_PASSWORD }}
-        buildToolsVersion: '34.0.0'
+    - name: Native Sign APK
+      env:
+        KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+        KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+        KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+        KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+      run: |
+        # 1. Decode the keystore from base64
+        echo "$KEYSTORE_BASE64" | base64 --decode > release.keystore
+        
+        # 2. Find the newest installed Android Build Tools on the runner
+        BUILD_TOOLS=$(ls -d $ANDROID_HOME/build-tools/* | sort -V | tail -n 1)
+        
+        # 3. Find the unsigned APK built by Gradle
+        UNSIGNED_APK=$(find app/build/outputs/apk/release -name "*.apk" | head -n 1)
+        
+        # 4. Zipalign the APK to optimize memory usage
+        $BUILD_TOOLS/zipalign -v -p 4 "$UNSIGNED_APK" aligned.apk
+        
+        # 5. Sign the APK cryptographically
+        $BUILD_TOOLS/apksigner sign --ks release.keystore --ks-pass pass:"$KEYSTORE_PASSWORD" --ks-key-alias "$KEY_ALIAS" --key-pass pass:"$KEY_PASSWORD" --out Monet-Files-Release.apk aligned.apk
 
     - name: Upload Signed APK Artifact
       uses: actions/upload-artifact@v4
       with:
         name: Monet-Files-Release
-        path: ${{ steps.sign_app.outputs.signedReleaseFile }}
+        path: Monet-Files-Release.apk
