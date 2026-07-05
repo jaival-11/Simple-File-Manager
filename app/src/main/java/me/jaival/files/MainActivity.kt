@@ -34,7 +34,7 @@ import org.koin.core.context.startKoin
 import org.koin.dsl.module
 
 val appModule = module {
-    single { PreferencesManager(org.koin.android.ext.koin.androidContext()) }
+    single { PreferencesManager(get()) }
     single { PM(get()) }
     single { Filesystem(get<android.content.Context>() as Application) }
 }
