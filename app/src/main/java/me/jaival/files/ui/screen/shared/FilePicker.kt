@@ -3,7 +3,9 @@
  * https://github.com/MorpheApp/morphe-manager
  */
 
-package me.jaival.files.ui.screen.shared
+package me.jaival.files
+
+import me.jaival.files.R
 
 import android.content.Context
 import android.content.pm.PackageInfo
@@ -44,7 +46,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.core.graphics.createBitmap
-import me.jaival.files.R
 import me.jaival.files.domain.manager.PreferencesManager
 import me.jaival.files.util.APK_EXTENSIONS
 import me.jaival.files.util.PM
