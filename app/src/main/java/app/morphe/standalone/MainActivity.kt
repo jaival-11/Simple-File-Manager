@@ -8,6 +8,7 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.provider.Settings
+import android.webkit.MimeTypeMap
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -20,6 +21,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
+import androidx.core.content.FileProvider
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import app.morphe.standalone.data.platform.Filesystem
@@ -62,7 +64,6 @@ class MainActivity : ComponentActivity() {
                     val lifecycleOwner = LocalLifecycleOwner.current
                     var hasPermission by remember { mutableStateOf(checkStoragePermission(context)) }
 
-                    // Automatically refresh permission status when returning from Android Settings
                     DisposableEffect(lifecycleOwner) {
                         val observer = LifecycleEventObserver { _, event ->
                             if (event == Lifecycle.Event.ON_RESUME) {
@@ -78,7 +79,27 @@ class MainActivity : ComponentActivity() {
                             mimeTypes = arrayOf("*/*"),
                             onDismiss = { finish() },
                             onFilePicked = { file ->
-                                Toast.makeText(context, "Picked: ${file.name}", Toast.LENGTH_LONG).show()
+                                try {
+                                    // Generate a secure content:// URI via FileProvider
+                                    val uri = FileProvider.getUriForFile(
+                                        context,
+                                        "${context.packageName}.provider",
+                                        file
+                                    )
+                                    
+                                    // Dynamically resolve the MIME type based on file extension
+                                    val ext = file.extension.lowercase()
+                                    val mimeType = MimeTypeMap.getSingleton().getMimeTypeFromExtension(ext) ?: "*/*"
+                                    
+                                    // Fire the intent to open the file
+                                    val intent = Intent(Intent.ACTION_VIEW).apply {
+                                        setDataAndType(uri, mimeType)
+                                        addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                                    }
+                                    context.startActivity(Intent.createChooser(intent, "Open with"))
+                                } catch (e: Exception) {
+                                    Toast.makeText(context, "Cannot open file: ${e.message}", Toast.LENGTH_SHORT).show()
+                                }
                             },
                             allowFolderSelection = false
                         )
