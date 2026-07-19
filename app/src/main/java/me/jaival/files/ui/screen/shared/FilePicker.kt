@@ -29,6 +29,8 @@ import androidx.compose.material.icons.automirrored.outlined.ArrowBack
 import androidx.compose.material.icons.automirrored.outlined.InsertDriveFile
 import androidx.compose.material.icons.automirrored.outlined.Sort
 import androidx.compose.material.icons.outlined.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.activity.compose.BackHandler
@@ -65,6 +67,8 @@ import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 import kotlin.time.Duration.Companion.milliseconds
+import com.mikepenz.aboutlibraries.ui.compose.m3.LibrariesContainer
+import com.mikepenz.aboutlibraries.ui.compose.produceLibraries
 
 // Exact MIME type → extensions
 private val MIME_EXTENSION_MAP: Map<String, Set<String>> = mapOf(
@@ -255,6 +259,9 @@ fun FilePicker(
     var showSearch by remember { mutableStateOf(false) }
     var searchQuery by remember { mutableStateOf("") }
     val searchFocusRequester = remember { FocusRequester() }
+    var showOverflowMenu by remember { mutableStateOf(false) }
+    var showCreditsDialog by remember { mutableStateOf(false) }
+    var showLicensesDialog by remember { mutableStateOf(false) }
 
     val breadcrumbs = remember(currentDir, roots) {
         val dir = currentDir ?: return@remember emptyList()
@@ -349,7 +356,9 @@ fun FilePicker(
     val isAtRoot = currentDir == null || roots.any { (_, root) -> root == currentDir }
 
     BackHandler {
-        if (showSearch) {
+        if (showLicensesDialog) {
+            showLicensesDialog = false
+        } else if (showSearch) {
             showSearch = false
         } else if (!isAtRoot) {
             // Not at the root folder, so go up one level safely
@@ -369,6 +378,7 @@ fun FilePicker(
     MorpheDialog(
         onDismissRequest = {
             when {
+                showLicensesDialog -> { showLicensesDialog = false }
                 showSearch -> { showSearch = false }
                 currentDir != null -> navigateBack()
                 else -> onDismiss()
@@ -379,7 +389,8 @@ fun FilePicker(
         scrollable = false,
         footer = null
     ) {
-        Column(modifier = Modifier.fillMaxSize()) {
+        Box(modifier = Modifier.fillMaxSize()) {
+            Column(modifier = Modifier.fillMaxSize()) {
             // New content appears instantly; old content fades out
             AnimatedContent(
                 targetState = showSearch,
@@ -485,6 +496,34 @@ fun FilePicker(
                                 contentDescription = stringResource(R.string.search),
                                 tint = LocalDialogTextColor.current
                             )
+                        }
+                        Box {
+                            IconButton(onClick = { showOverflowMenu = true }) {
+                                Icon(
+                                    imageVector = Icons.Outlined.MoreVert,
+                                    contentDescription = stringResource(R.string.more_options),
+                                    tint = LocalDialogTextColor.current
+                                )
+                            }
+                            DropdownMenu(
+                                expanded = showOverflowMenu,
+                                onDismissRequest = { showOverflowMenu = false }
+                            ) {
+                                DropdownMenuItem(
+                                    text = { Text(stringResource(R.string.credits)) },
+                                    onClick = {
+                                        showOverflowMenu = false
+                                        showCreditsDialog = true
+                                    }
+                                )
+                                DropdownMenuItem(
+                                    text = { Text(stringResource(R.string.opensource_licenses)) },
+                                    onClick = {
+                                        showOverflowMenu = false
+                                        showLicensesDialog = true
+                                    }
+                                )
+                            }
                         }
                     }
                 }
@@ -712,7 +751,14 @@ fun FilePicker(
                 }
             }
         }
+        if (showLicensesDialog) {
+            LicensesScreen(onBack = { showLicensesDialog = false })
+        }
     }
+    if (showCreditsDialog) {
+        CreditsDialog(onDismissRequest = { showCreditsDialog = false })
+    }
+}
 }
 
 @Composable
@@ -781,6 +827,122 @@ private fun FilePickerRow(
                     style = MaterialTheme.typography.bodySmall,
                     color = LocalDialogSecondaryTextColor.current
                 )
+            }
+        }
+    }
+}
+
+@Composable
+private fun CreditsDialog(onDismissRequest: () -> Unit) {
+    val uriHandler = androidx.compose.ui.platform.LocalUriHandler.current
+    AlertDialog(
+        onDismissRequest = onDismissRequest,
+        title = {
+            Text(
+                text = stringResource(R.string.credits),
+                style = MaterialTheme.typography.titleLarge,
+                fontWeight = FontWeight.Bold
+            )
+        },
+        text = {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .verticalScroll(rememberScrollState()),
+                verticalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
+                Text(
+                    text = "This File Manager is adapted from the built-in file manager of Morphe Manager.",
+                    style = MaterialTheme.typography.bodyLarge
+                )
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable {
+                            runCatching {
+                                uriHandler.openUri("https://github.com/MorpheApp/Morphe-manager")
+                            }
+                        }
+                        .padding(vertical = 4.dp)
+                ) {
+                    Icon(
+                        imageVector = Icons.Outlined.Link,
+                        contentDescription = "GitHub Repository Link",
+                        tint = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.size(20.dp)
+                    )
+                    Text(
+                        text = "github.com/MorpheApp/Morphe-manager",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.primary,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                }
+            }
+        },
+        confirmButton = {
+            TextButton(onClick = onDismissRequest) {
+                Text(stringResource(android.R.string.ok))
+            }
+        }
+    )
+}
+
+@Composable
+private fun LicensesScreen(onBack: () -> Unit) {
+    val context = LocalContext.current
+    val libraries by produceLibraries {
+        withContext(Dispatchers.IO) {
+            context.resources.openRawResource(R.raw.aboutlibraries).use { stream ->
+                stream.bufferedReader().readText()
+            }
+        }
+    }
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = MaterialTheme.colorScheme.background
+    ) {
+        Column(modifier = Modifier.fillMaxSize()) {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .statusBarsPadding()
+                    .padding(start = 4.dp, end = 8.dp, top = 4.dp, bottom = 4.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                IconButton(onClick = onBack) {
+                    Icon(
+                        imageVector = Icons.AutoMirrored.Outlined.ArrowBack,
+                        contentDescription = stringResource(R.string.back),
+                        tint = LocalDialogTextColor.current
+                    )
+                }
+                Text(
+                    text = stringResource(R.string.opensource_licenses),
+                    style = MaterialTheme.typography.titleLarge,
+                    fontWeight = FontWeight.Bold,
+                    color = LocalDialogTextColor.current,
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(start = 8.dp)
+                )
+            }
+            HorizontalDivider(color = LocalDialogTextColor.current.copy(alpha = 0.08f))
+            val libs = libraries
+            if (libs != null) {
+                LibrariesContainer(
+                    libraries = libs,
+                    modifier = Modifier.fillMaxSize()
+                )
+            } else {
+                Box(
+                    modifier = Modifier.fillMaxSize(),
+                    contentAlignment = Alignment.Center
+                ) {
+                    CircularProgressIndicator()
+                }
             }
         }
     }

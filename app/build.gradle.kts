@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.parcelize)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.about.libraries.android)
 }
 
 dependencies {
@@ -21,6 +22,8 @@ dependencies {
     implementation(libs.libsu.core)
     implementation(libs.koin.android)
     implementation(libs.koin.compose)
+    implementation(libs.about.libraries.core)
+    implementation(libs.about.libraries.m3)
 }
 
 android {
@@ -30,8 +33,8 @@ android {
     defaultConfig {
         applicationId = "me.jaival.files"
         minSdk = 26
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "1.0.1"
         vectorDrawables.useSupportLibrary = true
     }
 
