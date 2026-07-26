@@ -1,8 +1,11 @@
-name: Build Signed Release APK
+name: Build Release APK
 
 on:
   push:
     branches: [ main ]
+    tags:
+      - 'v*'
+      - '*.*.*'
   workflow_dispatch:
 
 jobs:
@@ -23,33 +26,43 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    - name: Build Release APK
-      run: ./gradlew assembleRelease
+    - name: Extract Version Name
+      id: get_version
+      run: |
+        VERSION=$(grep -oP 'versionName = "\K[^"]+' app/build.gradle.kts || echo "1.0.1")
+        echo "VERSION=$VERSION" >> $GITHUB_ENV
+        echo "App Version: $VERSION"
 
-    - name: Native Sign APK
+    - name: Build Release APK
+      run: ./gradlew assembleRelease --no-daemon
+
+    - name: Native Sign & Package APK
       env:
         KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
         KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
         KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
         KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
       run: |
-        # 1. Decode the keystore from base64
-        echo "$KEYSTORE_BASE64" | base64 --decode > release.keystore
-        
-        # 2. Find the newest installed Android Build Tools on the runner
-        BUILD_TOOLS=$(ls -d $ANDROID_HOME/build-tools/* | sort -V | tail -n 1)
-        
-        # 3. Find the unsigned APK built by Gradle
+        OUTPUT_APK="Simple-File-Manager-${VERSION}.apk"
         UNSIGNED_APK=$(find app/build/outputs/apk/release -name "*.apk" | head -n 1)
-        
-        # 4. Zipalign the APK to optimize memory usage
-        $BUILD_TOOLS/zipalign -v -p 4 "$UNSIGNED_APK" aligned.apk
-        
-        # 5. Sign the APK cryptographically
-        $BUILD_TOOLS/apksigner sign --ks release.keystore --ks-pass pass:"$KEYSTORE_PASSWORD" --ks-key-alias "$KEY_ALIAS" --key-pass pass:"$KEY_PASSWORD" --out Monet-Files-Release.apk aligned.apk
 
-    - name: Upload Signed APK Artifact
+        if [ -n "$KEYSTORE_BASE64" ]; then
+          echo "$KEYSTORE_BASE64" | base64 --decode > release.keystore
+          BUILD_TOOLS=$(ls -d $ANDROID_HOME/build-tools/* | sort -V | tail -n 1)
+          $BUILD_TOOLS/zipalign -v -p 4 "$UNSIGNED_APK" aligned.apk
+          $BUILD_TOOLS/apksigner sign --ks release.keystore --ks-pass pass:"$KEYSTORE_PASSWORD" --ks-key-alias "$KEY_ALIAS" --key-pass pass:"$KEY_PASSWORD" --out "$OUTPUT_APK" aligned.apk
+        else
+          echo "Keystore secret not present, using unsigned release APK."
+          cp "$UNSIGNED_APK" "$OUTPUT_APK"
+        fi
+
+        # Compute SHA-256 checksum for reproducible build verification
+        sha256sum "$OUTPUT_APK" > "${OUTPUT_APK}.sha256"
+
+    - name: Upload APK & Checksum Artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: Monet-Files-Release
-        path: Monet-Files-Release.apk
+        name: Simple-File-Manager-${{ env.VERSION }}
+        path: |
+          Simple-File-Manager-*.apk
+          *.sha256

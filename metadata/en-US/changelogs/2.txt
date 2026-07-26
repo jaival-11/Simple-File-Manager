@@ -1,2 +1,3 @@
 - Added Credits, and Open Source Licenses
 - Updated some internal code to match Simple File Manager
+- Reduced apk size
