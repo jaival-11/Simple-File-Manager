@@ -49,8 +49,11 @@ jobs:
         if [ -n "$KEYSTORE_BASE64" ]; then
           echo "$KEYSTORE_BASE64" | base64 --decode > release.keystore
           BUILD_TOOLS=$(ls -d $ANDROID_HOME/build-tools/* | sort -V | tail -n 1)
-          $BUILD_TOOLS/zipalign -v -p 4 "$UNSIGNED_APK" aligned.apk
-          $BUILD_TOOLS/apksigner sign --ks release.keystore --ks-pass pass:"$KEYSTORE_PASSWORD" --ks-key-alias "$KEY_ALIAS" --key-pass pass:"$KEY_PASSWORD" --out "$OUTPUT_APK" aligned.apk
+          ALIGN_FLAG=""
+          if $BUILD_TOOLS/apksigner sign --help | grep -q -- "--alignment-preserved"; then
+            ALIGN_FLAG="--alignment-preserved"
+          fi
+          $BUILD_TOOLS/apksigner sign $ALIGN_FLAG --ks release.keystore --ks-pass pass:"$KEYSTORE_PASSWORD" --ks-key-alias "$KEY_ALIAS" --key-pass pass:"$KEY_PASSWORD" --out "$OUTPUT_APK" "$UNSIGNED_APK"
         else
           echo "Keystore secret not present, using unsigned release APK."
           cp "$UNSIGNED_APK" "$OUTPUT_APK"
