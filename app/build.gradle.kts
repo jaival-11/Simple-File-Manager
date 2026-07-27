@@ -58,4 +58,10 @@ android {
         compose = true
         buildConfig = true
     }
+
+    packaging {
+        jniLibs {
+            keepDebugSymbols.add("**/libdatastore_shared_counter.so")
+        }
+    }
 }
