@@ -71,11 +71,18 @@ You can download the latest compiled APK directly from the following sources:
     </td>
   </tr>
   <tr>
-     <th align="center">Orion Store</th> </tr>
+     <th align="center">Orion Store</th>
+     <th align="center">SafeHaven Store </th>
+  </tr>
   <tr>
      <td align="center">
       <a href="https://rookieenough.github.io/Orion-Data/redirect.html?id=simple-file-manager">
         <img src="https://raw.githubusercontent.com/RookieEnough/Orion-Store/refs/heads/main/assets/orion-badge.png" alt="Download from Orion Store" height="50">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://store.colourswift.com/app/me.jaival.files">
+        <img src="https://store.colourswift.com/badge.svg" alt="Download from SafeHaven Store" height="50">
       </a>
     </td>
   </tr>
