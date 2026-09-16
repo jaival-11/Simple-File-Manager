@@ -57,12 +57,24 @@ You can download the latest compiled APK directly from the following sources:
 
 <table>
   <tr>
+    <th align="center" colspan="2">F-Droid</th>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <a href="https://f-droid.org/packages/me.jaival.files">
+        <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="70">
+      </a>
+    </td>
+  </tr>
+  <tr>
     <th align="center">Github</th>
-    <th align="center">Obtainium </th>  </tr>
+    <th align="center">Obtainium </th>
+  </tr>
   <tr>
     <td align="center">
       <a href="https://github.com/jaival-11/Simple-File-Manager/releases/latest">
         <img src="https://raw.githubusercontent.com/NeoApplications/Neo-Backup/034b226cea5c1b30eb4f6a6f313e4dadcbb0ece4/badge_github.png" alt="Download from Github Releases" height="70">
+      </a>
     </td>    
     <td align="center">
       <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/jaival-11/Simple-File-Manager">
