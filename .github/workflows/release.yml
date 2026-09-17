@@ -9,6 +9,7 @@ on:
     paths-ignore:
       - '**.md'
       - '**.yml'
+      - '**.py'
   workflow_dispatch:
 
 jobs:
