@@ -48,6 +48,10 @@ jobs:
               URL=$(echo "$DATA" | jq -r .html_url)
               HEADER="<b>$REPO $TAG</b>"
             else
+              DATA=$(jq .release "$GITHUB_EVENT_PATH" 2>/dev/null || echo "{}")
+              if [[ $(echo "$DATA" | jq '.assets // [] | length') -eq 0 ]]; then
+                DATA=$(curl -s https://api.github.com/repos/$REPO/releases/tags/$RELEASE_TAG)
+              fi
               RAW_BODY="$RELEASE_BODY"
               TAG="$RELEASE_TAG"
               URL="$RELEASE_URL"
@@ -66,6 +70,28 @@ jobs:
               echo "$CLEAN_BODY"
               echo "EOF"
             } >> "$GITHUB_OUTPUT"
+
+            APK_INFO=$(echo "$DATA" | jq -r '
+              [.assets[]? | select(.name | test("\\.apk$"; "i"))] as $apks
+              | if ($apks | length) == 0 then
+                  ""
+                else
+                  ([$apks[] | select(.name | test("universal"; "i"))] | if length > 0 then .[0] else $apks[0] end)
+                  | "\(.name)\t\(.browser_download_url)"
+                end
+            ')
+
+            if [[ -n "$APK_INFO" && "$APK_INFO" != "null" ]]; then
+              APK_NAME=$(echo "$APK_INFO" | cut -f1)
+              APK_URL=$(echo "$APK_INFO" | cut -f2)
+              if [[ -n "$APK_NAME" && -n "$APK_URL" && "$APK_URL" != "null" ]]; then
+                echo "Downloading release APK: $APK_NAME"
+                curl -sL -o "$APK_NAME" "$APK_URL"
+                if [[ -f "$APK_NAME" && -s "$APK_NAME" ]]; then
+                  echo "apk_path=${APK_NAME}" >> $GITHUB_OUTPUT
+                fi
+              fi
+            fi
 
           elif [[ "$EVENT" == "issues" ]]; then
             ACTION="$EVENT_ACTION"
@@ -99,6 +125,7 @@ jobs:
           CHAT_ID: ${{ steps.info.outputs.final_chat_id }}
           TOPIC_ID: ${{ steps.info.outputs.final_topic_id }}
           TEXT: ${{ steps.info.outputs.full_message }}
+          APK_PATH: ${{ steps.info.outputs.apk_path }}
         run: |
           jq -n \
             --arg chat_id "$CHAT_ID" \
@@ -111,4 +138,18 @@ jobs:
               disable_web_page_preview: false
             } + (if $thread_id != "" then {message_thread_id: ($thread_id | tonumber? // $thread_id)} else {} end)' > payload.json
 
-          curl -X POST -H "Content-Type: application/json" -d @payload.json https://api.telegram.org/bot$BOT_TOKEN/sendMessage
+          curl -X POST -H "Content-Type: application/json" -d @payload.json "https://api.telegram.org/bot$BOT_TOKEN/sendMessage"
+
+          if [[ -n "$APK_PATH" && -f "$APK_PATH" ]]; then
+            CURL_ARGS=(
+              -F "chat_id=$CHAT_ID"
+              -F "document=@$APK_PATH"
+            )
+            if [[ -n "$TOPIC_ID" ]]; then
+              CURL_ARGS+=(-F "message_thread_id=$TOPIC_ID")
+            fi
+            curl -X POST "${CURL_ARGS[@]}" "https://api.telegram.org/bot$BOT_TOKEN/sendDocument"
+          fi
+
+
+
